@@ -1,0 +1,106 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Usage",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My Usage Details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "What Uses Most",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare My Bills",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myRates",
+            "label":    "My Rates",
+            "url":      "/myRates",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "label":    "Rewards",
+            "clientUrl":      "http://rewards.opower.com",
+            "displayCriteria": {
+                "type"      : "CUSTOMER_STUDY_GROUP",
+                "arguments" : {
+                    "studyName":     "Points and Rewards",
+                    "studyGroupName": "P & R"
+                }
+            }
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "help",
+            "heading":  "Help"
+        },
+        {
+            "pageName": "termsOfUse",
+            "heading":  "Terms of Use"
+        },
+        {
+            "pageName": "privacyPolicy",
+            "heading":  "Privacy Policy"
+        }
+    ]
+}

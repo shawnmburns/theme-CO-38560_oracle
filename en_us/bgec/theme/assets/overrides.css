@@ -1,0 +1,90 @@
+/* Put overrides in here */
+
+/* Revert bge text to arial */
+.outageAndContactHeader a,
+.bge_button,
+.bgeMainTabs a,
+.mainNav,
+.subNav a {
+	font-family: arial,helvetica,sans-serif;
+}
+
+/* Fix Opower fonts */
+.mainarea td {
+	font-family: 'ProximaNova',arial,sans-serif !important;
+	font-size: 14px;
+}
+
+/*Fix subnav alignment */
+.subNav li {
+margin-right: -3px
+}
+
+/* Fix line-heights */
+.outageAndContactHeader,
+.bgeMainTabs a,
+.mainNav a,
+.mainNav,
+.subNav a,
+div#pageFooter,
+#pageFooter h6 {
+	line-height: normal !important;
+}
+
+/* Fix background (sidebar gray) */
+body {
+	background: #dcdcdc url(Background.jpg) 0 0 repeat-x;
+	background-repeat: repeat-x;
+}
+
+/* BGEC Theme Overrides */
+#content {
+	background-color: rgb(255,255,255);
+}
+
+/* Pull Opower content to center of page */
+div.mainarea {margin-left: -30px;}
+
+/* Change link colors to bge colors */
+div.mainarea a {color: #005348;}
+div.mainarea a:visited {color: #308378;}
+
+/* Change orange buttons to green */
+div.mainarea .orangebutton {
+	color: #fff !important;
+	border: 1px solid #74a961;
+	background: -moz-linear-gradient(top, #74a961 0%, #93bc84 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #74a961), color-stop(1, #93bc84));
+	background: -ms-linear-gradient(top,#74a961,#93bc84);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#74a961', endColorstr='#93bc84',GradientType=0 );
+}
+
+/*Fix gray buttons in IE */
+.button {
+	background: -ms-linear-gradient(top,#eeeeee,#cccccc);
+}
+/* Fix div dimensions */
+div#pageFooter {height: 116px;}
+.subNav a {height: 16px;}
+.mainNav a {height: 17px;}
+.logoutForm {width: 93px;}
+
+/* Fix font sizes */
+h1.pageTitleHeader {font-size: 24px;}
+.mainNav {font-size: 12px;}
+
+/* Fix logout button color in IE9 */
+.bge_button {
+	background-color: #93bc84;
+	background-image: url("arrow-small-wide.png");
+	background-image: url("arrow-small-wide.png"),-webkit-linear-gradient(top,#93bc84 0,#74a961 100%);
+	background-image: url("arrow-small-wide.png"),-moz-linear-gradient(top,#93bc84 0,#74a961 100%);
+	background-image: url("arrow-small-wide.png"),-ms-linear-gradient(top,#93bc84 0,#74a961 100%);
+}
+.bge_button:hover {
+	background-color: #74a961;
+	background-image: url("arrow-small-wide.png");
+	background-image: url("arrow-small-wide.png"),-webkit-linear-gradient(top,#74a961 0,#5d844f 100%);
+	background-image: url("arrow-small-wide.png"),-moz-linear-gradient(top,#74a961 0,#5d844f 100%);
+	background-image: url("arrow-small-wide.png"),-ms-linear-gradient(top,#74a961 0,#5d844f 100%);
+}

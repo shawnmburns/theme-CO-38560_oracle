@@ -1,0 +1,110 @@
+﻿/** 
+ * 
+ * imported from: 
+ * http://youraccount-mercury.leapthought.co.nz/css/screen.css
+ * 
+ **/
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+form, fieldset, input, select, textarea, button,
+.unlist, .unlist ul, .unlist ol,
+iframe {margin: 0; padding: 0; border: 0; list-style-type: none;}
+
+html {font-size: 125%;}
+
+body {font-size: 50%; font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 1em; line-height: 1.5em;}
+
+a {text-decoration: none; outline: none;}
+
+a:hover {text-decoration: underline;}
+
+.inner {width: 940px; margin: 0 auto; padding: 0 20px;}
+
+.outer {width: 100%;}
+
+h1 {}
+
+a:hover {text-decoration: underline;}
+
+body {color: #fff; font-size: 14px; line-height: 18px; background: #6f6f74; font-family: "proxima-nova", Helvetica, Arial, sans-serif;}
+
+#main-div {position: relative; min-width: 940px; overflow: hidden;}
+
+#overlay {display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba( 0, 0, 0, 0.5 ); z-index: 1000;}
+
+.overlay-slide {position: absolute; top: 70px; bottom: 0; left: 100%; width: 50%; border-left: 2px solid #231f20; background: #f3f3f4;}
+
+#header-container {position: relative; height: 39px; padding: 15px 0; background: #fff; border-bottom: 1px solid #918f90; overflow: visible; z-index: 3;}
+
+#header {position: relative;}
+
+#brand {float: left; width: 150px; height: 39px; text-indent: -999em; background: url(logo.png) 0 0 no-repeat; overflow: hidden;}
+
+#header .navigation {float: right; padding: 0 100px 0 0; overflow: hidden;}
+
+#header .navigation li {float: left; margin: 0 25px 0 0;}
+
+#header .navigation li.current {padding-bottom: 30px; background: url(icon.navigation.png) bottom left no-repeat;}
+
+#header .navigation li a {font-size: 18px; line-height: 22px; font-weight: 700; color: #211d70;}
+
+#header .navigation li a:hover {text-decoration: none;}
+
+#header .navigation li a span {display: block; font-size: 12px; line-height: 16px; font-weight: 400; color: #6d6f72;}
+
+.text-action {display: block; height: 21px; padding: 0 12px; border-width: 1px; border-style: solid; font-size: 12px; line-height: 21px; text-decoration: none; overflow: hidden;}
+
+#log {position: absolute; top: -15px; right: 20px; border-color: #dcddde; border-top: 0; color: #6d6f72;}
+
+#content-container {position: relative; padding: 40px 0 20px; color: #000; background: #e7e7e8 url(shadow.header.png) 0 0 repeat-x;}
+
+#footer {padding: 20px; overflow: hidden;}
+
+#footer a:hover {text-decoration: underline !important;}
+
+#footer .navigation {float: left; width: 150px; overflow: hidden; font-size: 14px; line-height: 18px; font-weight: bold;}
+
+#footer .navigation li {float: left; width: 65px;}
+
+#footer .navigation li a {color: #fff; text-decoration: none;}
+
+#footer #additional {padding: 0 0 0 20px;}
+
+#footer #additional li {float: none;}
+
+#further-information {width: 235px; float: right; overflow: hidden;}
+
+#further-information #contact-link {color: #fff; font-size: 14px; font-weight: bold; line-height: 18px; text-decoration: none; display: block; margin: 0 0 10px 0;}
+
+#further-information dl {float: left; width: 150px; font-size: 12px; line-height: 16px; margin: 0;}
+
+#further-information dl dt {float: left; width: 30px;}
+
+#further-information dl dd {float: left;}
+
+#further-information #social-container {float: right;}
+
+#further-information #social-container #social {margin: 0; padding: 0; list-style-type: none;}
+
+#further-information #social-container #social li {float: left;}
+
+#further-information #social-container #social a {display: block; width: 22px; height: 21px; margin: 0 0 0 2px; text-indent: -999em; background-image: url(sprite.social.jpg); overflow: hidden;}
+
+#further-information #social-container #social #facebook a {background-position: 0 0;}
+
+#further-information #social-container #social #twitter a {background-position: -22px 0;}
+
+#further-information #social-container #social #youtube a {background-position: -44px 0;}
+
+#further-information #other-container {clear: both; overflow: hidden;}
+
+#further-information #other-container #other {margin: 20px 0 0 0; padding: 0; list-style-type: none;}
+
+#further-information #other-container #other li {float: left;}
+
+#further-information #other-container #other li a {color: #fff; font-size: 12px; line-height: 16px; text-decoration: none;}
+
+#further-information #other-container #other li span {font-size: 10px; margin: 0 5px;}

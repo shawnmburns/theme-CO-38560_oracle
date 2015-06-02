@@ -1,0 +1,153 @@
+/*basic reset and styleing*/
+
+
+a {
+    color: #002c73;
+}
+
+/*menustack styles*/
+
+.menustack li {
+    border-bottom: 1px solid #dfe4e8;
+    border-right: 1px solid #dfe4e8;
+    border-left: 1px solid #dfe4e8;
+    list-style-type: none;
+    height: 80px;
+    display: table;
+    width:100%
+}
+
+.menustack li.active span {
+    color: white;
+}
+
+
+.menustack li.icon a  {
+    position: relative;
+	padding-left: 60px; 
+	display: table-cell;
+  vertical-align: middle;
+}
+
+.menustack li.active a {
+    background-color: #173464;
+    color: white;
+    position: relative;
+    border-radius: 0;
+    width:100%;
+
+}
+
+
+
+
+.menustack a {
+    background-color: white;
+    display: block;
+    font-style: italic;
+    padding: 24px 24px 24px 72px;
+    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+    text-decoration: none;
+    height: 100%;
+}
+
+.menustack>li.active>a:focus,.menustack>li.active>a:hover {
+    background-color:  #173464;
+   /* display: block;
+    font-style: italic;
+   padding: 24px 24px 24px 72px;
+    padding: 1.5rem 1.5rem 1.5rem 4.5rem;
+    text-decoration: none;*/
+    color: white;
+    border-radius: 0;
+    vertical-align: middle;
+       height: 80px;
+}
+
+.menustack>li.active:focus,.menustack>li.active:hover {   
+     height: 80px;
+}
+
+
+.menustack a span {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #707070;
+    display: block;
+}
+
+/*icon styles and sprite defined*/
+
+.menustack li.icon a:before {
+	background-image: url("../images/mma-icons-sprite.png");
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 60px;
+    left: -3px;
+    position: absolute;
+    top: 9px;
+    width: 60px;
+}
+
+@media ( max-width : 750px) {
+	.menustack li.icon a:before {
+		/*background-image : none;*/
+		    height: 47px;
+    left: -11px;
+    position: absolute;
+    top: 9px;
+    width: 51px;
+	}
+	.menustack li.icon a  {
+	/*padding-left: 15px; */
+	    padding-left: 45px; 
+	    padding-right:6px;
+	}
+}
+
+.menustack li.active a:after {
+	content: '';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 20px solid #173464;
+	right: -20px;
+	top: 0
+}
+
+
+
+/*sprite positioning*/
+li.icon.moving a:before {background-position: 0px 0px;}
+li.icon.payments a:before {background-position: -60px 0px;}
+li.icon.discounts-programs a:before {background-position: -120px 0px;}
+li.icon.my-energy a:before {background-position: -180px 0px;}
+li.icon.admin a:before {background-position: -240px 0px;}
+li.icon.profile a:before {background-position: -300px 0px;}
+
+/*active white icons*/
+li.icon.moving.active a:before {background-position: 0px -60px;}
+li.icon.payments.active a:before {background-position: -60px -60px;}
+li.icon.discounts-programs.active a:before {background-position: -120px -60px;}
+li.icon.my-energy.active a:before {background-position: -180px -60px;}
+li.icon.admin.active a:before {background-position: -240px -60px;}
+li.icon.profile.active a:before {background-position: -300px -60px;}
+
+/*media queries*/
+
+/*2x sprite for high res screens*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	.menustack li.icon a:before {
+		/* Reference the @2x Sprite */
+		background-image: url("../images/mma-icons-sprite2x.png");
+		/* Translate the @2x sprite's dimensions back to 1x */
+		background-size: 360px 120px;
+	}
+}

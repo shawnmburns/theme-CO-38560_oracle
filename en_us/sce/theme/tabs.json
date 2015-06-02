@@ -1,0 +1,81 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+            {
+                "pageName": "myEnergyUse",
+                "label":    "My usage details",
+                "url":      "/myEnergyUse",
+                "cssClass":    "rounded-tl rounded-tr"
+            },
+            {
+                "pageName": "whatUsesMost",
+                "label":    "What uses most",
+                "url":      "/whatUsesMost/",
+                "cssClass":    "rounded-tl rounded-tr",
+                "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                            "customerType": "RESIDENTIAL"
+                        }
+                     }
+            },
+            {
+                "pageName": "compareMyBills",
+                "label":    "Compare my bills",
+                "url":      "/compareMyBills",
+                "cssClass":    "rounded-tl rounded-tr"
+            },
+            {
+                "pageName": "myGoal",
+                "label":    "My goal",
+                "url":      "/s/myGoal.html",
+                "cssClass":    "rounded-tl rounded-tr"
+            }
+            ]
+        },
+        {
+            "pageName": "myRates",
+            "label":    "Audit",
+            "url":          "/myRates",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "framedContent",
+            "label":    "My Points",
+            "url":      "/frame/smb/myreports",
+            "cssClass":    "custom",
+            "displayCriteria": {
+                "type": "CUSTOMER_TYPE",
+                "arguments": {
+                  "customerType": "RESIDENTIAL"
+                }
+            }
+        }
+
+    ]
+}

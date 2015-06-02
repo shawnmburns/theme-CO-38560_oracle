@@ -1,0 +1,160 @@
+<div class="main">
+    <div class="mainInside">
+        <div class="customerHeader clear">
+            <div class="container"
+                data-test-pageName="{{pageName}}"
+                data-test-displayName="{{displayName}}"
+                data-test-username="{{username}}"
+                data-test-clientName="{{clientName}}"
+                data-test-astroUrl="{{astroUrl}}"
+                data-test-themeUrl="{{themeUrl}}">
+            <div id="header" class="clearfix">
+                <div class="row-fluid" id="logo-row">
+                    <div class="logo span-4">
+                        {{#loggedIn}}
+                            <a href="https://efficiencyvermont.com/"><img src="{{themeUrl}}/assets/header_clientLogo.png" alt="Efficiency Vermont"></a>
+                        {{/loggedIn}}
+                        {{^loggedIn}}
+                            <a href="https://efficiencyvermont.com/"><img src="{{themeUrl}}/assets/header_clientLogo.png" alt="Efficiency Vermont"></a>
+                        {{/loggedIn}}
+                    </div>
+                    <div id="utilityNavContainer">
+                        <a class="button" id="linkBackButton" href="http://efficiencyvermont.com/">
+                        <span class="">Go To EfficiencyVermont.com</span>
+                        <span class="icon icon-right-5 icon-size-5"></span>
+                        </a>
+                    </div>
+                    <div id="header-meta">
+                    {{#loggedIn}}
+                        <div class="module-person-userbox">
+                            <ul class="nav-meta small">
+
+                                <li class="first" data-test-name="{{displayName}}">Welcome, <span>{{displayName}}</span></li>
+
+                                <li><a id="myAccountLink" href="/ei/app/myAccount/">My Account</a></li>
+                                <li class="last">
+                                <a href="/ei/app/logout">Sign Out</a></li>
+                            </ul>
+                        </div>
+                    {{/loggedIn}}
+                    {{^loggedIn}}
+                        <ul class="nav-meta small">
+                            <li class="last">
+                                <a href="/ei/app/help.html" data-test-help="header">Help</a>
+                            </li>
+                        </ul>
+                        <ul class="nav-buttons">
+                            <li>
+                                <a href="/ei/app/account/create" data-sso="headerCreateAccount standard" class="button" id="header-createAccountLink">CREATE AN ACCOUNT</a>
+                            </li>
+                            <li>
+                                <a href="/ei/app/signin/index.html" class="button signInDropdownToggle">SIGN IN</a>
+                                <div class="hide rounded signInDropdown">
+                                    <div class="rounded bg-white">
+                                        <form id="login-form" name="login-form" action="/ei/app/login-process" method="POST"
+                                          class="clearfix nonssoSignIn">
+
+                                            <div class="font-scheme-1 space-bottom-small clearfix">
+                                                <div class="float-left icon-size-3 space-right-small">
+                                                    <div class="icon icon-blue-I-3 icon-size-3 "></div>
+                                                </div>
+                                                <div class="float-left infoText">
+                                                    This site requires a different account than online billing. <a href="/ei/app/account/create">Create an account</a>
+                                                </div>
+                                            </div>
+                                            <p class="space-bottom-small">
+                                                <label for="header-username" class="align-left">Email address</label>
+                                                <input type="text" name="j_username" id="header-username" class="text" autocomplete="off">
+                                            </p>
+                                            <p class="space-bottom">
+                                                <label for="header-password" class="align-left">Password</label>
+                                                <input type="password" name="j_password" id="header-password" class="text password" autocomplete="off">
+                                            </p>
+                                            <div class="clearfix space-top">
+                                                <div class="float-left">
+                                                    <input id="header-loginButton" type="submit" name="login" class="orangebutton rounded"
+                                                    value="Sign in" data-test-signinbutton="nonSSO">
+                                                </div>
+                                                <div class="space-bottom-small float-left space-left font-scheme-1 center-vertical">
+                                                    <a id="header-forgotPasswordLink" href="/ei/app/account/password">Forgot your
+                                                    password?</a>
+                                                </div>
+                                            </div>
+
+                                            <input type="hidden" name="_csrf" value="17345fb5-9758-4e39-b28c-ac58c5ce9410">
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    {{/loggedIn}}
+                    </div>
+                </div>
+                <div class="row-fluid" id="nav-row" role="navigation">
+                    <div id="nav" class="span12">
+                        <div class="sfContentBlock">
+                            <ul class="rounded-tl rounded-tr">
+                                {{#navBar}}
+                                    <span class="fade-trigger-wrap"> 
+                                        <li {{#active}}data-nav-state="active" class="active round-top-medium"{{/active}}{{^active}}class="round-top-medium"{{/active}}><a href="{{url}}" {{#active}}data-nav-state="active" class="active round-top-medium"{{/active}}{{^active}}class="round-top-medium"{{/active}}>{{label}}</a></li>
+                                    </span> 
+                                {{/navBar}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="nav-divider"> </div>
+    {{#hasActiveSubNav}}
+        <div id="nav-secondary" class="clearfix bg-brand span12">
+        <ul>
+             
+            {{#activeSubNav}}
+            <span class="fade-trigger-wrap">
+                <li {{#active}}data-nav-secondary-state="active" class="active round-top-medium"{{/active}}{{^active}}class="round-top-medium"{{/active}}>
+                    <a href="{{url}}" class="round-top-medium">{{label}}</a>
+                </li>
+            </span>
+            {{/activeSubNav}}
+        </ul>
+        </div>
+    {{/hasActiveSubNav}}
+    {{^hasActiveSubNav}}
+        {{#navBar}}
+            {{#active}}
+                <div class="banner bg-brand" role="banner">
+                    <h2>
+                        {{heading}}
+                        {{^heading}}
+                            {{label}}
+                        {{/heading}}
+                    </h2>
+                </div>
+            {{/active}}
+        {{/navBar}}
+    {{/hasActiveSubNav}}
+            </div>
+        </div>
+        </div>
+        <!-- CLOSE customerHeader.jsp DO NOT REMOVE -->
+        <div class="mainarea">
+            <!-- *Original Content Removed* -->
+            {{{content}}}
+        </div>
+    </div>
+    <div class="container">
+        <div id="footer-container">
+            <div id="footer" class="small clearfix" role="contentinfo">
+                <ul class="nav-meta" role="navigation">
+                    <li class="first"><a href="/ei/app/help.html">Help</a></li>
+                        <li><a href="/ei/app/help.html">Contact</a></li>
+                    <li><a href="/ei/app/terms_of_use.html">Terms of Use</a></li>
+                    <li><a href="/ei/app/privacy_policy.html">Privacy Policy</a></li>
+                </ul>
+                <div id="copyright" data-test-copyrightuntil="2012">
+                    &copy;2010-2014 OPOWER&reg;. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

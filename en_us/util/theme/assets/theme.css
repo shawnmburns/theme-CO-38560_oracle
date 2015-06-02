@@ -1,0 +1,181 @@
+/** 
+ * 
+ * imported from: 
+ * http://slc08gbu.us.oracle.com:8892/OUCSSPortal/adf/styles/cache/gsrdab105db_4919_402a_9246_3afc2ca17ee3-desktop-k0dxn3-en-ltr-webkit.css
+ * 
+ **/
+.AFLabelText,.af_outputLabel,.af_inputChoice_label,.af_inputFile_label,.af_inputNumberSpinbox_label,.af_inputText_label,.af_selectBooleanCheckbox_label,.af_selectBooleanRadio_label,.af_inputColor_label,.af_inputDate_label,.af_inputListOfValues_label,.af_selectManyCheckbox_label,.af_selectManyListbox_label,.af_selectOneChoice_label,.af_selectOneListbox_label,.af_selectOneRadio_label,.af_panelLabelAndMessage_label,.portlet-form-label,.portlet-icon-label,.portlet-dlg-icon-label,.portlet-form-field-label,.af_richTextEditor_label,.af_codeEditor_label,.af_selectManyShuttle_label,.af_selectOrderShuttle_label,.af_selectManyChoice_label,.af_inputComboboxListOfValues_label,.af_quickQuery_label,.af_inputNumberSlider_label,.af_inputRangeSlider_label {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-size: 11px; text-align: right; color: #755600; padding: 0px 6px 0px 0px; font-weight: normal;}
+
+.OraLinkDisabled,.af_outputLabel_required-icon-style,.af_inputChoice_required-icon-style,.af_inputNumberSpinbox_required-icon-style,.af_inputText_required-icon-style,.af_selectBooleanCheckbox_required-icon-style,.af_selectBooleanRadio_required-icon-style,.af_inputDate_required-icon-style,.af_selectManyCheckbox_required-icon-style,.af_selectManyListbox_required-icon-style,.af_selectOneChoice_required-icon-style,.af_selectOneListbox_required-icon-style,.af_selectOneRadio_required-icon-style,.af_outputLabel_group-icon-style,.af_inputChoice_group-icon-style,.af_inputNumberSpinbox_group-icon-style,.af_inputText_group-icon-style,.af_selectBooleanCheckbox_group-icon-style,.af_selectBooleanRadio_group-icon-style,.af_inputDate_group-icon-style,.af_selectManyCheckbox_group-icon-style,.af_selectManyListbox_group-icon-style,.af_selectOneChoice_group-icon-style,.af_selectOneListbox_group-icon-style,.af_selectOneRadio_group-icon-style,.af_menuList,button,.af_navigationPane_choice-label,.af_navigationPane_choice-options,.af_navigationPane_choice-button,.af_selectManyShuttle_box-content,.af_selectOrderShuttle_box-content,.af_menuTabs,.p_OraDisabled,.OraNav3,.p_OraTreeRow,.portlet-section-footer,.portlet-section-text,.af_selectOrderShuttle_desc-area,.af_selectManyShuttle_desc-area,.AFNoteWindowChooser,.af_message_detail,.af_messages_summary,.af_messages_detail,.af_dvt-treemapNode,.af_dvt-treemapNodeHeader,.af_dvt-sunburstNode,.WCBlogArchiveMonthCommandLink {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px;}
+
+.af_dialog_content {border: 0px; padding-top: 7px; padding-bottom: 7px; padding-right: 5px; padding-left: 5px; background-color: #EBEFF5;}
+
+.af_inputText_content,.WCInputText {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; border-color: #9297A6; border-style: solid; border-width: 1px; border-top-color: #aeb4bd; border-left-color: #aeb4bd; border-bottom-color: #e0e3e8; border-right-color: #e0e3e8; background-image: url(inputText_bg.png); background-repeat: repeat-x; color: #333333; padding: 1px 2px 1px 3px; margin: 1px; width: 170px; overflow-x: hidden; overflow-y: auto;}
+
+BODY {background-color: #ffffff; font-family: Tahoma, Verdana, Helvetica, sans-serif;}
+
+.af_panelList A,.PortletHeaderLink,.PortletSubHeaderLink,.af_commandLink,.af_goLink,.af_messages_component-link,.af_calendar_list-day-of-month-link,.af_calendar_list-title-link,.af_calendar_month-grid-cell-header-day-link,.af_calendar_week-header-day-link {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; color: #003286; text-decoration: none;}
+
+.af_navigationPane_bar-active-enabled .af_navigationPane_bar-content a:hover,.af_navigationPane_bar-inactive-enabled .af_navigationPane_bar-content a:hover,.af_navigationPane_buttons-active-enabled .af_navigationPane_buttons-content a:hover,.af_navigationPane_buttons-inactive-enabled .af_navigationPane_buttons-content a:hover,.af_navigationPane_list-active-enabled .af_navigationPane_list-content a:hover,.af_navigationPane_list-inactive-enabled .af_navigationPane_list-content a:hover,.AFAccessKeyStyle,.af_commandButton_access-key,.af_goButton_access-key,.af_dialog_footer-button-access-key,.af_resetButton_access-key,.af_query_button-access-key,.af_commandLink_access-key,.af_goLink_access-key,.af_inputText_access-key,.af_inputFile_access-key,.af_richTextEditor_access-key,.af_inputDate_access-key,.af_navigationPane-bar_access-key,.af_navigationPane-buttons_access-key,.af_navigationPane-choice_access-key,.af_navigationPane-list_access-key,.af_navigationPane-tabs_access-key,.af_breadCrumbs_access-key,.af_trainButtonBar_access-key,.af_inputColor_access-key,.af_inputNumberSpinbox_access-key,.af_selectBooleanCheckbox_access-key,.af_selectBooleanRadio_access-key,.af_selectManyCheckbox_access-key,.af_selectManyShuttle_access-key,.af_selectManyChoice_access-key,.af_selectManyListbox_access-key,.af_panelLabelAndMessage_access-key,.af_selectOrderShuttle_access-key,.af_panelTabbed_access-key,.af_menu_bar-item-access-key,.af_commandMenuItem_bar-item-access-key,.af_goMenuItem_bar-item-access-key,.af_commandMenuItem_menu-item-access-key,.af_goMenuItem_menu-item-access-key,.af_menu_submenu-access-key,.af_commandImageLink_access-key,.af_goImageLink_access-key,.af_commandToolbarButton_access-key,.af_selectOneChoice_access-key,.af_selectOneListbox_access-key,.af_selectOneRadio_access-key,.af_outputLabel_access-key,.af_panelAccordion_access-key,.af_inputListOfValues_access-key,.af_inputComboboxListOfValues_access-key,.af_inputNumberSlider_access-key,.af_inputRangeSlider_access-key,.RtcPresenceText:hover,a.actionObject:hover,.af_commandLink.WCBlogPostTitle,a.WCRteDigestReadMore:hover,.af_train_stop-link.p_AFTrainVisited:active,.af_train-vertical_stop-link.p_AFTrainVisited:active,.af_navigationPane-bar_link:hover,.af_navigationPane-buttons_link:hover,.af_navigationPane-list_link:hover,.af_breadCrumbs_step:hover,.af_panelTabbed_conveyor-belt-container .AFConveyorBeltElement:hover,.af_navigationPane-tabs_conveyor-belt-container .AFConveyorBeltElement:hover,.af_panelTabbed_overflow-container .AFOverflowElement:hover,.af_navigationPane-tabs_overflow-container .AFOverflowElement:hover,.af_chooseDate_regular-day:hover,.af_panelAccordion_overflow-container .AFOverflowElement:hover,.af_panelList A:hover,.af_commandLink:hover,.af_goLink:hover,.af_commandImageLink_text:hover,.af_goImageLink_text:hover,.af_messages_component-link:hover,.af_calendar_list-day-of-month-link:hover,.af_calendar_list-title-link:hover,.af_calendar_month-grid-cell-header-day-link:hover,.af_calendar_month-overflow-link:hover,.af_calendar_week-header-day-link:hover,.af_train_stop-link.p_AFTrainVisited:hover,.af_train-vertical_stop-link.p_AFTrainVisited:hover {text-decoration: underline;}
+
+.af_navigationPane_bar-content a,.af_navigationPane_buttons-content a,.af_navigationPane_list-content a,.RtcPresence[disabled]:hover > span,a.contextObject:hover,.af_pageCustomizable .af_toolbox.ComposerToolbox .af_commandImageLink.WCButton .af_commandImageLink_text,.WCPageHeading .WCSortListBox .WCSortListLink:hover,a:link,.af_navigationPane-bar_link.p_AFDisabled:hover,.af_navigationPane-buttons_link.p_AFDisabled:hover,.af_navigationPane-list_link.p_AFDisabled:hover,.af_navigationPane-tabs_tab-link:hover,.af_panelTabbed_tab-text-link:hover,.af_navigationPane-tabs_tab-link.p_AFDisabled:hover,.af_panelTabbed_tab-text-link.p_AFDisabled:hover,.af_navigationPane-tabs_tab.p_AFSelected .af_navigationPane-tabs_tab-link:hover,.af_panelTabbed_tab-text-link.p_AFSelected:hover {text-decoration: none;}
+
+.af_panelFormLayout_cell,.af_panelFormLayout_message-cell,.af_table_data-row .af_inputText.p_AFReadOnly .af_inputText_content,.af_table_data-row .af_selectOneListbox.p_AFReadOnly .af_selectOneListbox_content,.af_table_data-row .af_selectManyListbox.p_AFReadOnly .af_selectManyListbox_content,.af_table_data-row .af_selectOneChoice.p_AFReadOnly .af_selectOneChoice_content,.af_table_data-row .af_chooseDate.p_AFReadOnly .af_chooseDate_choice-list-content,.af_table_data-row .af_inputDate.p_AFReadOnly .af_inputDate_content,.af_table_data-row .af_inputNumberSpinbox.p_AFReadOnly .af_inputNumberSpinbox_content,.af_table_data-row .af_inputListOfValues.p_AFReadOnly .af_inputListOfValues_content,.af_table_data-row .af_inputComboboxListOfValues.p_AFReadOnly .af_inputComboboxListOfValues_content,.af_table_data-row .af_selectManyChoice.p_AFReadOnly .af_selectManyChoice_content,.af_column_column-header .af_selectBooleanCheckbox_content-input,.af_table_data-row .af_selectBooleanCheckbox_content-input,.af_table_data-row .af_selectBooleanCheckbox.p_AFReadOnly .af_selectBooleanCheckbox_content-input,.af_menuBar_item,.af_toolbar_item,.af_panelCustomizable.p_AFEmpty,.af_pageCustomizable .af_toolbox.ComposerToolbox .af_commandToolbarButton_link,.af_dvt-hierarchyViewer .af_panelFormLayout_label-cell,.WCCompactToolbox .af_menu_bar-item-text,.af_panelWindow_content.p_AFResizable,.af_dialog_content.p_AFResizable {padding: 0px;}
+
+.af_messages,.af_inputFile_multiple-upload-progressbar-determinate-start-label,.af_inputFile_multiple-upload-progressbar-determinate-end-label,.af_breadCrumbs .af_breadCrumbs_overflow-container,.af_navigationPane-tabs .af_navigationPane-tabs_overflow-container,.af_navigationPane-bar .af_navigationPane-bar_overflow-container,.af_panelTabbed .af_panelTabbed_overflow-container,.af_toolbar .af_toolbar_overflow-container,.af_menuBar .af_menuBar_overflow-container,.af_train .af_train_overflow-container,.af_train-vertical .af_train-vertical_overflow-container,.af_navigationPane-tabs .af_navigationPane-tabs_conveyor-belt-container,.af_panelTabbed .af_panelTabbed_conveyor-belt-container,.af_breadCrumbs_overflow-spacer,.af_panelTabbed_overflow-spacer,.af_menuBar_overflow-spacer,.af_toolbar_overflow-spacer,.af_navigationPane-bar_overflow-spacer,.af_train_overflow-spacer,.af_train-vertical_overflow-spacer,.af_calendar_time-activity-outer-container.p_AFDragSource,.af_inputColor_launch-icon-style.p_AFDisabled,.af_selectManyShuttle_content-input,.af_selectOrderShuttle_content-input,.af_commandMenuItem_menu-item-antonym-text-selected,.af_commandMenuItem.p_AFSelected .af_commandMenuItem_menu-item-antonym-text-default,.af_menu_child-container.p_AFDetached .af_menu_detach-handle,.af_menu_child-container.p_AFDetached .af_menu_detach-grip,.af_menu_child-container .af_panelWindow_close-icon-style,.af_menu_child-container .af_panelWindow_title,.af_panelAccordion_header.p_AFDisabled .af_panelAccordion_header-disclose,.af_panelAccordion_header-subsequent.p_AFDisabled .af_panelAccordion_header-disclose,.af_panelWindow_resize-icon-region,.af_dialog_resize-icon-region,.AFPopupScopingContainerHidden,.af_showDetailFrame_collapse-icon-style.PEDisplayNone,.af_showDetailFrame_disclose-icon-style.PEDisplayNone,.af_showDetailFrame_actionmenu-icon-style.p_AFEmpty,.webcenter-chat .buddy-list .panel-content .idle img,.webcenter-chat .ChatBuddylistPanel .set-custom-status,.webcenter-chat .ChatBuddylistPanel .flyout,.webcenter-chat .ChatBuddylistPanel .status-dropdown,.webcenter-chat .searchbox,.af_dvt-hierarchyViewer .af_inputNumberSlider_label,.af_dvt-timelineItem_feeler-vertical,.af_dvt-timelineOverview_timeaxis,.WCPortalNavPage.WCNoNav .WCPortalNavPageToggle,.WCPortalNavPage.WCNoNav .WCPortalNavPageDivider,.WCPortalNavPage .WCPortalNavPage .WCPortalNavPageToggle,.WCPortalNavPage .WCPortalNavPage .WCPortalNavPageDivider,.af_panelCollection.NoStatusBar .af_panelCollection_statusbar,.WCTableNoHeader .af_column_column-header-cell,.af_commandImageLink.NoIcon .af_commandImageLink_image,.af_table_data-row .af_commandImageLink.WCPageVariantExpander {display: none;}
+
+.af_selectOneChoice.p_AFReadOnly .af_contextInfo_launch-icon-style,.af_inputText.p_AFReadOnly .af_contextInfo_launch-icon-style,.af_inputComboboxListOfValues.p_AFReadOnly .af_contextInfo_launch-icon-style,.af_inputListOfValues.p_AFReadOnly .af_contextInfo_launch-icon-style,.af_selectBooleanCheckbox_content-input,.af_selectManyCheckbox_content-input,.af_selectManyCheckbox_icon-style,.af_selectBooleanCheckbox_icon-style,.af_form,.WCPortalEditToolbar .WCPortalEditGlobal .WCPortalEditUserPhoto,.AFUserStampSwitcher {margin: 0px;}
+
+.af_dialog_footer-button {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; color: #003D5B; border-style: solid; border-width: 1px; border-top-color: #E0E3E8; border-right-color: #606974; border-bottom-color: #606974; border-left-color: #E0E3E8; text-decoration: none; white-space: nowrap; background-image: url(button_bg_ena.png); background-position: top; background-repeat: repeat-x; margin: 0px; padding-top: 1px; padding-bottom: 3px; background-color: #CCD6E8; padding: 1px 1px 0px 2px; margin-left: 3px; height: 21px; padding-left: 9px; padding-right: 9px;}
+
+.af_goButton:focus,.af_dialog_footer-button:focus,.af_query_button:focus,.AFNoteWindowAllButton:focus {background-image: url(button_bg_ena.png); background-color: #CCD6E8;}
+
+.af_goButton:active,.af_dialog_footer-button:active,.af_query_button:active,.AFNoteWindowAllButton:active,.af_goButton:active:hover,.af_dialog_footer-button:active:hover,.af_query_button:active:hover,.AFNoteWindowAllButton:active:hover,.af_commandButton:active:hover:focus,.af_resetButton:active:hover:focus,.af_goButton:active:hover:focus,.af_dialog_footer-button:active:hover:focus,.af_query_button:active:hover:focus,.AFNoteWindowAllButton:active:hover:focus {border-width: 1px; border-style: solid; border-top-color: #4E555E; border-right-color: #8F9AAC; border-bottom-color: #8F9AAC; border-left-color: #4E555E; background-image: url(button_bg_dwn.png); background-color: #A7B7D4; font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; color: #000000;}
+
+.af_commandButton.p_AFDisabled,.af_commandButton:active.p_AFDisabled,.af_commandButton.p_AFTextOnly.p_AFDisabled,.af_resetButton.p_AFDisabled,.af_resetButton:active.p_AFDisabled,.af_dialog_footer-button.p_AFDisabled,.af_dialog_footer-button:active.p_AFDisabled,.af_query_button.p_AFDisabled,.af_query_button:active.p_AFDisabled,.af_goButton.p_AFDisabled,.af_goButton:active.p_AFDisabled,.af_goButton.p_AFTextOnly.p_AFDisabled,.af_trainButtonBar_back-button.p_AFDisabled,.af_trainButtonBar_next-button.p_AFDisabled,.af_trainButtonBar_back-button:active.p_AFDisabled,.af_trainButtonBar_next-button:active.p_AFDisabled,.af_commandButton.p_AFDisabled:hover,.af_commandButton:active.p_AFDisabled:hover,.af_commandButton.p_AFTextOnly.p_AFDisabled:hover,.af_resetButton.p_AFDisabled:hover,.af_resetButton:active.p_AFDisabled:hover,.af_dialog_footer-button.p_AFDisabled:hover,.af_dialog_footer-button:active.p_AFDisabled:hover,.af_query_button.p_AFDisabled:hover,.af_query_button:active.p_AFDisabled:hover,.af_goButton.p_AFDisabled:hover,.af_goButton:active.p_AFDisabled:hover,.af_goButton.p_AFTextOnly.p_AFDisabled:hover,.af_trainButtonBar_back-button:hover.p_AFDisabled,.af_trainButtonBar_next-button:hover.p_AFDisabled {color: #6e7587; border-color: #9297A6; border-style: solid; border-width: 1px; border-top-color: #E0E3E8; border-right-color: #B3BFC5; border-bottom-color: #B3BFC5; border-left-color: #E0E3E8; background-image: none; text-decoration: none; margin: 0px; background-color: #DBE0EA;}
+
+.af_commandLink:visited,.af_goLink:visited,.af_messages_component-link:visited,.af_calendar_list-day-of-month-link:visited,.af_calendar_list-title-link:visited,.af_calendar_month-overflow-link:visited,.af_commandLink:active,.af_goLink:active,.af_messages_component-link:active,.af_calendar_list-day-of-month-link:active,.af_calendar_list-title-link:active,.af_calendar_month-grid-cell-header-day-link:active,.af_calendar_month-overflow-link:active,.af_calendar_week-header-day-link:active,.af_commandLink:link:active,.af_goLink:link:active,.af_messages_component-link:link:active,.af_calendar_list-day-of-month-link:link:active,.af_calendar_list-title-link:link:active,.af_calendar_month-grid-cell-header-day-link:link:active,.af_calendar_month-overflow-link:link:active,.af_calendar_week-header-day-link:link:active,.af_train_stop-link.p_AFTrainVisited,.af_train-vertical_stop-link.p_AFTrainVisited,.af_commandImageLink_text:active,.af_goImageLink_text:active,.af_commandImageLink:visited .af_commandImageLink_text,.af_goImageLink:visited .af_goImageLink_text,.af_navigationPane-tabs_conveyor-belt-container .AFConveyorBeltElement .af_navigationPane-tabs_tab-link:active:hover,.af_panelTabbed_conveyor-belt-container .AFConveyorBeltElement:active:hover,.af_navigationPane-tabs_overflow-container .AFOverflowElement .af_navigationPane-tabs_tab-link:active:hover,.af_panelTabbed_overflow-container .AFOverflowElement:active:hover,.af_panelAccordion_overflow-container .AFOverflowElement:active:hover {color: #72007C;}
+
+.af_chooseDate_today.p_AFDisabled,.af_menu.p_AFDisabled .af_menu_bar-item-text,.af_commandMenuItem.p_AFDisabled .af_commandMenuItem_bar-item-text,.af_goMenuItem.p_AFDisabled .af_goMenuItem_bar-item-text,.af_commandMenuItem_menu-item.p_AFDisabled,.af_goMenuItem_menu-item.p_AFDisabled,.af_menu_submenu.p_AFDisabled,.af_inputNumberSlider.p_AFDisabled .af_inputNumberSlider_tick-value,.af_inputRangeSlider.p_AFDisabled .af_inputRangeSlider_tick-value,.af_commandMenuItem.p_AFDisabled .af_commandMenuItem_menu-item-text,.af_goMenuItem.p_AFDisabled .af_goMenuItem_menu-item-text,.af_menu.p_AFDisabled .af_menu_submenu-text,.af_commandMenuItem.p_AFDisabled .af_commandMenuItem_menu-item-accelerator,.af_goMenuItem.p_AFDisabled .af_goMenuItem_menu-item-accelerator,.af_menu.p_AFDisabled .af_menu_submenu-accelerator,.af_inputNumberSlider.p_AFDisabled .af_inputNumberSlider_tick-value-zero,.af_inputRangeSlider.p_AFDisabled .af_inputRangeSlider_tick-value-zero,.af_inputNumberSlider.p_AFDisabled.p_AFVertical .af_inputNumberSlider_tick-value-zero,.af_inputRangeSlider.p_AFDisabled.p_AFVertical .af_inputRangeSlider_tick-value-zero,.af_inputNumberSlider.p_AFDisabled.p_AFVertical .af_inputNumberSlider_tick-value,.af_inputRangeSlider.p_AFDisabled.p_AFVertical .af_inputRangeSlider_tick-value,.af_breadCrumbs_step.p_AFDisabled[theme="dark"],.af_goLink.p_AFDisabled[theme="dark"],.af_goLink:active.p_AFDisabled[theme="dark"],.af_goLink:focus.p_AFDisabled[theme="dark"],.af_commandLink.p_AFDisabled[theme="dark"],.af_commandLink:active.p_AFDisabled[theme="dark"],.af_commandLink:focus.p_AFDisabled[theme="dark"],.af_commandImageLink.p_AFDisabled .af_commandImageLink_text[theme="dark"],.af_commandImageLink.p_AFDisabled .af_commandImageLink_text:active[theme="dark"],.af_commandImageLink.p_AFDisabled .af_commandImageLink_text:focus[theme="dark"],.af_goImageLink.p_AFDisabled .af_goImageLink_text[theme="dark"],.af_goImageLink.p_AFDisabled .af_goImageLink_text:active[theme="dark"],.af_goImageLink.p_AFDisabled .af_goImageLink_text:focus[theme="dark"],.af_navigationPane-buttons_link.p_AFDisabled[theme="dark"],.af_navigationPane-bar_link.p_AFDisabled[theme="dark"],.af_navigationPane-list_link.p_AFDisabled[theme="dark"],.af_goLink:hover.p_AFDisabled[theme="dark"],.af_commandLink:hover.p_AFDisabled[theme="dark"],.af_commandImageLink.p_AFDisabled .af_commandImageLink_text:hover[theme="dark"],.af_goImageLink.p_AFDisabled .af_goImageLink_text:hover[theme="dark"] {color: #8e98af;}
+
+.af_menu_bar-item-content:focus,.af_commandMenuItem_bar-item-content:focus,.af_goMenuItem_bar-item-content:focus,.af_menu_submenu:focus,.af_commandMenuItem_menu-item:focus,.af_goMenuItem_menu-item:focus,.AFPopupSelector:focus,.af_dialog_content:focus,.af_panelWindow_content:focus {outline: none;}
+
+.af_commandImageLink,.af_goImageLink {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; white-space: nowrap; text-decoration: none;}
+
+.af_commandImageLink_image,.af_goImageLink_image {border: none; vertical-align: middle; display: inline;}
+
+.af_document {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; background-image: url(page_background_white.png); background-repeat: repeat-x; background-position: top left; color: #333333; background-color: rgb(255,255,255);}
+
+.af_document.p_AFMaximized {position: absolute; padding: 0px; margin: 0px; border-style: none; width: 100%; height: 100%; top: 0px; left: 0px;}
+
+.af_document_messages {overflow: auto; width: auto; height: auto;}
+
+.af_document_skip-link {background-color: #ffffff; position: absolute; top: -999px; z-index: 1; border: 1px solid black; padding: 2px 5px;}
+
+.af_panelWindow,.af_dialog {box-shadow: 3px 3px 5px rgba(0,0,0,0.5); border: none; background-color: transparent; -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.5); -webkit-border-radius: 5px;}
+
+.af_panelWindow_main,.af_dialog_main {position: relative; width: 100%; z-index: 2;}
+
+.af_panelWindow_header-start,.af_dialog_header-start {font-size: 0px; background-image: url(dialog-header-left.png); background-repeat: no-repeat; width: 5px; height: 25px;}
+
+.af_panelWindow_header-start.p_AFResizable,.af_dialog_header-start.p_AFResizable {cursor: nw-resize;}
+
+.af_panelWindow_header,.af_dialog_header {white-space: nowrap; background-image: url(dialog-header-middle.png); background-repeat: repeat-x; height: 25px;}
+
+.af_panelWindow_header.p_AFResizable,.af_dialog_header.p_AFResizable {cursor: n-resize;}
+
+.af_panelWindow_header-end,.af_dialog_header-end {font-size: 0px; background-image: url(dialog-header-right.png); background-repeat: no-repeat; width: 5px; height: 25px;}
+
+.af_panelWindow_header-end.p_AFResizable,.af_dialog_header-end.p_AFResizable {cursor: ne-resize;}
+
+.af_panelWindow_header-content-center,.af_dialog_header-content-center {width: 100%; padding-left: 2px; padding-right: 2px; cursor: default;}
+
+.af_dialog_content-center {width: auto; height: auto; padding-top: 7px; padding-bottom: 7px; padding-right: 5px; padding-left: 5px;}
+
+.af_dialog_content-start {width: 3px; font-size: 0px; border-right: none; border-left: solid 1px #C2C7D3; background-color: #EBEFF5;}
+
+.af_panelWindow_content-start.p_AFResizable,.af_dialog_content-start.p_AFResizable {cursor: w-resize;}
+
+.af_dialog_content-end {width: 3px; font-size: 0px; border-left: none; border-right: solid 1px #C2C7D3; background-color: #EBEFF5;}
+
+.af_panelWindow_content-end.p_AFResizable,.af_dialog_content-end.p_AFResizable {cursor: e-resize;}
+
+.af_panelWindow_footer-start.p_AFResizable,.af_dialog_footer-start.p_AFResizable {cursor: sw-resize;}
+
+.af_panelWindow_footer.p_AFResizable,.af_dialog_footer.p_AFResizable {cursor: s-resize;}
+
+.af_panelWindow_footer-end.p_AFResizable,.af_dialog_footer-end.p_AFResizable {cursor: se-resize;}
+
+.af_dialog_footer-start {background-position: bottom; border-top: none; height: 30px; padding: 0px; background-image: url(dialog-footer-left.png); background-repeat: no-repeat; width: 5px;}
+
+.af_dialog_footer {background-position: bottom; border-top: none; height: 30px; background-image: url(dialog-footer-middle.png); background-repeat: repeat-x; padding: 0px;}
+
+.af_dialog_footer-end {background-position: bottom; border-top: none; height: 30px; padding: 0px; background-image: url(dialog-footer-right.png); background-repeat: no-repeat; width: 5px;}
+
+.af_dialog_footer-content {width: 100%; padding-left: 20px; padding-top: 1px; white-space: nowrap; text-align: right; padding-bottom: 3px; padding-right: 3px;}
+
+.af_panelWindow_close-icon-style,.af_dialog_close-icon-style {display: block; cursor: default; background-position: top; background-image: url(close_ena.png); background-repeat: no-repeat; margin-top: 0px; padding: 0px; width: 13px; height: 13px;}
+
+.af_panelWindow_resize-icon-style,.af_dialog_resize-icon-style {display: block; width: 11px; height: 13px; cursor: se-resize; background-image: url(dialog-resize-se.png); background-repeat: no-repeat;}
+
+.af_panelWindow_title,.af_dialog_title {margin-top: 2px; cursor: default; white-space: nowrap; font-family: Tahoma, Verdana, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #003D5B;}
+
+.af_panelWindow_icon-region,.af_dialog_icon-region {margin-top: 2px; margin-right: 2px; margin-bottom: -1px; height: 16px; width: 16px; overflow: hidden;}
+
+.af_panelWindow_close-icon-region,.af_dialog_close-icon-region {overflow: hidden; margin-top: 3px; margin-bottom: 0px; margin-left: 3px; width: 13px; height: 16px;}
+
+.af_panelWindow_inactive-background,.af_dialog_inactive-background {position: absolute; z-index: 1; display: none; background-color: #FFFFFF;}
+
+.af_panelHeader.WCNoDecoration .af_panelHeader_title-text0,.af_commandLink.WCSearchResultsExpert,.af_goLink.WCSearchResultsTitleLink,.af_commandLink.WCSearchResultsTitleLink,.af_outputLabel,tbody,td,tr,text {font-size: 14px;}
+
+.af_dialog_footer-button.p_AFTextOnly {margin-left: 3px;}
+
+.af_panelWindow_resize-icon-region.p_AFResizable,.af_dialog_resize-icon-region.p_AFResizable {margin: 0px; height: 13px; width: 11px; overflow: hidden; display: block; padding: 0px; vertical-align: bottom;}
+
+.af_panelWindow_close-icon-style:active,.af_dialog_close-icon-style:active {background-image: url(close_dwn.png); background-repeat: no-repeat;}
+
+.af_breadCrumbs_step[theme="dark"],.af_breadCrumbs_separator[theme="dark"],.af_goLink[theme="dark"],.af_goLink:focus[theme="dark"],.af_commandLink[theme="dark"],.af_commandLink:focus[theme="dark"],.af_commandImageLink_text[theme="dark"],.af_commandImageLink_text:focus[theme="dark"],.af_goImageLink_text[theme="dark"],.af_goImageLink_text:focus[theme="dark"],.af_navigationPane-buttons_link[theme="dark"],.af_navigationPane-bar_link[theme="dark"],.af_navigationPane-list_link[theme="dark"],.af_goLink:hover[theme="dark"],.af_commandLink:hover[theme="dark"],.af_commandImageLink_text:hover[theme="dark"],.af_goImageLink_text:hover[theme="dark"] {color: #AFD7E5;}
+
+.af_goLink:active[theme="dark"],.af_commandLink:active[theme="dark"],.af_commandImageLink_text:active[theme="dark"],.af_goImageLink_text:active[theme="dark"],.af_goLink:visited[theme="dark"],.af_commandLink:visited[theme="dark"],.af_commandImageLink:visited .af_commandImageLink_text[theme="dark"],.af_goImageLink:visited .af_goImageLink_text[theme="dark"] {color: #CD83D3;}
+
+.af_resetButton.p_AFTextOnly,.af_dialog_footer-button,.af_dialog_footer-button.p_AFTextOnly,.af_dialog_footer-button:focus,.af_dialog_footer-button:active {height: 28px; background: none; background-color: #357ebd; border: 1px solid #428bca; border-radius: 5px; box-shadow: none; font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-color: #FFFFFF;}
+
+.af_commandButton:hover,.af_commandButton:focus:hover,.af_resetButton:hover,.af_resetButton:focus:hover,.af_goButton:focus:hover,.af_dialog_footer-button:focus:hover,.af_query_button:focus:hover,.AFNoteWindowAllButton:focus:hover {height: 28px; background: none; border: 1px solid #428bca; border-radius: 5px; box-shadow: none; font-color: #4d4d4d; border-width: 1px; border-style: solid; border-top-color: #A8CEFC; border-right-color: #00AEFF; border-bottom-color: #00AEFF; border-left-color: #A8CEFC; background-image: url(button_bg_ovr.png); background-color: #3696FF; font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; color: #000000;}
+
+.af_commandButton:hover.p_AFTextOnly,.af_commandButton:active.p_AFTextOnly,.af_commandButton:focus:hover.p_AFTextOnly,.af_resetButton:hover.p_AFTextOnly,.af_resetButton:active.p_AFTextOnly,.af_resetButton:focus:hover.p_AFTextOnly,.af_dialog_footer-button:hover,.af_dialog_footer-button:active:hover,.af_dialog_footer-button:hover.p_AFTextOnly,.af_dialog_footer-button:active.p_AFTextOnly,.af_dialog_footer-button:focus:hover,.af_dialog_footer-button:focus:hover.p_AFTextOnly {height: 28px; background: none; background-color: #FFFFFF; border: 1px solid #428bca; border-radius: 5px; box-shadow: none; font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-color: #4d4d4d;}
+
+.p_AFTextOnly {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; text-transform: none; vertical-align: middle; color: #FFFFFF;}
+
+.af_inputText_content,.af_inputDate_content,.af_selectOneChoice_content,.af_chooseDate_choice-list-content,.af_chooseDate_spinbox-content,.af_column_data-cell,.af_column_banded-data-cell {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; text-transform: none; vertical-align: middle; color: #4d4d4d;}
+
+.af_panelHeader_title-text1,.af_panelHeader_title-text2,.af_panelHeader_title-text3,.af_panelHeader_title-text4,.af_panelHeader_title-text5,.af_panelBox_header-element,.af_dialog_title {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 16px; color: #113d8c;}
+
+.af_panelLabelAndMessage,.af_panelLabelAndMessage_label,.af_commandLink,.af_inputText_label,.af_showDetailHeader_title-text2,.af_column_column-header-cell-content,label {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; color: #113d8c;}
+
+.af_panelGroupLayout,.af_panelLabelAndMessage_end-facet,.af_panelLabelAndMessage_content-cell {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; color: #4d4d4d;}
+
+body {background-color: White; color: black;}
+
+header {margin: auto; box-shadow: 0px 5px 5px 0px rgba(17, 61, 140, 0.23);}
+
+.header-top {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; color: #4d4d4d; text-transform: none; margin-top: 0px; margin-bottom: 0px;}
+
+.header-link {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; padding: 5px 5px 5px 5px; color: #800000; text-transform: capitalize;}
+
+#menu {list-style: none; height: 46px; margin: 0px 0px 0px 0px; padding: 0px;}
+
+#menu li {float: right; display: block; position: relative; padding: 5px 15px 5px 15px;}
+
+#menu li:hover {padding: 5px 15px 15px 15px;}
+
+#menu li a {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 20px; font-weight: normal; text-transform: uppercase; color: #113d8c; background: #FFFFFF; display: block; outline: 0; text-decoration: none; vertical-align: bottom;}
+
+.popupmenu {margin: 10px auto; float: left; position: absolute; left: -999em; text-align: left; border: none; z-index: 99;}
+
+#menu li ul {list-style: none; padding: 0; margin: 0;}
+
+#menu li:hover .popupmenu {left: 0px; top: auto;}
+
+#menu li ul li,#menu li ul li:hover {position: relative; padding: 5px 0px 0px 0px; width: 230px; background: #FFFFFF; box-shadow: 5px 5px 5px rgba(17, 61, 140, 0.23); border-left: 1px solid #BFBFBF;}
+
+#menu li:hover div a {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 18px; font-weight: normal; text-transform: capitalize; color: #4d4d4d; background: #FFFFFF; display: block; outline: 0; vertical-align: top; padding: 5px 0px 5px 15px;}
+
+#menu li:hover div a:hover,.sideNav div a:hover,.sideNav a.Selected {color: #FFFFFF; background: #4d4d4d;}
+
+.sideNavHeader {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 20px; font-weight: normal; text-transform: uppercase; color: #113d8c; background: #FFFFFF; display: block; outline: 0; vertical-align: top; padding: 5px 0px 10px 0px;}
+
+.sideNav div a {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 18px; font-weight: normal; text-transform: capitalize; color: #4d4d4d; background: #FFFFFF; display: block; outline: 0; vertical-align: top; padding: 5px 0px 5px 10px;}
+
+.mainContentArea {padding: 0px; margin: auto auto;}
+
+footer {background: rgba(17, 61, 140, 0.23); height: 50px; width: 100%;}
+
+.footer-content {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; font-weight: normal; text-transform: capitalize; color: #000000;}
+
+.footer-links {font-family: Cabin, "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; font-weight: normal; text-transform: uppercase; color: #000000;}
+
+.af_inputColor_content::-webkit-input-placeholder,.af_inputComboboxListOfValues_content::-webkit-input-placeholder,.af_inputDate_content::-webkit-input-placeholder,.af_inputListOfValues_content::-webkit-input-placeholder,.af_inputNumberSpinbox_content::-webkit-input-placeholder,.af_inputText_content::-webkit-input-placeholder {color: #737373;}
+
+.af_goButton:hover,.af_dialog_footer-button:hover,.af_query_button:hover,.AFNoteWindowAllButton:hover,.af_trainButtonBar_back-button:hover,.af_trainButtonBar_next-button:hover {border-width: 1px; border-style: solid; border-top-color: #A8CEFC; border-right-color: #00AEFF; border-bottom-color: #00AEFF; border-left-color: #A8CEFC; background-image: url(button_bg_ovr.png); background-color: #3696FF; font-family: Tahoma, Verdana, Helvetica, sans-serif; font-weight: normal; font-size: 11px; color: #000000;}
+
+.af_panelWindow_close-icon-style:hover,.af_dialog_close-icon-style:hover {background-image: url(close_ovr.png); background-repeat: no-repeat;}

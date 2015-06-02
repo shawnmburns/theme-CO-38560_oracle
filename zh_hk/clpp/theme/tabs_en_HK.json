@@ -1,0 +1,62 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass": "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "Consumption History",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Personal Comparison",
+                    "url":      "/compareMyBills"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Saving Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Saving Tips for You",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "My Info"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "My Info"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "My Info"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "My Info"
+        }
+    ]
+}

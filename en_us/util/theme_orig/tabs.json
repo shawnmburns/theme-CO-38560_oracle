@@ -1,0 +1,94 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My Usage Details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "What Uses Most",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare My Bills",
+                    "serverRelativeUrl": "/ei/x/compare-my-bills/",
+                    "displayCriteria": {
+                        "type"      : "CUSTOMER_STUDY_GROUP",
+                        "arguments" : {
+                            "studyName":     "Points and Rewards",
+                            "studyGroupName": "Points and Rewards Customers"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare My Bills",
+                    "url":      "/compareMyBills",
+                    "displayCriteria": {
+                        "type"      : "CUSTOMER_STUDY_GROUP",
+                        "arguments" : {
+                            "studyName":     "Points and Rewards",
+                            "studyGroupName": "Not Points and Rewards Customers"
+                        }
+                    }
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html"
+                },
+                {
+                    "pageName":     "myRates",
+                    "label":        "My Rates",
+                    "url":          "/myRates"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "label":    "Rewards",
+            "clientUrl":   "/rewards",
+            "cssClass":    "custom",
+            "displayCriteria": {
+                "type"      : "CUSTOMER_STUDY_GROUP",
+                "arguments" : {
+                    "studyName":     "Points and Rewards",
+                    "studyGroupName": "Points and Rewards Customers"
+                }
+            }
+        }
+    ]
+}

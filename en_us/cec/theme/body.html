@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="mainNav">
+    <ul class="tabs-menu">
+      {{#navBar}}
+      <li>
+        <a href="{{url}}" {{#active}}class="tabs-active"{{/active}}>{{label}}</a>
+      </li>
+      {{/navBar}}
+    </ul>
+  </div>
+</div>
+<div class="borderNav">
+</div>
+{{{content}}}
+<div class="container">
+  <div id="footer-container">
+    <div id="footer" class="small clearfix" role="contentinfo">
+      <div id="copyright" data-test-copyrightuntil="2012">
+        Runs on Opower&reg;
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    var prevOnload = window.onLoad;
+    window.onload = function() {
+    // Is it ok to be ambivalent about security here?
+    // If not, '*' should be more restrictive.
+    top.postMessage(document.body.clientHeight, '*');
+
+    // pass through to old event handler to avoid quashing anyone else
+    if (prevOnload) {
+      prevOnload.call(arguments);
+    }
+  }
+</script>
+

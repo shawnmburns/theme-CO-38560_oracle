@@ -1,0 +1,278 @@
+/** 
+ * 
+ * imported from: 
+ * https://www.eonenergy.com/css/core.css
+ * 
+ **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+
+body {line-height: 1;}
+
+ol, ul {list-style: none;}
+
+body {font-family: Arial, Helvetica, sans-serif; font-size: 100%; font-weight: normal;}
+
+h2 {font-weight: normal; font-size: 20px; color: #f21c0a; padding: 10px 10px 10px 10px; line-height: 22px;}
+
+h3 {font-weight: normal; font-size: 0.88em; color: #f21c0a; padding: 10px 10px 10px 10px;}
+
+p {color: #5D5D5D; font-size: 12px; line-height: 16px; padding: 10px 10px 10px 10px;}
+
+h3.teaser {font-size: 20px; color: #f21c0a;}
+
+p a {color: #F21C0A;}
+
+a {color: #5D5D5D; text-decoration: none;}
+
+a:visited {color: #5D5D5D; text-decoration: none;}
+
+a:hover {color: #a30900; text-decoration: underline;}
+
+p a {color: #f21c0a; text-decoration: underline;}
+
+p a:visited {color: #f21c0a; text-decoration: underline;}
+
+p a:hover {color: #a30900; text-decoration: underline;}
+
+input {font-family: Arial, Helvetica, sans-serif;}
+
+#wrapper {width: 960px; margin: 0 auto;}
+
+#header {float: left; width: 960px; margin: 0 0 32px 0;}
+
+#logo {float: left; margin: 15px 0 0 10px; display: inline;}
+
+#nav-extras {float: right; margin-bottom: 20px;}
+
+#switcher-nav {float: right;}
+
+#switcher-nav li.home {border-radius: 0 0 0 3px; -webkit-border-radius: 0 0 0 3px; -moz-border-radius: 0 0 0 3px;}
+
+#switcher-nav li.last {border-radius: 0 0 3px 0; -webkit-border-radius: 0 0 3px 0; -moz-border-radius: 0 0 3px 0;}
+
+#switcher-nav li {float: left; margin: 0 0 0 2px; display: block; background-color: #e6e6e6;}
+
+#switcher-nav li a {font-weight: bold; color: #000; font-size: 12px; padding: 7px 10px 7px 20px; display: block; text-decoration: none; background: url(RightArrowRed.gif) 10px 50% no-repeat;}
+
+#switcher-nav li.selected {background-color: #f21c0a;}
+
+#switcher-nav li.selected a {color: #fff; background: url(RightArrowWhite.gif) 10px 50% no-repeat;}
+
+#switcher-nav li:hover {background-color: #a30900;}
+
+#switcher-nav li a:hover {color: #fff; background: url(RightArrowWhite.gif) 10px 50% no-repeat;}
+
+#switcher-nav li.switcher-drop-down-menu a {width: 130px; background: url(DownArrowRed.gif) 95% 50% no-repeat;}
+
+#switcher-nav li.switcher-drop-down-menu:hover {background-color: #a30900;}
+
+#switcher-nav li.switcher-drop-down-menu a:hover {background: url(DownArrowWhite.gif) 95% 50% no-repeat;}
+
+#switcher-nav li.switcher-drop-down-menu ul {width: 160px; position: absolute; display: none; z-index: 999;}
+
+#switcher-nav li.switcher-drop-down-menu ul li {font-weight: normal; float: none; margin: 0 0 0 0; background-color: #e6e6e6; color: #000; display: block; width: 160px;}
+
+#switcher-nav li.switcher-drop-down-menu ul li a {background: none; background-color: #e6e6e6; border-top: 1px #fff solid;}
+
+#switcher-nav li.switcher-drop-down-menu ul li a:hover {background-image: none !important; background-color: #a30900 !important; color: #fff !important;}
+
+#search-site {clear: right; float: right; margin-top: 20px; width: 503px;}
+
+#search-site input.searchbox {float: left; border: 1px solid #CCCCCC; border-right: 1px solid #fff; height: 20px; width: 144px; vertical-align: middle; font-size: 1.1em; color: #666;}
+
+#search-site input:focus {border: 1px solid #f21c0a;}
+
+.accessible-friendly-hide {position: absolute; left: -9999px;}
+
+#search-site input.search-button {cursor: pointer; float: left; position: relative; left: -1px;}
+
+#login-register {float: left; padding-top: 3px;}
+
+#login-register p {font-size: 12px; font-weight: bold; color: #000; padding: 0;}
+
+#login-register p.secure {background: url(padlockred.gif) no-repeat 0 50%; padding-left: 15px; float: left;}
+
+#login-register a {color: #f21c0a;}
+
+#search-form {float: right;}
+
+#content {width: 960px; float: left;}
+
+#primary-nav {float: left; background-color: #f21c0a; height: 40px; width: 960px; display: inline; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+
+#primary-nav ul {position: relative;}
+
+#primary-nav li {float: left; height: 40px; border-right: 1px #bd0b01 solid;}
+
+#primary-nav li.home {border-right: none; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; background: #f21c0a;}
+
+#primary-nav li.home span.separator {background: url(nav-sep.gif) 100% 100% no-repeat; display: block; height: 40px; width: 11px; text-indent: -9999px; text-align: left; float: left; position: relative; left: 9px;}
+
+#primary-nav li.selected {background-color: #d30d01;}
+
+#primary-nav li.home.selected span.separator {background: url(nav-sep-selected.gif) 100% 100% no-repeat;}
+
+#primary-nav li.home:hover span.separator {background: url(nav-sep-hover.gif) 100% 100% no-repeat;}
+
+#primary-nav li:hover {background-color: #a30900;}
+
+#primary-nav li.first {padding-left: 10px;}
+
+#primary-nav li a {padding: 12px 10px 0 10px; height: 28px;}
+
+#primary-nav li a:hover {text-decoration: none;}
+
+#primary-nav li a:focus {text-decoration: underline; background-color: #a30900;}
+
+#primary-nav li a:active {text-decoration: underline; background-color: #a30900;}
+
+#primary-nav li.flyout a.button {background: url(TopMenuArrowButtonDown.png) no-repeat 0 0; margin-left: 10px; height: 0px; width: 19px; padding: 19px 0 0 0; overflow: hidden; text-indent: -1000px; margin-right: 20px; margin-top: 10px;}
+
+#primary-nav li.flyout a.button:hover {background: url(TopMenuArrowButtonDownHover.png) no-repeat 100% 0;}
+
+#primary-nav li a {float: left; font-size: 0.9em; text-decoration: none; color: #ffffff; font-weight: normal; line-height: 15px;}
+
+#primary-nav li a:focus {text-decoration: underline; background-color: #a30900; color: #fff;}
+
+#primary-nav-flyouts {display: none; height: 200px; width: 960px; background-color: #f5f5f5; border-bottom: 2px #f21c0a solid; clear: both; margin-bottom: 15px;}
+
+#primary-nav-flyouts .flyout-items li {float: left; width: 180px; height: 160px; margin-left: 10px; background-color: #ffffff; position: relative;}
+
+#primary-nav-flyouts #flyout-close {text-align: right; padding: 5px 5px 5px 0; height: 20px;}
+
+#primary-nav-flyouts #flyout-close a {background: url(Close.gif) no-repeat 100% 0; font-size: 12px; padding: 4px 24px 5px 0; display: block; color: black; font-weight: bold;}
+
+#primary-nav-flyouts #flyout-close a:hover {background: url(CloseHover.gif) no-repeat 100% 0; color: #a30900;}
+
+#primary-nav-flyouts .flyout-items li.flyout-menu {background-color: #f5f5f5;}
+
+#primary-nav-flyouts .flyout-item li a.teaser-button {font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #fff; display: block; position: absolute; bottom: 0px; right: 10px; background: url(RightTeaserArrow.png) no-repeat 100% 0; padding-bottom: 11px; clear: both; text-indent: -1000px;}
+
+#primary-nav-flyouts .flyout-item li:hover {background-color: #A30900;}
+
+#primary-nav-flyouts .flyout-item li:hover h2, #primary-nav-flyouts .flyout-item li:hover p {color: #ffffff;}
+
+#primary-nav-flyouts .flyout-item li:hover ul {background-color: transparent;}
+
+#primary-nav-flyouts .flyout-item li:hover a.teaser-button {background: url(RightTeaserArrowWhite.png) no-repeat 100% 0;}
+
+#primary-nav-flyouts .flyout-item li.flyout-menu:hover {background-color: #f5f5f5;}
+
+#primary-nav-flyouts .flyout-menu {border-top: #b9b9b9 1px solid; width: 180px;}
+
+#primary-nav-flyouts .flyout-menu li {display: inline; background-color: transparent;}
+
+#primary-nav-flyouts .flyout-menu li {float: none; margin-left: 0; height: 10px;}
+
+#primary-nav-flyouts .flyout-menu li a {background-color: #F5F5F5; color: #454545; text-decoration: none; font-size: 0.75em; font-weight: normal; background: 0px 50% no-repeat; background-image: url(RightArrowRed.gif); padding-left: 15px; padding-top: 5px; padding-bottom: 5px; border-bottom: #b9b9b9 1px solid; display: block;}
+
+#primary-nav-flyouts .flyout-menu li a:link {text-decoration: none;}
+
+#primary-nav-flyouts .flyout-menu li a:hover {text-decoration: underline; background-color: #a30900; color: #fff; background-image: url(RightArrowWhite.gif);}
+
+#footer {clear: both; padding-top: 30px; height: 10px;}
+
+#footer-breadcrumb {overflow: auto; clear: right; padding-top: 14px; border-top: #e8e8e8 2px solid;}
+
+#footer-breadcrumb li {float: left; background: url(BreadcrumbArrowRight.gif) no-repeat 100% 0; padding-left: 10px; padding-right: 15px; height: 29px;}
+
+#footer-breadcrumb li a {padding-top: 3px; font-size: 0.75em; display: block; font-weight: bold;}
+
+#footer-breadcrumb li.selected {background-image: none;}
+
+#footer-breadcrumb li.selected a {color: #767676; font-weight: normal;}
+
+#thick-footer {float: left; display: block; height: 275px; margin-bottom: 15px; padding-top: 10px; padding-left: 10px;}
+
+#footer-links {width: 760px; float: left; background-color: #f5f5f5; height: 270px; padding-left: 10px;}
+
+#footer-links ul {float: left; width: 170px; margin-right: 25px;}
+
+#footer-links ul li {font-size: 0.88em; list-style-position: outside; line-height: 38px; border-bottom: 1px #e6e6e6 solid; font-weight: bold; color: #454545;}
+
+#footer-links li a, #footer-links li a:visited {color: #454545; font-size: 0.89em; text-decoration: none; display: block; font-weight: bold;}
+
+#footer-links li a:hover, #footer-links li a:focus {text-decoration: underline; color: #a30900;}
+
+#footer-links ul li ul li {line-height: 25px;}
+
+#copyright-info {font-size: 11px; text-align: center; margin-bottom: 50px; font-weight: bold;}
+
+#copyright-info ul li {display: inline; padding-left: 10px; padding-right: 10px;}
+
+h1.teaser, h2.teaser, h3.teaser, p.teaser {padding: 0px;}
+
+.footer-teaser {width: 180px; height: 270px; float: left; display: block; position: relative;}
+
+.footer-teaser .text-wrapper {padding: 20px 10px 0;}
+
+.footer-teaser a.teaser-button, .teaser-button {font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #fff; display: block; position: absolute; bottom: 0px; right: 0px; background: url(RightArrowInBox.gif) no-repeat right 0; padding-right: 25px; padding-bottom: 11px; clear: both;}
+
+.footer-teaser .text-wrapper p {padding: 10px 0 0 0;}
+
+.footer-teaser-hover-text, .footer-teaser:hover {background-color: #a30900;}
+
+.footer-teaser-hover-text h3.teaser a, .footer-teaser-hover-text p, .footer-teaser:hover *, .footer-teaser h3.teaser a:hover {color: #fff;}
+
+#footer-links ul {margin-right: 10px;}
+
+a.skip:link, a.skip:visited {position: absolute; top: 0; left: 0; margin: 0px; text-indent: -600em; float: left; padding: 10px 0px 0px 0px; width: 140px; height: 32px; font-size: 12px; font-weight: bold; text-align: center; outline: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+
+a.skip:focus, a.skip:active {text-indent: 0px; text-decoration: underline; background-color: #A30900; color: #FFFFFF; zIndex: '20000';}
+/** 
+ * 
+ * imported from: 
+ * https://www.eonenergy.com/css/modules.css
+ * 
+ **/
+#pt-17 .search-results-display a:hover, a:focus, a:active {text-decoration: underline;}
+
+.tertiary-teaser-vertical-a {width: 180px; height: 270px; float: left; display: block; position: relative; margin-left: 0;}
+
+.tertiary-teaser-vertical-a a {cursor: hand;}
+
+.tertiary-teaser-vertical-a:hover {background-color: #f5f5f5;}
+
+.tertiary-teaser-vertical-a:hover * {color: #A30900; text-decoration: none;}
+
+.tertiary-teaser-vertical-a:hover  p {color: #5D5D5D;}
+
+.tertiary-teaser-vertical-a:hover h3.teaser {text-decoration: underline;}
+
+.tertiary-teaser-vertical-a .text-wrapper {padding: 10px 5px 0 10px; height: 135px; background: url(RightArrowInBox.gif) no-repeat right 124px;}
+
+.tertiary-teaser-vertical-a a:hover .text-wrapper {background: url(RightArrowHover-M.gif) no-repeat right 124px;}
+
+.tertiary-teaser-vertical-a .text-wrapper p {padding: 10px 5px 0 0; margin-right: 6px;}
+/** 
+ * 
+ * imported from: 
+ * https://www.eonenergy.com/css/eon-icon-toolset.css
+ * 
+ **/
+.close {background-image: url(close.gif); background-repeat: no-repeat; background-position: 0 50%; min-height: 23px;}
+
+.close:hover {background-image: url(close-hover.gif); background-repeat: no-repeat; background-position: 0 50%;}
+/** 
+ * 
+ * imported from: 
+ * https://www.eonenergy.com/css/cookie.css
+ * 
+ **/
+.cookie-notice {width: 100%; padding: 0 0 10px 0; float: left; height: auto; top: 0; position: relative; background-color: #ffffff;}
+
+.cookie-notice .cookienote-container {font-family: Arial, sans-serif; width: 100%; height: 42px; position: relative; float: left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #E6E6E6;}
+
+.cookie-notice .cookienote-container p.cookie-text {font-size: 11px; font-weight: normal; float: left; width: 85%; color: #5D5D5D; padding: 5px 0px 5px 20px; margin: 0px; height: 32px;}
+
+.cookie-notice .cookienote-container div.cookie-close-button {position: absolute; top: 4px; right: 3px;}
+
+.cookie-notice .cookienote-container div.cookie-close-button a.close {background-position: top right; display: inline-block; width: 105px;}
+
+.cookie-notice .cookienote-container div.cookie-close-button a.close {display: inline-block; padding: 2px 0px 6px 5px; margin: 0px; outline: none; font-size: 11px;}
+
+.cookie-notice .cookienote-container div.cookie-close-button a.close:hover {text-decoration: underline; color: #A30900;}
+
+.cookie-notice .cookienote-container div.cookie-close-button a.close:focus, .cookie-notice .cookienote-container div a.close:active {background-image: url(close-hover.gif); text-decoration: underline; color: #A30900;}
+
+.cookie-notice .cookienote-container p.cookie-text a {display: inline-block;}

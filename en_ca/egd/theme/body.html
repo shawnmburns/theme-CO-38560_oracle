@@ -1,0 +1,512 @@
+<div class="contentPage subSectionPage noPrinting">
+    <style type="text/css">
+        #ctl00_divBannerTitle {background-image: url({{themeUrl}}/assets/myEnbridge68-8582.jpg);}
+    </style>
+        <div id="header" class="headerContainer">
+            <div class="header">
+                <div class="layout">
+                    <!-- Component 1: HEADER -->
+                    <div class="clearfix">
+                        <a class="logo" href="{{clientUrl}}/homes" title="Enbridge Gas Distribution" alt="Enbridge Gas Distribution">Enbridge</a>
+                        <div class="headerElements">
+                            <div class="myenbridgeNav">
+								{{^loggedIn}}
+                                <ul class="navigation">
+                                    <li class="first">
+                                        <a href="{{clientUrl}}/myEnbridge/login.aspx">Sign In</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{clientUrl}}/myEnbridge/user-registration.aspx">Register</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{clientUrl}}/myEnbridge/about-myEnbridge.aspx">Learn More</a>
+                                    </li>
+                                </ul>
+								{{/loggedIn}}
+								{{#loggedIn}}
+                                <ul class="navigation">
+                                    <li class="first">
+								        <a href= "{{clientUrl}}/AU/MyOverview.aspx">Overview</a>
+									</li>
+								    <li>
+										<a href="{{clientUrl}}/UN/Account/Logout.aspx">Sign Out</a>
+									</li>
+                                </ul>
+								{{/loggedIn}}
+                            </div>
+                            <div class="clear">
+                            </div>
+                            <div class="searchBar">
+                                <label for="ctl00_txtSearch" class="smellGas">
+                                    <span>Smell gas? </span>
+									Call 1-866-763-5427
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="primaryNav ucase clearfix">
+                        <ul id="ctl00_NavigationPrimary_navHomeBusinessList" class="homeBusinessNav tabs">
+                            <li class="first selected">
+                                <a href="{{clientUrl}}/homes">For Homes</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/businesses">For Businesses</a>
+                            </li>
+                        </ul>
+                        <ul id="ctl00_NavigationPrimary_navOtherList" class="navigation clearfix">
+                            <li class="first">
+                                <a href="{{clientUrl}}/corporate">Corporate Commitments</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/gas-safety">Safety</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/about">About Us</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/contact-us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="secondaryNav navigation dropdown clearfix">
+                        <li id="home" class="first">
+                            <a href="{{clientUrl}}/homes/index.aspx">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/accounts-billing">Accounts &amp; Billing</a>
+                            <ul>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/residential-gas-rates">Residential Gas Rates</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/go-paperless">Go Paperless</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/bill-payment-options.aspx">Bill Payment Options</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/understand-your-bill">Understand Your Bill</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/is-your-bill-high.aspx">Is Your Bill High?</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/billing-services">Billing Services</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/submit-meter-reading">Submit a Meter Reading</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/accounts-billing/update-account-information">Update Account Information</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/customer-service">Customer Service</a>
+                            <ul>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/contact-customer-service">Contact Customer Service</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/no-heat">No Heat?</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/when-to-call-enbridge.aspx">When To Call Enbridge</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/need-contractor.aspx">Need a Contractor?</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/visits-to-your-door.aspx">Visits to Your Door</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/customer-updates">Customer Updates</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/frequently-asked-questions.aspx">Frequently Asked Questions</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/customer-service/conditions-of-service.aspx">Conditions of Service</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="widedropdown slide-down">
+                            <a href="{{clientUrl}}/homes/start-stop-move">Start, Stop or Move Service</a>
+                            <ul>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/start-stop-move/why-switch-natural-gas">Why Switch to Natural Gas?</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/start-stop-move/moving">Moving?</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/start-stop-move/open-new-enbridge-account.aspx">Open New       Enbridge Account</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/start-stop-move/start-gas-service">Start Gas Service</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/start-stop-move/stop-gas-service">Stop Gas Service</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/start-stop-move/landlord-tenant.aspx">Landlord/Tenant</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="widedropdown">
+                            <a href="{{clientUrl}}/homes/gas-choices">Your Gas Choices</a>
+                            <ul>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/gas-choices/customer-choice.aspx">Customer Choice</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/gas-choices/buying-natural-gas-from-enbridge.aspx">Buying Natural Gas From Enbridge</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/gas-choices/buying-natural-gas-from-marketer.aspx">Buying Natural Gas From a Marketer</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/gas-choices/visits-to-your-door.aspx">Visits to Your Door</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/gas-choices/about-ontarios-natural-gas-industry">About Ontario's Natural Gas Industry</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="widedropdown slide-down">
+                            <a href="{{clientUrl}}/homes/manage-energy">Manage Your Energy Use</a>
+                            <ul>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/manage-energy/energy-efficiency-tips">Energy Efficiency Tips</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/manage-energy/rebates-incentive-programs">Rebates and Incentive Programs</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/manage-energy/renovations-upgrades">Renovations and Upgrades</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/manage-energy/appliances-and-equipment">Appliances and Equipment</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/manage-energy/managing-seasonal-gas-use.aspx">Managing Seasonal Gas Use</a>
+                                </li>
+                                <li>
+                                    <a href="{{clientUrl}}/homes/manage-energy/energy-efficiency-quizzes">Energy Efficiency Quizzes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- HEADER ends -->
+                </div>
+            </div>
+   		 <div class="clear"></div>
+   		 <div class="layout">
+   			 <div id="ctl00_divBannerTitle" class="banner bannerShort hideTitle">
+   			 </div>
+   		 </div>
+		 <div class="clear"></div>
+
+		 <div class="clearfix">
+ 		  <br/>
+         </div>
+
+        <!-- Component 3: BODY CONTENT -->
+		 <div class="container">
+	   		 <div id="nav-main" class="clear" role="navigation">
+	   		     <ul class="rounded-tl rounded-tr">
+	   		         {{#navBar}}
+	   		             <li {{#active}}data-nav-state="active" class="active"{{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a></li>
+	   		         {{/navBar}}
+					     <li data-nav-state="active"><a href="{{clientUrl}}/AU/MyOPower.aspx?au=y" class="lastHeaderElement {{cssClass}}">Return to myEnbridge</a></li>
+	   		     </ul>
+	   		 </div>
+
+	    		 <div id="nav-divider"> </div>
+	    		     {{#hasActiveSubNav}}
+	    		         <div id="nav-secondary" class="clearfix bg-brand">
+	    		         <ul>
+	    		             {{#activeSubNav}}
+	    		             <li {{#active}}data-nav-secondary-state="active" class="active"{{/active}}>
+	    		                 <a href="{{url}}" id="{{id}}" class="rounded-tl rounded-tr">{{label}}</a>
+	    		             </li>
+	    		             {{/activeSubNav}}
+	    		         </ul>
+	    		         </div>
+	    		     {{/hasActiveSubNav}}
+	    		     {{^hasActiveSubNav}}
+	    		         {{#navBar}}
+	    		             {{#active}}
+	    		                 <div class="banner bg-brand subnav-single" role="banner">
+	    		                     <h2>
+	    		                         {{heading}}
+	    		                         {{^heading}}
+	    		                             {{label}}
+	    		                         {{/heading}}
+	    		                     </h2>
+	    		                 </div>
+	    		             {{/active}}
+	    		         {{/navBar}}
+	    		     {{/hasActiveSubNav}}
+
+	    		     </div>
+	    		 </div>
+	         </div>
+		{{{content}}}
+	    </div>
+        <!-- BODY CONTENT ends -->
+        <div class="clearfix">
+		  <br/>
+        </div>
+
+        <!-- Component 5: FOOTER -->
+        <div class="footerContainer">
+            <hr style="border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);">
+            <div class="footer">
+                <div class="fatFooterNav layout clearfix">
+                    <!-- COLUMN ONE -->
+                    <ul class="navigation columns">
+                        <li class="heading ucase">
+                            For Homes
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/index.aspx">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/accounts-billing/index.aspx">Accounts &amp; Billing</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/customer-service/index.aspx">Customer Service</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/start-stop-move/index.aspx">Start, Stop or Move Service</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/gas-choices/index.aspx">Your Energy Choices</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/homes/manage-energy/index.aspx">Managing Your Energy Use</a>
+                        </li>
+                    </ul>
+                    <!-- COLUMN TWO -->
+                    <ul class="navigation columns">
+                        <li class="heading ucase">
+                            For Businesses
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/businesses/index.aspx">Home</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/businesses/accounts-billing/index.aspx">Accounts &amp; Billing</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/businesses/customer-service/index.aspx">Customer Service</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/businesses/start-stop-move-service/index.aspx">Start, Stop or Move Service</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/businesses/energy-management/index.aspx">Energy Management</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/businesses/energy-management/commercial/index.aspx">Programs and Incentives</a>
+                        </li>
+                    </ul>
+                    <!-- COLUMN THREE -->
+                    <div class="columns column3">
+                        <ul class="navigation ">
+                            <li>
+                                <a href="{{clientUrl}}/corporate/index.aspx">Corporate Commitments</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/gas-safety/index.aspx">Safety</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/about/index.aspx">About Us</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/contact-us/index.aspx">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/about/for-the-media/index.aspx">Newsroom</a>
+                            </li>
+                            <li>
+                                <a href="{{clientUrl}}/corporate/AODA/index.aspx">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="http://www.enbridge.com" target="_blank">Enbridge Inc.</a>
+                            </li>
+                        </ul>
+												{{^loggedIn}}
+                        <div class="myEnbridgeSection">
+                            <div class="myEnbridgeTitle">
+                                MyEnbridge
+                            </div>
+                            <div class="Extranet_divMyEnbridgeLogin">
+                                <ul class="navigation clearfix">
+                                    <li class="first">
+                                        <a href="{{clientUrl}}/myEnbridge/login.aspx">Sign In</a>
+                                        |
+                                        <a href="{{clientUrl}}/myEnbridge/user-registration.aspx">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+												{{/loggedIn}}
+												{{#loggedIn}}
+                        <div class="myEnbridgeSection">
+                            <div class="myEnbridgeTitle">
+                                MyEnbridge
+                            </div>
+                            <div class="Extranet_divMyEnbridgeLogin">
+                                <ul class="navigation clearfix">
+                                    <li class="first">
+                                        <a href="{{clientUrl}}/AU/MyOverview.aspx">Overview</a>
+                                        |
+                                        <a href="{{clientUrl}}/UN/Account/Logout.aspx">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+												{{/loggedIn}}
+                    </div>
+                    <!-- COLUMN FOUR-->
+                    <div class="emergencyBeforeDig columns">
+                        <h6 class="emergency">
+                            EMERGENCY SERVICE
+                        </h6>
+                        <p>
+                            1-866-763-5427 (1-866-SMELGAS)
+                        </p>
+                        <ul class="navigation">
+                            <li>
+                                <a title="index" href="{{clientUrl}}/homes" xmlns:tridion="http://www.tridion.com/ContentManager/5.0">More emergency information</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <h6 class="ucase">
+                            BEFORE YOU DIG
+                        </h6>
+                        <p>
+                            1-800-400-2255
+                        </p>
+                        <ul class="navigation">
+                            <li>
+                                <a title="index" href="{{clientUrl}}/gas-safety/before-you-dig.aspx" xmlns:tridion="http://www.tridion.com/ContentManager/5.0">More information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="moreLinks columns">
+                        <div class="clearfix">
+                            <div class="top100">
+                                <a class="top100" title="Working at Enbridge" href="{{clientUrl}}/about/working-at-enbridge/">Canada's Top 100 Employers</a>
+                            </div>
+                            <div class="item">
+                                <p>
+                                    Enbridge was selected as one of Canada's Top 100 Employers for 2014
+                                </p>
+                                <ul class="navigation">
+                                    <li>
+                                        <a title="current-opportunities" href="{{clientUrl}}/about/working-at-enbridge/current-opportunities.aspx" xmlns:tridion="http://www.tridion.com/ContentManager/5.0">View Current Opportunities</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="clearfix">
+                            <div class="twitter">
+                                <a class="twitter" title="Social Media" href="{{clientUrl}}/about/for-the-media/social-media.aspx">Twitter</a>
+                            </div>
+                            <div class="item">
+                                <p>
+                                    Enbridge Gas Distribution is on Twitter!
+                                    <a title="social-media" href="{{clientUrl}}/about/for-the-media/social-media.aspx" xmlns:tridion="http://www.tridion.com/ContentManager/5.0">Learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondaryFooterMenu layout clearfix">
+                    <div class="secondaryFooterMenuContainer">
+                        <div class="logoSmall">
+                            Enbridge
+                        </div>
+                        <div class="copyright">
+                            &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script><noscript>2015</noscript> Enbridge Gas Distribution Inc. All Rights Reserved.
+                        </div>
+                    </div>
+                    <ul class="navigation clearfix">
+                        <li>
+                            <a href="{{clientUrl}}/footer/website-feedback.aspx">Website Feedback</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/footer/privacy-policy.aspx">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/footer/terms-use.aspx">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/footer/all-brochures/index.aspx">All Brochures</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/footer/all-forms.aspx">All Forms</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/about/working-at-enbridge/current-opportunities.aspx">Careers</a>
+                        </li>
+                        <li>
+                            <a href="{{clientUrl}}/footer/sitemap.aspx">Sitemap</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="top">Back to top</a>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER ends -->
+    </form>
+    <div id="_atssh" style="visibility: hidden; height: 1px; width: 1px; position: absolute; z-index: 100000;">
+    </div>
+    <!-- Tooltips container -->
+    <div id="tooltipcontainerMyE" class="hidden">
+        <div class="tooltipc1">
+            <div class="tooltipc2">
+                <div class="tooltipheader clearfix">
+                    <a class="tooltipclose" title="Close"></a>
+                </div>
+                <div id="tooltipbody">
+                </div>
+            </div>
+        </div>
+        <div class="tooltiparrow">
+        </div>
+    </div>
+    <!-- Popup layer container -->
+    <div class="popup">
+        <div id="dialog" class="window" style="display:none;">
+            <div class="dialogcontainer">
+                <div class="dialogheader">
+                    <a href="#" class="dialogclose">Close</a>
+                    <div class="clear">
+                    </div>
+                    <div id="dialogtitle" class="dialogtitle">
+                    </div>
+                </div>
+                <div id="popupcontent">
+                </div>
+            </div>
+            <div class="dialogbottom">
+                <div class="dialogcorner">
+                </div>
+            </div>
+        </div>
+        <div id="mask">
+        </div>
+    </div>
+
+<!-- CO-35335 -->
+<script type="text/javascript">
+(function() {
+    var image = document.createElement('img');
+    image.src = "{{clientUrl}}/UN/SessionHandler.aspx?p1=keepAlive";
+})();
+</script>

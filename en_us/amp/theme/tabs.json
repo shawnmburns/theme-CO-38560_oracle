@@ -1,0 +1,62 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My usage details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "What uses most",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare my bills",
+                    "serverRelativeUrl": "/ei/app/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My goal",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "label":     "My Success Story",
+            "clientUrl": "http://opower.amp-testimonials.sgizmo.com/s3/"
+        }
+    ]
+}

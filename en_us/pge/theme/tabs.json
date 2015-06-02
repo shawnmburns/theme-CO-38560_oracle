@@ -1,0 +1,137 @@
+{
+    "navBar" : [
+        {
+            "label":        "Overview",
+            "clientUrl":    "/myenergyweb/appmanager/pge/customer?_nfpb=true&_pageLabel=Landing",
+            "cssClass":     "nav1"
+        },
+        {
+            "label":        "Pay &amp; Manage",
+            "clientUrl":    "/myenergyweb/appmanager/pge/customer?_nfpb=true&_pageLabel=PayManage&_nfls=false",
+            "cssClass":     "nav2"
+        },
+        {
+            "pageName":     "myEnergyUse",
+            "label":        "My Usage",
+            "url":          "/myEnergyUse",
+            "cssClass":     "nav3",
+            "hasSubNav":    true,
+            "subNav": [
+                {
+                    "label":             "Solar Summary",
+                    "serverRelativeUrl": "/ei/x/solar-summary/",
+                    "cssClass":          "nav1",
+                    "displayCriteria": {
+                        "type": "SOLAR_CUSTOMER",
+                        "arguments": {
+                          "isSolar": true
+                        }
+                    }
+                },
+                {
+                    "label":             "My Dashboard",
+                    "serverRelativeUrl": "/ei/x/dashboard",
+                    "cssClass":          "nav2",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "label":             "Compare My Bills",
+                    "serverRelativeUrl": "/ei/x/compare-my-bills/",
+                    "cssClass":          "nav3",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName":     "myGoal",
+                    "label":        "My Goal",
+                    "url":          "/s/myGoal.html",
+                    "cssClass":     "nav4",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName":     "myEnergyUse",
+                    "label":        "My Usage Details",
+                    "url":          "/myEnergyUse",
+                    "cssClass":     "nav5"
+                },
+                {
+                    "pageName":     "myRates",
+                    "label":        "My Rates",
+                    "url":          "/myRates",
+                    "cssClass":     "nav6"
+                }
+            ]
+        },
+        {
+            "pageName":     "ideas",
+            "label":        "Ways to Save",
+            "url":          "/ideas/free",
+            "cssClass":     "nav4",
+            "hasSubNav":    true,
+            "subNav": [
+                {
+                    "pageName":     "myPlan",
+                    "label":        "My Plan to Save",
+                    "url":          "/myPlan",
+                    "cssClass":     "nav1",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName":     "myAudit",
+                    "label":        "Business Energy Checkup",
+                    "clientUrl":    "/waystosave",
+                    "cssClass":     "nav1",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "SMB"
+                        }
+                    }
+                },
+                {
+                    "pageName":     "ideas",
+                    "label":        "Ideas & Advice",
+                    "url":          "/ideas/free",
+                    "cssClass":     "nav2"
+                },
+                {
+                    "pageName":     "whatUsesMost",
+                    "label":        "Home Energy Checkup",
+                    "url":          "/whatUsesMost/",
+                    "cssClass":     "nav3",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+           "pageName": "myProfile",
+            "label":    "Community",
+            "cssClass":     "nav5",
+            "clientUrl":"/myenergyweb/appmanager/pge/customer?_nfpb=true&_pageLabel=Community"
+        }
+    ]
+}

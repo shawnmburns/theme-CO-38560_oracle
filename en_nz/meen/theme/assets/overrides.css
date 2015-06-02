@@ -1,0 +1,126 @@
+﻿/* Put overrides in here */
+
+/* Override white background since footer color is transparent */
+#footer-container-astro {
+      background-color: #6F6F74;
+}
+
+/* Styling missed by Snooper */
+#further-information #other-container #other li span {
+      color: white;
+}
+
+/* Styling missed by Snooper */
+#further-information dl dt {
+      color: white;
+}
+
+/* Styling missed by Snooper */
+#further-information dl dd {
+      color: white;
+      margin-left: 40px;
+}
+
+/* Styling off from Snooper */
+#log {
+      line-height: 20px;
+}
+
+/* Need to shift to acccomodate previous shift */
+#header .navigation li a {
+      line-height: 22px;
+}
+
+/* Need to shift up to accomodate previous two shifts */
+#header .navigation li a span {
+      line-height: 12px;
+}
+
+/* Icon for current tab renders too high after adjusting line heights */
+#header .navigation li.current {
+      padding-bottom: 33px;
+}
+
+#content-container {
+      background: #e7e7e8;
+      padding-top: 0;
+}
+
+#header ul.unlist li {
+    height: 68px;
+}
+
+#header ul.unlist li.current {
+    height: 35px;
+}
+
+ul.subnav-list {
+      margin-left: 20px;
+      padding: 0;
+      list-style: none;
+      display: block;
+      line-height: 40px;
+}
+
+ul.subnav-list li {
+      display: inline-block;
+      height: 100%;
+      position: relative;
+      float: left;
+}
+
+.secondary-nav {
+      clear: both;
+      height: 40px;
+      width: 980px;
+      background: #E7E7E8;
+      margin-top: -15px;
+      margin-left: -15px;
+      padding-top: 39px;
+}
+
+ul.subnav-list li a {
+      color: #6D6F72;
+      padding: 0 15px;
+      display: block;
+      background-color: white;
+      margin-right: 10px;
+}
+
+ul.subnav-list li a:hover {
+      text-decoration: none;
+      background: #CCC url(../../../images/layout/background-grayGradient.png) 0 0 repeat-x;
+}
+
+/* Awful hackery to create static subnav tabs on all pages */
+body#page-dashboard ul.subnav-list li a#overview-link,
+body#page-myEnergyUse ul.subnav-list li a#usage-link,
+body#page-compareMyBills ul.subnav-list li a#bill-link,
+body#page-myGoal ul.subnav-list li a#goal-link,
+body#page-ideas ul.subnav-list li a#ideas-link,
+body#page-whatUsesMost ul.subnav-list li a#piechart-link,
+body#page-myPlan ul.subnav-list li a#plan-link {
+      color: white;
+      background-color: #6D6F72;
+}
+
+.content-wrapper {
+      margin-left: -15px;
+}
+
+/* This background color should match the color of the secondary nav background */
+body {
+      background-color: #E7E7E8;
+}
+
+.colorbar {
+      background-color: #6D6F72;
+      height: 28px;
+      width: 980px;
+      margin-left: -15px;
+}
+
+/* WEB-2942: Non-color-based-cues for links.  Accessibility requirement.  Overrides necessary to play nice w/ Astro. */
+#header-container a,
+#footer-container-astro a,
+.secondary-nav a { text-decoration: none; }

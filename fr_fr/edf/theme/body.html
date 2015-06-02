@@ -1,0 +1,179 @@
+<div class="edf similarHomes fr_FR ">
+  {{^loggedIn}}
+  <div id="cookieBox">
+    <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies afin d'analyser
+      <br>votre navigation et nous permettre de mesurer l'audience de notre site internet.
+    </p>
+    <div id="cookiebox_close">
+      <a href="#">
+        <img src="{{themeUrl}}/assets/close.png">
+      </a>
+    </div>
+  </div>
+  {{/loggedIn}}
+  <a id="skip-nav-link" href="#main-content">Passer pour aller au contenu principal</a>
+  <div id="utilityNavContainer">
+    <a class="button" href="http://particuliers.edf.com">
+      <span class="">EDF</span>
+      <span class="icon icon-right-5 icon-size-5"></span>
+    </a>
+  </div>
+  <div class="container">
+    <div id="header" class="clearfix">
+      <div id="header-logo">
+        <h1>
+          {{#loggedIn}}
+          <a href="/ei/app/dashboard" id="top" title="EDF">
+              {{/loggedIn}}
+              {{^loggedIn}}
+                  <a href="/ei/app/index.html" id="top" title="EDF">
+              {{/loggedIn}}
+              <span class="hide">{{clientName}}</span>
+              </a>
+        </h1>
+      </div>
+
+      <div id="header-meta">
+        {{#loggedIn}}
+        <div class="module-person-userbox">
+          <ul class="nav-meta small">
+
+            <li class="first" data-test-name="{{displayName}}">Bienvenue
+              <span>{{displayName}}</span>
+            </li>
+
+            <li><a id="myAccountLink" href="/ei/app/myAccount">Mon compte</a>
+            </li>
+            <li class="last">
+              <a href="/ei/app/logout">Se déconnecter</a>
+            </li>
+          </ul>
+        </div>
+        {{/loggedIn}} {{^loggedIn}}
+        <ul class="nav-meta small">
+          <li class="last">
+            <a href="/ei/app/help.html" data-test-help="header">Aide</a>
+          </li>
+        </ul>
+        <ul class="nav-buttons">
+          <li>
+            <a href="/ei/app/account/create" data-sso="headerCreateAccount standard" class="button" id="header-createAccountLink">Créer un compte</a>
+          </li>
+          <li>
+            <a href="/ei/app/signin/index.html" class="button signInDropdownToggle" role="button" aria-haspopup="true">Connectez-vous<span class="arrow"></span></a>
+            <div class="hide rounded signInDropdown" aria-hidden="true" id="signInDropdownDiv">
+              <div class="rounded bg-white">
+                <form id="header-login-form" name="header-login-form" action="/ei/app/login-process" method="POST" class="clearfix nonssoSignIn">
+                  <div class="font-scheme-1 space-bottom-small clearfix">
+                    <div class="float-left icon-size-3 space-right-small">
+                      <div class="icon icon-blue-I-3 icon-size-3 ">
+                      </div>
+                    </div>
+                    <div class="float-left infoText">
+                      Ce site nécessite la création d'un nouveau compte.
+                      <a href="/ei/app/account/create">Créer un compte</a>
+                    </div>
+                  </div>
+                  <p class="space-bottom-small">
+                    <label for="header-username" class="align-left">
+                      Adresse électronique
+                    </label>
+                    <input type="text" name="j_username" id="header-username" aria-required="true" class="text">
+                  </p>
+                  <p class="space-bottom">
+                    <label for="header-password" class="align-left">
+                      Mot de passe
+                    </label>
+                    <input type="password" name="j_password" id="header-password" aria-required="true" class="text password">
+                  </p>
+                  <div class="clearfix space-top">
+                    <div class="float-left">
+                      <input id="header-loginButton" type="submit" name="login" class="orangebutton rounded" value="Connectez-vous" data-test-signinbutton="nonSSO">
+                    </div>
+                    <div class="space-bottom-small float-left space-left font-scheme-1 center-vertical">
+                      <a id="header-forgotPasswordLink" href="/ei/app/account/password">Mot de passe oublié&nbsp;?</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </li>
+        </ul>
+        {{/loggedIn}}
+      </div>
+
+      <div id="nav-main" class="clear" role="navigation">
+        <ul class="rounded-tl rounded-tr">
+          {{#navBar}}
+          <li {{#active}}data-nav-state="active" class="active" {{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a>
+          </li>
+          {{/navBar}}
+        </ul>
+      </div>
+      <div id="nav-divider"> </div>
+    </div>
+    {{#hasActiveSubNav}}
+    <div id="nav-secondary" class="clearfix bg-brand">
+      <ul>
+        {{#activeSubNav}}
+        <li {{#active}}data-nav-secondary-state="active" class="active" {{/active}}>
+          <a href="{{url}}" id="{{id}}" class="rounded-tl rounded-tr">{{label}}</a>
+        </li>
+        {{/activeSubNav}}
+      </ul>
+    </div>
+    {{/hasActiveSubNav}} {{^hasActiveSubNav}} {{#navBar}} {{#active}}
+    <div class="banner bg-brand" role="banner">
+      <h2>
+        {{heading}} {{^heading}} {{label}} {{/heading}}
+      </h2>
+    </div>
+    {{/active}} {{/navBar}} {{/hasActiveSubNav}}
+  </div>
+</div>
+<!--[if lt IE 8]>
+        <div class="unsupported-browser-warning">
+            La version actuelle de votre navigateur est un peu ancienne et notre site fonctionne mieux avec les navigateurs récents.
+            <br/>
+            <a href="http://browsehappy.com/" target="_blank">Veuillez mettre à jour votre navigateur</a>
+            <a id="closeUnsupportedBrowserWarning" class="close-bar" href="#">
+            <span class="close-icon">
+            fermer
+            </span>
+            </a>
+        </div>
+    <![endif]-->
+<div class="container">
+  {{{content}}}
+</div>
+<div class="container">
+  <div id="footer-container">
+    <div id="footer" class="small clearfix" role="contentinfo">
+      <ul class="nav-meta">
+        <li class="first">
+          <a href="/ei/app/help.html">Aide</a>
+        </li>
+        <li>
+          <a href="/ei/app/help.html">Contact</a>
+        </li>
+        <li>
+          <a href="/ei/app/terms_of_use.html">Mentions Légales</a>
+        </li>
+        <li>
+          <a href="/ei/app/privacy_policy.html">Informatique et libertés</a>
+        </li>
+      </ul>
+      <div id="copyright" data-test-copyrightuntil="2015">
+        &copy; 2010-
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+        <noscript>2015</noscript> Opower&reg;. Tous droits réservés.
+      </div>
+    </div>
+  </div>
+</div>
+
+{{^loggedIn}}
+<script type="text/javascript" src="{{themeUrl}}/assets/cookies.js"></script>
+{{/loggedIn}}

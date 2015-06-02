@@ -1,0 +1,286 @@
+<div class="mainContainer">
+	<div id="header">
+		<a href="{{clientUrl}}" title="E.ON" class="logo"><img src="{{themeUrl}}/assets/eon.png" id="m_logo_noFlashImage" alt="E.ON" title="E.ON"></a>
+		<form id="searchForm" action="https://www.eon.se/Ovrigt/Sok">
+			<input name="quicksearchquery" type="text" id="quicksearchquery" class="quicksearchinput" title="Sök">
+			<input name="searchButton" type="submit" id="searchButton" class="searchButton" > 
+		</form>
+		<div class="pageTools">
+		<ul id="m_menuLogin_fbMenuLogin_pageToolsLinks" class="pageToolsLinks">
+			<li>
+				<a id="m_menuLogin_fbMenuLogin_extranetLink" href="{{clientUrl}}/Extranet/">Extranet</a>
+			</li>
+		</ul>
+		{{#loggedIn}}
+		<div id="m_menuLogin_fbMenuLogin_minaSidorLoginDiv" class="minaSidorLogin">
+			<p id="utility_0_pAnonymous" class="logout">
+				 Inloggad som <b>{{displayName}}</b>
+				<a id="utility_0_HyperLinkLogin" href="https://www.eon.se/templates/Logout.aspx">Logga ut</a>
+			</p>
+		</div>
+		{{/loggedIn}}
+		{{^loggedIn}}
+		<div id="m_menuLogin_fbMenuLogin_minaSidorLoginDiv" class="minaSidorLogin">
+			<p class="login">
+				<a href="{{clientUrl}}/privatkund/Mina-sidor">Mina sidor</a>
+			</p>	
+		</div>
+		{{/loggedIn}}
+	</div>
+		<div id="main-navigation" class="mainNavigation clear">
+			<ul><li class="current"><a href='{{clientUrl}}/privatkund/'><strong>Privatkund</strong></a>
+				<ul><li><a href='{{clientUrl}}/privatkund/Produkter-och-priser/'>
+					Produkter &amp; priser</a> </li>
+					<li><a href='{{clientUrl}}/privatkund/Kundservice/'>Kundservice</a> </li>
+					<li><a href='{{clientUrl}}/privatkund/Energieffektivisering/'>
+						Energieffektivisering</a> </li>
+						{{#loggedIn}}
+						<li class="current"><a href='{{clientUrl}}/privatkund/Mina-sidor/'>
+							Mina sidor</a> </li>
+						{{/loggedIn}}
+						{{^loggedIn}}
+						<li><a href='{{clientUrl}}/privatkund/Mina-sidor/'>
+							Mina sidor</a> </li>
+						{{/loggedIn}}
+						</ul>
+						<span class="ieRoundedCornerLeft"></span>
+						<span class="ieRoundedCornerRight"></span>
+					</li>
+					<li><a href="{{clientUrl}}/foretagskund/">Företagskund</a></li>
+					<li><a href="{{clientUrl}}/om-eon/">Om E.ON</a></li>
+					<li><a href='https://shop.eon.se/Eon/index/verify'>
+							Webbshop</a> </li>	
+				</ul>
+			</ul>
+		</div> 
+		<div class="clear"></div>
+		<div id="nav-wrapper" class="clear">
+			<div id="nav-main" class="clear" role="navigation">
+				<ul>
+					{{#navBar}}
+					<li {{#active}}data-nav-state="active" class="active"{{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a></li>
+					{{/navBar}}
+				</ul>
+			</div>
+			<div id="nav-divider"> </div>
+			{{#hasActiveSubNav}}
+			<div id="nav-secondary" class="clearfix bg-brand">
+				<ul>
+					{{#activeSubNav}}
+					<li {{#active}}data-nav-secondary-state="active" class="active"{{/active}}>
+						<a href="{{url}}" id="{{id}}" >{{label}}</a>
+					</li>
+					{{/activeSubNav}}
+				</ul>
+			</div>
+			{{/hasActiveSubNav}}
+			{{^hasActiveSubNav}}
+			{{#navBar}}
+			{{#active}}
+			<!--<div class="banner bg-brand" role="banner">
+				<h2>
+				{{heading}}
+				{{^heading}}
+				{{label}}
+				{{/heading}}
+				</h2>
+				</div>-->
+				{{/active}}
+				{{/navBar}}
+				{{/hasActiveSubNav}}
+			</div>
+		</div>
+	{{#hasActiveSubNav}}
+	<br><br>
+	{{/hasActiveSubNav}}					
+    {{{content}}}
+	</div>
+	<div id="m_footer" class="footer">
+		<div class="footerFunctions">
+			<ul class="left">
+				<ul id="navlist">
+					<li id="m_footerControl_FooterFunctionsRepeater_ctl01_footerFunctionsIcon" class="footer-icon RSS">
+						<a href="{{clientUrl}}/om-eon/Om-foretaget/aktuellt/Rss-kallor/">RSS</a>
+					</li>
+					<li id="m_footerControl_FooterFunctionsRepeater_ctl02_footerFunctionsIcon" class="footer-icon Sitemap">
+						<a href="{{clientUrl}}/Ovrigt/Sidhuvud/Sitemap/">Sitemap</a>
+					</li>
+					<li id="m_footerControl_FooterFunctionsRepeater_ctl03_footerFunctionsIcon" class="footer-icon Kontakta oss">
+						<a href="{{clientUrl}}/om-eon/Kontakta-oss/">Kontakta oss</a>
+					</li>
+				</ul>
+			</ul>
+			<ul class="">
+				<li id="navlist">
+					<a href="javascript:window.print();" class="Print">
+						Skriv ut
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footerLinks">
+			<dl>
+				<dt>
+					<span id="m_footerControl_FooterLinksRepeater_ctl00_label1">
+						Våra erbjudanden
+					</span>
+				</dt>
+				<dd>
+					<ul id="navlist">
+						<li id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl01_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Produkter-och-priser/Elavtal/Ny-Teckna-Elavtal/" id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl01_label1link">Teckna elavtal</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl02_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Produkter-och-priser/Elavtal/Miljoval-Ny/" id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl02_label1link">Miljömärkt el</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl03_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Produkter-och-priser/Fordonsgas/" id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl03_label1link">Fordonsgas</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl04_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Produkter-och-priser/Naturgas/" id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl04_label1link">Naturgas</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl05_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Produkter-och-priser/Fjarrvarme/" id="m_footerControl_FooterLinksRepeater_ctl00_repeaterInner_ctl05_label1link">Fjärrvärme</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<span id="m_footerControl_FooterLinksRepeater_ctl01_label1">
+						Kundservice
+					</span>
+				</dt>
+				<dd>
+					<ul id="navlist">
+						<li id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl01_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Mina-sidor/" id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl01_label1link">Mina sidor</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl02_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Kundservice/Betalning/" id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl02_label1link">Faktura &amp; betalning</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl03_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Kundservice/Flyttanmalan/" id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl03_label1link">Flyttanmälan</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl04_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Kundservice/Avbrottsinformation/" id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl04_label1link">Strömavbrott</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl05_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Kundservice/Kundombudsmannen2/" id="m_footerControl_FooterLinksRepeater_ctl01_repeaterInner_ctl05_label1link">Kundombudsmannen</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<span id="m_footerControl_FooterLinksRepeater_ctl02_label1">
+						Energieffektivisering
+					</span>
+				</dt>
+				<dd>
+					<ul id="navlist">
+						<li id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl01_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Energiradgivning/E-Prize-Privat/" id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl01_label1link">E-prize</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl02_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Energiradgivning/Energiradgivning-vinter/" id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl02_label1link">Energispartips</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl03_footerIcon">
+							<a href="http://villahjalpen.eon.se/" id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl03_label1link">Energitesta din bostad</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl04_footerIcon">
+							<a href="{{clientUrl}}/om-eon/Om-energi/Energigeni/utbildningsmaterial/Mitt-klimatfotspar/" id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl04_label1link">Testa ditt klimatfotspår</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl05_footerIcon">
+							<a href="{{clientUrl}}/privatkund/Energiradgivning/standby-guiden/" id="m_footerControl_FooterLinksRepeater_ctl02_repeaterInner_ctl05_label1link">Standbyguiden</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<span id="m_footerControl_FooterLinksRepeater_ctl03_label1">
+						Om E.ON
+					</span>
+				</dt>
+				<dd>
+					<ul id="navlist">
+						<li id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl01_footerIcon">
+							<a href="{{clientUrl}}/om-eon/Om-foretaget/" id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl01_label1link">Om företaget</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl02_footerIcon">
+							<a href="{{clientUrl}}/om-eon/Press/" id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl02_label1link">Press</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl03_footerIcon">
+							<a href="{{clientUrl}}/om-eon/Jobba-hos-oss/" id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl03_label1link">Lediga tjänster</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl04_footerIcon">
+							<a href="{{clientUrl}}/om-eon/Vart-ansvar/" id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl04_label1link">Vårt ansvar</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl05_footerIcon">
+							<a href="{{clientUrl}}/om-eon/Om-energi/" id="m_footerControl_FooterLinksRepeater_ctl03_repeaterInner_ctl05_label1link">Om energi</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>
+					<span id="m_footerControl_FooterLinksRepeater_ctl04_label1">
+						Flj oss
+					</span>
+				</dt>
+				<dd>
+					<ul id="navlist">
+						<li id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl01_footerIcon" class="footer-icon News">
+							<a href="{{clientUrl}}/nyhetsbrev" id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl01_label1link">Nyhetsbrev</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl02_footerIcon" class="footer-icon Facebook">
+							<a href="http://www.facebook.com/eonsverige" id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl02_label1link" target="_blank">E.ON på Facebook</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl03_footerIcon" class="footer-icon Twitter">
+							<a href="http://www.twitter.com/EON_Nordic" id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl03_label1link" target="_blank">E.ON på Twitter</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl04_footerIcon" class="footer-icon Youtube">
+							<a href="{{clientUrl}}/om-eon/Om-energi/Webb-TV-och-filmer-om-energi--el/" id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl04_label1link" target="_blank">E.ON på webb-tv</a>
+						</li>
+						<li id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl05_footerIcon" class="footer-icon Mobile">
+							<a href="{{clientUrl}}/appar" id="m_footerControl_FooterLinksRepeater_ctl04_repeaterInner_ctl05_label1link">E.ON i mobilen</a>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		<div class="legalFooter">
+			<span>
+				Kundservice försäljning 020-22 24 24 | Växel 040-25 50 00 
+			</span>
+			<br/><br/>
+			<span>
+				Avsändare till denna webbsida är E.ON Försäljning
+			</span>
+			<span>
+				<a href="{{clientUrl}}/Ovrigt/Footer/Sidfot/Om-webbplatsen/">Om webbplatsen</a>
+			</span>
+			<span>
+				<a href="{{clientUrl}}/english">In English</a>
+			</span>
+			<span>
+				<a href="{{clientUrl}}/om-eon/Om-energi/Broschyrarkiv/">Broschyrarkiv</a>
+			</span>
+			<span>
+				<a href="{{clientUrl}}/Ovrigt/Footer/Sidfot/Legal/">Legal</a>
+			</span>
+		</div>
+		<div id="opower-copyright" class="clear">
+			<ul>
+				<li>
+					&copy; 2010–2013 Opower&reg;.
+				</li>
+				<li>
+					Med ensamrätt.
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>	

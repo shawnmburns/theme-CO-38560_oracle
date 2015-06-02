@@ -1,0 +1,150 @@
+<a id="skip-nav-link" class="hide" href="#content">Skip to main content</a>
+<div id="utilityNavContainer">
+
+</div>
+
+<div class="container"
+        data-test-pageName="{{pageName}}"
+        data-test-displayName="{{displayName}}"
+        data-test-username="{{username}}"
+        data-test-clientName="{{clientName}}"
+        data-test-astroUrl="{{astroUrl}}"
+        data-test-themeUrl="{{themeUrl}}">
+    <div id="header" class="clearfix">
+        <div id="header-logo">
+            <h1>
+                {{#loggedIn}}
+                    <a href="{{clientUrl}}/app/dashboard" name="top" title="Puget Sound Energy">
+                {{/loggedIn}}
+                {{^loggedIn}}
+                    <a href="{{clientUrl}}/app/index.html" name="top" title="Puget Sound Energy">
+                {{/loggedIn}}
+                <span class="hide">{{clientName}}</span>
+                </a>
+            </h1>
+        </div>
+
+        <div id="header-meta">
+            {{#loggedIn}}
+                <div class="module-person-userbox">
+                    <ul class="nav-meta small">
+                        <li class="first" data-test-name="{{displayName}}">Welcome, <span>{{displayName}}</span></li>
+                        <li class="last">
+                        <a href="/ei/app/logout">Sign out</a> </li>
+                        <li class="last">
+                        Your myPSE session will not be affected.</li> 
+                    </ul>
+                </div>
+            {{/loggedIn}}
+            {{^loggedIn}}
+                <ul class="nav-meta small">
+                    <li class="last">
+                        <a href="/ei/app/help.html" data-test-help="header">Help</a>
+                    </li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li>
+                        <a href="/ei/app/signin/index.html" class="button signInDropdownToggle" role="button" aria-haspopup="true">Sign In<span class="arrow"></span></a>
+                        <div class="rounded signInDropdown" aria-hidden="true" id="signInDropdownDiv" style="top: 36px; right: 0px; display: none;">
+                            <div class="rounded bg-white">
+                                <div class="ssoSignIn">
+                                    <p class="small space-bottom">
+                                        Sign in with your myPSE account username and password to access your account.
+                                    </p>
+                                    <p>
+                                        <a href="https://pse.com/MyPSE/EnergyCenter/Pages/default.aspx" class="orangebutton rounded" data-test-signinbutton="sso">
+                                        Sign in
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            {{/loggedIn}}
+        </div>
+<div id="nav-main" class="clear">
+    <ul class="rounded-tl rounded-tr" role="navigation">
+        {{#navBar}}
+            <li {{#active}}data-nav-state="active" class="active"{{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a></li>
+        {{/navBar}}
+
+    </ul>
+</div>
+<div id="nav-divider"> </div>
+    {{#hasActiveSubNav}}
+        <div id="nav-secondary" class="clearfix bg-brand">
+        <ul>
+            {{#activeSubNav}}
+            <li {{#active}}data-nav-secondary-state="active" class="active"{{/active}}>
+                <a href="{{url}}" id="{{id}}" class="rounded-tl rounded-tr">{{label}}</a>
+            </li>
+            {{/activeSubNav}}
+        </ul>
+        </div>
+    {{/hasActiveSubNav}}
+    {{^hasActiveSubNav}}
+        {{#navBar}}
+            {{#active}}
+                <div class="banner bg-brand" role="banner">
+                    <h2>
+                        {{heading}}
+                        {{^heading}}
+                            {{label}}
+                        {{/heading}}
+                    </h2>
+                </div>
+            {{/active}}
+        {{/navBar}}
+    {{/hasActiveSubNav}}
+
+    </div>
+</div>
+ <div class="container">
+{{{content}}}
+</div>
+<div class="container">
+    <div id="footer-container">
+        <div id="footer" class="small clearfix" role="contentinfo">
+            <ul class="nav-meta" role="navigation">
+                <li class="first"><a href="{{clientUrl}}/app/help.html">Help</a></li>
+                    <li><a href="{{clientUrl}}/app/help.html">Contact</a></li>
+                <li><a href="{{clientUrl}}/app/terms_of_use.html">Terms of Use</a></li>
+                <li><a href="{{clientUrl}}/app/privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+            <div id="copyright" data-test-copyrightuntil="2012">
+                &copy; 2013 OPOWER&reg;. All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END GLOBAL WRAPPER -->
+<!-- START OF SmartSource Data Collector TAG -->
+<script>
+// WebTrends SmartSource Data Collector Tag v10.4.1
+// Copyright (c) 2014 Webtrends Inc.  All rights reserved.
+// Tag Builder Version: 4.1.3.2
+// Created: 2014.03.27
+
+window.webtrendsAsyncInit=function(){
+    var dcs=new Webtrends.dcs().init({
+        dcsid:"dcs2221pbcy5tzss02s0zwuf7_5l1k",
+        domain:"statse.webtrendslive.com",
+        timezone:-8,
+        javascript : true,
+        downloadtypes:"xls,doc,ppt,pdf,txt,csv,zip,docx,xlsx,pptx,rar,gzip",
+        offsite:true,
+        onsitedoms:"pse.com,pse.opower.com",
+        anchor : true,
+        fpcdom:".pse.com,pse.opower.com",
+        plugins:{
+            hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+        }
+        }).track();
+};
+(function(){
+    var s=document.createElement("script"); s.async=true; s.src="{{themeUrl}}/assets/webtrends.min.js";    
+    var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);
+}());
+</script>
+<!-- END OF SmartSource Data Collector TAG -->

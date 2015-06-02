@@ -1,0 +1,165 @@
+/* Put overrides in here */
+
+/*Adjust padding and random shit in the header to make the fucking thing line up*/
+#header { padding-top: 40px; }
+ul#nav-utility.clearfix { margin-top: 6px; }
+li.toHome { padding-bottom: 6px; }
+
+div.login_info {
+  margin-top: 19px;
+  /*We only need a margin bottom because we removed the text in the header <span> section. This is to push to header down a little bit to
+  make up for that filler space.*/
+  margin-bottom: 20px;
+}
+
+/* Need to override the background-color set by Astro*/
+#content {
+  background-color: white;
+}
+
+/*Our Astro {{content}} has a 20px padding on all sides. Remove the left and top padding to line it up nicely
+  with the TPC header*/
+/*#main-content > div:first-of-type {
+  padding-left: 0px;
+  padding-top: 0px;
+}*/
+
+/*CO-28968 - TPC wanted the Usage Icon to be the 3dudes icon instead of the house icon that's
+  enabled when you turn on similar homes. Re-adjust the position of the background sprite image
+  to line up with the 3dudes icon*/
+li#viewSelector-neighbors > a { background-position: -75px -1900px !important; }
+li#viewSelector-neighbors.selected > a { background-position: -75px -6100px !important; }
+
+/*CO-29069 - We realized that the usage icon is inconsistent. It shows two different images
+  for the selected and unselected versions. TPC wanted the circle with the flat bottom
+  but that's not available to be shown in gray. WEB-2862 was opened to add this functionality
+  to astro. Until then, overriding it to at least make it consistently show the full circlei image
+  when selected*/
+#page-myEnergyUse #viewSelector-usage.selected a { background-position: -75px -6800px; }
+
+/*Ways to Save. The text on the buttons for each tip was too long and was causing the buttons
+  to overflow to the next line. Temporary fix is to lower padding on left/right from 15px down to 5px */
+.module-tips__actions-buttons .button {
+  padding: 4px 5px;
+}
+
+/*Override the myEnergyUse page to hide the fuel selector type text and menu at the top
+  TPC is purely elec so no need for dropdown*/
+#page-myEnergyUse #fuelTypeAndUtilityAccountSelectors {
+  display: none !important;
+}
+/*Override the compareMyBills page to hide the fuel selector type text and menu at the top
+  TPC is purely elec so no need for dropdown*/
+#page-compareMyBills #fuelTypeAndUtilityAccountSelectors {
+  display: none !important;
+}
+
+/*CO-29948 - There's a setting in theme.css that sets all <ol> and <ul> tags to
+  have a list-style of none. This causes a slight problem on the invidual tips
+  display page (e.g. ei/app/tip/tip006_tighten_refrigerator_seal) when the list that
+  is supposed to have ordinal numbering does not have any numbering at all. This override
+  corrects that issue. The selector here is purposely specific to avoid any other issues
+  that this correction might cause.*/
+#page-singleTip div.page-content ol { list-style: decimal }
+
+/* CO-29721, INTL-1616 - Align the smileys on the dashboard */
+:lang(ja) .module-customer__neighbors_comparison-bar_summary .rating .message-holder .message {
+  font-size: 10px;
+  width: 70px;
+}
+
+
+/*CO-29721 - Fix the degrees C issue because apparently this was a big fucking deal*/
+
+/* Add the hard-coded temperature unit to all but the top (which is actually the last li element) weather axis label */
+.page-myEnergyUse-data-type-weather .module-utility_account__energy-graph .elroi .y-ticks.y2 li:not(:last-of-type):after {
+  content: 'C';
+}
+/* Hide the labels on each weather data point (they're the only ones we ever label) */
+.page-myEnergyUse-data-type-weather .module-utility_account__energy-graph .elroi .elroi-point-label {
+  display: none;
+}
+
+/*CO-29921 - TPC wants to override the color when you select on of the data browser buttons*/
+#page-myEnergyUse #viewSelector li.selected {
+  border: 1px solid #ED8D11;
+  background-color: #ED8D11;
+}
+
+/*CO-30076 - We need product changes to hide certain things on the Tips printable page.
+  Till then the solution is to just hide the printer link on each tips page instead.*/
+.module-tips-full ul.export-toolbar li { display: none; }
+
+/*CO-30396 - The same printer link as above also appears when a user commits to a tip and that
+  tip is listed on the myPlan page. Need to hide it here as well*/
+#page-myPlan ul.export-toolbar li { display: none; }
+
+/*CO-30203 We are hiding contact info from the FAQ page. Setting the message properties
+  to blank still leaves the "mobile" icon displaying which looks stupid. Hiding that here.*/
+div.module-utility_company_contact_info-help div.contact { display: none; }
+
+/*CO-30189 - We need to hide heat type menu but not heating mechanism menu. These can't be
+  independently hidden - it's all or neither. As as a workaround we will
+    1. Hide the heat type menu question from the "About My Home" page
+    2. Hide the link on the ways to save page that pops up a modal with about-my-home-style questions
+  For #2 we resorted to hiding the whole link because it was more complex to hide just the
+  heat type question itself.
+*/
+/* Hide heat type menu from About My Home*/
+label[for="heatType"] { display: none; }
+select#heatType { display: none; }
+/* Hide the link on ways to save page. Also hide the dot character before the link*/
+a#myHome { display: none; }
+ul.nav-meta li:last-child:before { display: none; }
+
+/*CO-30895 - hide number of bedrooms from about my home section */
+label[for="bedrooms"] { display: none; }
+select#bedrooms { display: none; }
+
+/*CO-30139 / WEB-2895 - Increase font size for Elroi data browser */
+:lang(ja) .elroi .y-ticks li,
+:lang(ja) .elroi .x-ticks li,
+:lang(ja) .elroi .point-label { font-size: 12px; }
+#page-compareMyBills:lang(ja) .elroi .x-ticks.x1 li { font-size: 12px; }
+
+
+/*CO-30241 - A marketing banner was enabled on the dashboard and by default
+  shows up on the bottom of the dashboard. TPC wanted this shown at the top, so
+  we have to hack it.
+*/
+/*Push the neighbor comparison graph down by inserting padding. Ideally we would use
+  the selector ".neighborCompareBarSummary" here but this causes a problem because
+  that div does not appear for people without neighbor comparison. Selecting the div
+  above it is the next best thing */
+#page-dashboard #main-content .span-19.push-half { padding-top: 125px; }
+/* Make the marketing banner have absolute positioning so it floats to the top */
+#marketing-widgets { position: absolute; }
+
+/* WEB-2942: Non-color-based-cues for links.  Accessibility requirement.  Overrides necessary to play nice w/ Astro. */
+#header a, #footer a { text-decoration: none; }
+#footer a:hover { text-decoration: none; }
+
+
+/* CO-32761
+See these comments for background -
+https://ticket.opower.com/browse/CO-32761?focusedCommentId=787509&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-787509
+https://ticket.opower.com/browse/CO-32761?focusedCommentId=787624&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-787624
+
+We need to hide the bullet point from the description that deals with the neighbors
+description message set for heat type elec users. We already nulled out the message by
+setting
+  ei.module.neighborDescription.heatType.ELEC.all=
+  ei.module.neighborDescription.heatType.ELEC.some=
+
+But this doesn't stop the bullet point from appearing
+Luckily the JSP that generates the HTML of the page applies a very attribute to the
+<li> element that displays this property. Just select it and hide it
+*/
+li[data-test-neighborswithsameheattype] { display: none; }
+
+/* CO-35057 - disable click on promotional banner */
+
+a[href="\#"] {
+    pointer-events: none;
+    cursor: default;
+}      

@@ -1,0 +1,24 @@
+{
+    "navBar" : [
+                {
+                    "pageName":     "whatUsesMost",
+                    "label":        "What Uses Most",
+                    "url":          "/whatUsesMost/"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html"
+                },
+                {
+                    "pageName": "myPlan",
+                    "label":    "My Plan",
+                    "url":      "/myPlan"
+                },
+                {
+                    "pageName": "ideas",
+                    "label":    "Ideas and Advice",
+                    "url":      "/ideas/free"
+                }
+            ]
+        }

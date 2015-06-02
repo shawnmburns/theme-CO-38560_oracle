@@ -1,0 +1,12 @@
+/*
+    SMUD CSS
+*/
+
+/*  Creating this here because it's totally hacky. 
+    Every other client style override is in styles.properties.
+    
+    This removes the top left/right rounded corners on the main content bar
+*/
+
+#header #nav-main .rounded-tl { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0; }
+#header #nav-main .rounded-tr { -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0; }

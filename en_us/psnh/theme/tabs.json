@@ -1,0 +1,108 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "whatUsesMost",
+            "label":    "My Energy Use",
+            "url":      "/whatUsesMost/",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My usage details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "What uses most",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare my bills",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My goal",
+                    "url":      "/s/myGoal.html",
+                    "displayCriteria": {
+                        "type"      : "CUSTOMER_STUDY_GROUP",
+                        "arguments" : {
+                            "studyName":     "Normative vs rewards only at 201402_E",
+                            "studyGroupName": "201402_E_Rewards"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "label":    "Rewards",
+            "clientUrl":      "/rewards",
+            "displayCriteria": {
+                "type"      : "CUSTOMER_STUDY_GROUP",
+                "arguments" : {
+                    "studyName":     "Normative vs rewards only at 201402_E",
+                    "studyGroupName": "201402_E_Rewards"
+                }
+            }
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "help",
+            "heading":  "Help"
+        },
+        {
+            "pageName": "termsOfUse",
+            "heading":  "Terms of Use"
+        },
+        {
+            "pageName": "privacyPolicy",
+            "heading":  "Privacy Policy"
+        }
+    ]
+}

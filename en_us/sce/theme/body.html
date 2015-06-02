@@ -1,0 +1,124 @@
+<div class="sce neighbors en_US ">
+    <a id="skip-nav-link" href="#main-content">Skip to main content</a>
+    <div class="container" role="banner"
+
+            data-test-pageName="{{pageName}}"
+            data-test-displayName="{{displayName}}"
+            data-test-username="{{username}}"
+            data-test-clientName="{{clientName}}"
+            data-test-astroUrl="{{astroUrl}}"
+            data-test-themeUrl="{{themeUrl}}">
+        <div id="header" class="clearfix">
+            <div id="header-logo">
+
+                {{#loggedIn}}
+                    <a href="/ei/app/dashboard" id="top" title="Southern California Edison">
+                {{/loggedIn}}
+                {{^loggedIn}}
+                    <a href="/ei/app/dashboard" id="top" title="Southern California Edison">
+                {{/loggedIn}}
+                <span class="hide">{{clientName}}</span>
+                </a>
+
+            </div>
+
+            <div id="header-meta">
+                {{#loggedIn}}
+                <div class="module-person-userbox">
+                    <ul class="nav-meta small">
+                        <li class="first" data-test-name="{{displayName}}">
+                            Welcome, <span>{{displayName}}</span>
+                        </li>
+                        <li>
+                            <a id="myAccountLink" href="/ei/app/myAccount">My Account</a>
+                        </li>
+                        <li class="last">
+                            <a href="/ei/app/logout">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+                {{/loggedIn}}
+                {{^loggedIn}}
+                    <ul class="nav-meta small">
+                        <li class="last">
+                            <a href="/ei/app/help.html" data-test-help="header">Help</a>
+                        </li>
+                    </ul>
+
+                {{/loggedIn}}
+            </div>
+
+            <div id="nav-main" class="clear">
+                <ul class="rounded-tl rounded-tr" role="navigation">
+                    {{#navBar}}
+                        <li {{#active}}data-nav-state="active" class="active"{{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a></li>
+                    {{/navBar}}
+                </ul>
+            </div>
+            <div id="nav-divider">
+            </div>
+            {{#hasActiveSubNav}}
+            <div id="nav-secondary" class="clearfix bg-brand">
+            <ul>
+                {{#activeSubNav}}
+                <li {{#active}}data-nav-secondary-state="active" class="active"{{/active}}>
+                    <a href="{{url}}" id="{{id}}" class="rounded-tl rounded-tr">{{label}}</a>
+                </li>
+                {{/activeSubNav}}
+            </ul>
+            </div>
+            {{/hasActiveSubNav}}
+              {{^hasActiveSubNav}}
+                {{#navBar}}
+                    {{#active}}
+                        <div class="banner bg-brand" role="banner">
+                            <h2>
+                                {{heading}}
+                                {{^heading}}
+                                    {{label}}
+                                {{/heading}}
+                            </h2>
+                        </div>
+                    {{/active}}
+                {{/navBar}}
+            {{/hasActiveSubNav}}
+        </div>
+    </div>
+    <!--[if lt IE 8]>
+        <div class="unsupported-browser-warning">
+            Your current browser is a bit old and our site works best on newer browsers.
+            <br/>
+            <a href="http://browsehappy.com/" target="_blank">Please update your browser</a>
+            <a id="closeUnsupportedBrowserWarning" class="close-bar" href="#">
+            <span class="close-icon">
+            close
+            </span>
+            </a>
+        </div>
+    <![endif]-->
+    <div class="container" role="main">
+        <div id="main-content">
+
+            {{{content}}}
+        </div>
+    </div>
+    <div class="container">
+        <div id="footer-container">
+            <div id="footer" class="small clearfix" role="contentinfo">
+                 <ul class="nav-meta" role="navigation">
+                <li class="first"><a href="/ei/app/help.html">Help</a></li>
+                    <li><a href="/ei/app/help.html">Contact</a></li>
+                <li><a href="/ei/app/terms_of_use.html">Terms of Use</a></li>
+                <li><a href="/ei/app/privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+                <div id="copyright" data-test-copyrightuntil="2015">
+                    &copy; 2010–2015 Opower&reg;. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript"> var pageName = "{{pageName}}"; if(pageName == "myRates") { document.getElementById("main-content").outerHTML = "<img src='/ei/client/images/audit.png'/>" } </script>
+
+<script type="text/javascript"> var pageName = "{{pageName}}"; if(pageName == "framedContent") { document.getElementById("main-content").outerHTML = "<img src='/ei/client/images/simple_energy.png' width='980' height='633'  />" } </script>

@@ -1,0 +1,30 @@
+{
+    "navBar" : [
+                {
+                    "pageName":     "whatUsesMost",
+                    "label":        "Smart Home E-Audit",
+                    "url":          "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "myPlan",
+                    "label":    "My Plan",
+                    "url":      "/myPlan"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html"
+                },
+                {
+                    "pageName": "ideas",
+                    "label":    "Ideas and Advice",
+                    "url":      "/ideas/free"
+                }
+            ]
+        }

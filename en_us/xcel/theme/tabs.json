@@ -1,0 +1,115 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome", 
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "whatUsesMost",
+            "label":    "What Uses Most",
+            "url":      "/whatUsesMost/",
+            "cssClass":    "custom",
+            "displayCriteria": {
+                "type": "CUSTOMER_TYPE",
+                "arguments": {
+                  "customerType": "RESIDENTIAL"
+                }
+            }
+        },
+        {
+            "pageName": "compareMyBills",
+            "label":    "Compare My Bills",
+            "url":      "/compareMyBills",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "myGoal",
+            "label":    "My Goal",
+            "url":      "/s/myGoal.html",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "framedContent",
+            "label":    "Business Energy Reports",
+            "url":      "/frame/smb/myreports",
+            "displayCriteria": {
+                "type"      : "CUSTOMER_STUDY_GROUP",
+                "arguments" : {
+                    "studyName":     "SMB Pilot",
+                    "studyGroupName": "SMB"
+                }
+            },
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "framedContent",
+                    "label": "My Reports",
+                    "url": "/frame/smb/myreports"
+                 },
+                 {
+                    "pageName": "framedContent",
+                    "label": "My Profile",
+                    "url": "/frame/smb/profile"
+                 },
+                 {
+                    "pageName": "framedContent",
+                    "label": "Settings",
+                    "url": "/frame/smb/reportsettings"
+                 }
+             ]
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "help",
+            "heading":  "Help"
+        },
+        {
+            "pageName": "termsOfUse",
+            "heading":  "Terms of Use"
+        },
+        {
+            "pageName": "privacyPolicy",
+            "heading":  "Privacy Policy"
+        }
+    ]
+}

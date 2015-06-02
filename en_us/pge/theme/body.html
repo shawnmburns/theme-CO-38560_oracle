@@ -1,0 +1,163 @@
+﻿<p class="skipNav"> [ <a href="#main-content">Skip to Main Content</a> ]</p>
+<!-- START GLOBAL WRAPPER -->
+<div class="glb-wrapper">
+    <div class="glb-wrapper-inner">
+        <!-- START GLOBAL HEADER -->
+        <div class="glb-hdr-container">
+            <div class="glb-hdr">
+                <img id="logo" src="{{themeUrl}}/assets/logo-pge.gif" alt="PG&amp;E Logo">
+                <div id="glb-hdr-toolbar">
+                    <div class="salutation">
+                        <span>
+                            {{#loggedIn}}
+                            Logged in as {{displayName}}
+                            {{/loggedIn}}
+                        </span>
+                    </div>
+                    <div class="contact-link">
+                        <span>
+                            <a href="https://www.pge.com:443/myenergyweb/appmanager/pge/customer?_nfpb=true&amp;_windowLabel=headerInstance_1&amp;headerInstance_1_actionOverride=%2Fcom%2Fpge%2Fcsis%2Fmyenergy%2Fpageflows%2Fheaderfooter%2FfireCustomEvent">Contact Us</a>
+                        </span>
+                    </div>
+                    <div class="logout-link">
+                        <span>
+                            <a href="{{astroUrl}}/logout">Logout</a>
+                        </span>
+                    </div>
+                </div>
+                <ul id="glb-hdr-primary-nav">
+                    {{#navBar}}
+                        <li class="primaryNavItem {{cssClass}}">
+                            <a class="{{#active}}on{{/active}}" href="{{url}}"><span>{{label}}</span></a>
+                        </li>
+                    {{/navBar}}
+                </ul>
+                <div id="glb-hdr-secondary-nav">
+                    {{#hasActiveSubNav}}
+                        <ul>
+                            {{#activeSubNav}}
+                            <li class="{{cssClass}}">
+                                <a class="{{#active}}on{{/active}}" href="{{url}}"><span>{{label}}</span></a>
+                            </li>
+                            {{/activeSubNav}}
+                        </ul>
+                    {{/hasActiveSubNav}}
+                </div>
+            </div>
+        </div>
+        <!-- END GLOBAL HEADER -->
+        <div class="glb-bdy-container">
+            <div class="glb-bdy">
+                <div id="main-content" class="" tabindex="-1">
+                    {{{content}}}
+                </div>
+            </div>
+        </div>
+        <div class="glb-ftr-container">
+            <div class="glb-ftr">
+                <ul>
+                    <li>
+                        <a href="http://www.pge.com/en/myhome/index.page" target="_blank">
+                        For My Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/mybusiness/ " target="_blank">
+                        For My Business
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/about/" target="_blank">
+                        About PG&amp;E
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/about/company/privacy/index.shtml" target="_blank">
+                        Privacy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/about/company/disclosure/index.shtml" target="_blank">
+                        Disclosure
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/mybusiness/myaccount/welcome/" target="_blank">
+                        Help
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/about/sitemap/" target="_blank">
+                        Site Map
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.pge.com/about/newsroom/rss.shtml" target="_blank">
+                        RSS
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    "PG&amp;E" refers to Pacific Gas and Electric Company, a subsidiary of PG&amp;E Corporation. &copy; 2012 Pacific Gas and Electric Company. All rights reserved.
+                </p>
+                <p>
+                    Runs on Opower. &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Opower. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+        <!-- END GLOBAL FOOTER -->
+    </div>
+</div>
+<!-- END GLOBAL WRAPPER -->
+<!-- START OF SmartSource Data Collector TAG v10.2.36 -->
+<!-- Copyright (c) 2012 Webtrends Inc.  All rights reserved. -->
+<script>
+window.webtrendsAsyncInit=function(){
+    var dcs=new Webtrends.dcs().init({
+        dcsid:"dcsxbenul10000g0rtywrlp93_1x5d",
+        domain:"statse.webtrendslive.com",
+        timezone:-8,
+        i18n:true,
+        adimpressions:true,
+        adsparam:"WT.ac",
+        offsite:true,
+        download:true,
+        downloadtypes:"xls,doc,pdf,txt,csv,zip,docx,xlsx,rar,gzip",
+        onsitedoms:".opower.com",
+        fpcdom:"",
+        plugins:{
+            //hm:{src:"//s.webtrends.com/js/webtrends.hm.js"}
+        }
+        }).track();
+};
+(function(){
+    var meta,
+        head = document.getElementsByTagName('head')[0];    
+
+    {{#userId}}
+        meta = document.createElement('meta');
+        meta.name = "WT.z_userid";
+        meta.content = "{{userId}}";
+        head.appendChild(meta);
+    {{/userId}}
+
+    {{#accountNumber}}
+        meta = document.createElement('meta');
+        meta.name = "WT.z_accnum";
+        meta.content = "{{accountNumber}}";
+        head.appendChild(meta);
+    {{/accountNumber}}    
+
+    {{#serviceAgreementNumber}}
+        meta = document.createElement('meta');
+        meta.name = "WT.z_san";
+        meta.content = "{{serviceAgreementNumber}}";
+        head.appendChild(meta);
+    {{/serviceAgreementNumber}}    
+    
+    var s=document.createElement("script"); s.async=true; s.src="{{themeUrl}}/assets/webtrends.min.js";    
+    var s2=document.getElementsByTagName("script")[0]; s2.parentNode.insertBefore(s,s2);    
+}());
+</script>
+<noscript><img alt="dcsimg" id="dcsimg" width="1" height="1" src="//statse.webtrendslive.com/dcsxbenul10000g0rtywrlp93_1x5d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=10.2.36&amp;dcssip=www.ici.org"/></noscript>
+<!-- END OF SmartSource Data Collector TAG v10.2.36 -->

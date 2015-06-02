@@ -1,0 +1,22 @@
+@charset "windows-31j";
+
+/* CSS Document */
+.scrollArea { }
+/* �S�� */
+.jspContainer { overflow:hidden; position:relative; }
+
+/* �X�N���[���o�[���������G���A */
+.jspPane { position:absolute; }
+
+/* �c�X�N���[���o�[ */
+.jspVerticalBar { position:absolute; top:0; right:0; width:13px; height:100%; }
+
+/* ���X�N���[���o�[ */
+.jspHorizontalBar { position:absolute; bottom:0; left:0; width:100%; height:10px; }
+
+/* �w�i */
+.jspTrack { background:#dadada; position:relative; }
+
+/* �m�u */
+.jspDrag { background:#3775bb; position:relative; top:0; left:0; cursor:pointer; }
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag { float:left; height:100%; }

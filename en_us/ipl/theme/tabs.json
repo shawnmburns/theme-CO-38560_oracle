@@ -1,0 +1,52 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass":    "round-top-medium first"
+        },
+        {
+            "pageName": "whatUsesMost",
+            "label":    "My Energy Use",
+            "url":      "/whatUsesMost/",
+            "cssClass":    "round-top-medium",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My usage details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "Home Energy Inspector",
+                    "url":      "/whatUsesMost/"
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare my bills",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My goal",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "round-top-medium"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "round-top-medium"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+This script was used to migrate all the assets from the client jars.  
+The files were moved from /src/main/resources/clientconfig/clients/<CLIENT>/ei/assets in the client jar to <LOCALE>/<CLIENT>/theme in this git repository.
+
+Needs to be run in bin directory.
+
+USAGE:
+    Migrate all clients with default locale en_us:
+    ruby migrate.rb
+
+    * NOTE - in the script there is an array @ignoreClients that contain the clients that are not en_us.  Any client in this array won't be copied over.
+
+    Migrate single client to specified locale:
+    ruby migrate.rb -c CLIENT -l LOCALE
+
+    
+OPTIONS:
+    -c client to migrate
+    -l locale of client
+ 
+    -r remove the assets dir from <locale>/<client>.  Can be used with or without client specified.

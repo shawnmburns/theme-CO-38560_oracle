@@ -1,0 +1,552 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta name="robots" content="noarchive">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-31j">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="Thu, 01 Dec 1994 16:00:00 GMT">
+
+<title>会員トップページ グラフ 電気使用量グラフ｜でんき家計簿｜東京電力</title>
+<meta name="description" content="" >
+<meta name="keywords" content="" >
+<link rel="canonical" href="" >
+<link href="/client/toden6374/toden_relative/dk/css/import.css" rel="stylesheet" type="text/css" media="all" >
+<link href="/client/toden6374/toden_relative/dk/css/graph_usage.css" rel="stylesheet" type="text/css" media="all" >
+<link href="/client/toden6374/toden_relative/dk/css/jscrollpane.css" rel="stylesheet" type="text/css" media="all" >
+<link href="/client/toden6374/toden_relative/dk/css/popbox.css" rel="stylesheet" type="text/css" media="all" >
+
+
+<link rel="contents" href="/client/toden6374/toden_relative/dk/" title="ホーム" >
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/jquery-1.7.1.min.js" charset="windows-31j"></script>
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/jquery.jscrollpane.min.js" charset="windows-31j"></script>
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/jquery.mousewheel.js" charset="windows-31j"></script>
+<script type="text/javascript">
+$(function() {
+	$(".scrollArea").jScrollPane();
+});
+</script>
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/jquery.rollover.js" charset="windows-31j"></script>
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/jquery.page-scroller-309.js" charset="windows-31j"></script>
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/graph/page.js" charset="windows-31j"></script>
+<!--[if IE]>
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/graph/excanvas.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/css_browser_selector.js" charset="windows-31j"></script>
+
+<!--<script type="text/javascript" src="/client/toden6374/toden_relative/dk/js/jquery.focusT.js"></script>-->
+
+
+ <style type="text/css">
+ body,td,th {
+	font-family: "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", Osaka;
+}
+ </style>
+</head>
+
+<body>
+
+<div id="layout">
+
+<div id="hbox1">
+<div id="stxt"><h1></h1></div>
+<!-- / id hbox1 --></div>
+
+<div id="header">
+<div id="hbox2" class="clearfix">
+<div id="logo"><p><a href="/client/toden6374/toden_relative/dk/"><img src="/client/toden6374/toden_relative/dk/images/logo.jpg" width="253" height="37" alt="でんき家計簿"></a></p></div>
+<ul id="nav-utility" class="clearfix">
+<li class="toHome"><a href="#"><img src="/client/toden6374/toden_relative/dk/images/btn_home.jpg" width="117" height="18" alt="会員ホームへ"></a></li>
+<li class="qaBtn"><a href="#"><img src="/client/toden6374/toden_relative/dk/images/btn_qa.jpg" width="102" height="18" alt="よくあるご質問"></a></li>
+<li class="logoutBtn iconLine"><a href="#"><img src="/client/toden6374/toden_relative/dk/images/btn_logout.jpg" width="71" height="18" alt="ログアウト"></a></li>
+</ul>
+<div class="login_info clearBoth">
+<span>名前（ID）様　前回ログイン時：0000/00/00 00:00</span>
+</div>
+<!-- / id hbox2 --></div>
+<!-- / id header --></div>
+
+
+<div id="pageBodyBg" class="clearfix">
+<div id="pageBody" class="clearfix ">
+
+<div id="content">
+
+<ul class="navigation clearfix accordion">
+    <li class="navi01"><a href="#"><img class="img_on opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav01.jpg" alt="会員ホームへ" width="92" height="91" ></a></li>
+    <li class="navi02"><img class="opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav02.jpg" alt="使用量と料金をグラフで見る" width="148" height="91" ></li>
+    <li class="navi03"><a href="#"><img class="img_on opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav03.jpg" alt="使用量をみんなと比べる" width="148" height="91" ></a></li>
+    <li class="navi04"><img class="img_on opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav04.jpg" alt="ピッタリな省エネ術を知る" width="148" height="91" >
+        <ul class="subnav">
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav04_list01.jpg" alt="でんき診断" width="190" height="33" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav04_list02.jpg" alt="省エネアドバイス" width="190" height="33" ></a></li>
+        </ul>
+    </li>
+    <li class="navi05"><a href="#"><img class="img_on opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav05.jpg" alt="家電アシスト" width="148" height="91" ></a></li>
+    <li class="navi06"><a href="#"><img class="img_on opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav06.jpg" alt="おトクな料金メニューを探す" width="148" height="91" ></a></li>
+    <li class="navi07"><img class="img_on opacity100" src="/client/toden6374/toden_relative/dk/images/graph/nav07.jpg" alt="各種お手続き" width="148" height="91" >
+        <ul class="subnav">
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list01.jpg" alt="電気のお引っ越し手続き" width="200" height="33" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list02.jpg" alt="ご契約アンペアの変更" width="200" height="38" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list03.jpg" alt="ご契約アンペアの変更" width="200" height="38" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list04.jpg" alt="各種申込用紙の取り寄せ" width="200" height="33" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list05.jpg" alt="カード払いの申込み" width="200" height="38" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list06.jpg" alt="ご契約名義の変更" width="200" height="38" ></a></li>
+            <li><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/nav07_list07.jpg" alt="口座振替日の変更" width="200" height="39" ></a></li>
+        </ul>
+    </li>
+</ul>
+
+<div class="usage_place">
+<form method="post" action="">
+
+<dl class="clearfix">
+    <dt><img src="/client/toden6374/toden_relative/dk/images/graph/t_usage_place.jpg" alt="ご使用場所" width="147" height="46" ></dt>
+    <dd>
+    <select>
+        <option>東京都新宿区西新宿1-1-1/従量電灯B/00604-00000-0-00</option>
+        <option>東京都新宿区西新宿1-1-1/従量電灯B/00604-00000-0-00</option>
+        <option>東京都新宿区西新宿1-1-1/従量電灯B/00604-00000-0-00</option>
+        <option>東京都新宿区西新宿1-1-1/従量電灯B/00604-00000-0-00</option>
+    </select>
+    <input type="button" value="表示" >
+    </dd>
+</dl>
+</form>
+
+</div>
+
+<div class="graph_area">
+
+<div class="graph_nav">
+    <ul>
+    		<li class="border"></li>
+        <li class="nav01"><img class="opacity100" src="/client/toden6374/toden_relative/dk/images/graph/graph_nav01_on.jpg" alt="使用量グラフ" width="202" height="58" ></li>
+        <li class="border"></li>
+        <li class="nav02"><a href="#"><img class="opacity100 img_on" src="/client/toden6374/toden_relative/dk/images/graph/graph_nav02.jpg" alt="料金グラフ" width="202" height="58" ></a></li>
+        <li class="border"></li>
+        <li class="nav03"><a href="#"><img class="opacity100 img_on" src="/client/toden6374/toden_relative/dk/images/graph/graph_nav03.jpg" alt="使用量・料金一覧" width="202" height="58" ></a></li>
+        <li class="border"></li>
+        <li class="nav04"><a href="#"><img class="opacity100 img_on" src="/client/toden6374/toden_relative/dk/images/graph/graph_nav04.jpg" alt="当月詳細" width="202" height="58" ></a></li>
+        <li class="border"></li>
+    </ul>
+</div>
+
+<div class="graph_area_in">
+<div class="graph_wrap">
+    <div class="graph_head">
+        <ul>
+            <li class="w138"><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color01.jpg" alt="今年の昼間ご使用量" width="13" height="13" ></span><span class="title_text">今年の昼間ご使用量</span></li>
+            <li class="w144"><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color02.jpg" alt="今年のピークご使用量" width="13" height="13" ></span><span class="title_text">今年のピークご使用量</span></li>
+            <li class="w142"><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color03.jpg" alt="今年の夜間ご使用量" width="13" height="13" ></span><span class="title_text">今年の夜間ご使用量</span></li>
+            <li><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color04.jpg" alt="同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内）" width="19" height="9" ></span><span class="title_text">同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内）</span></li>
+            <li class="w138"><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color05.jpg" alt="前年の昼間ご使用量" width="13" height="13" ></span><span class="title_text">前年の昼間ご使用量</span></li>
+            <li class="w144"><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color06.jpg" alt="前年のピークご使用量" width="13" height="13" ></span><span class="title_text">前年のピークご使用量</span></li>
+            <li class="w142"><span class="image"><img src="/client/toden6374/toden_relative/dk/images/graph/graph_color07.jpg" alt="前年の夜間ご使用量" width="13" height="13" ></span><span class="title_text">前年の夜間ご使用量</span></li>
+        </ul>
+	</div>
+    <script type="text/javascript">
+	onload = function() {
+	  sample();
+	};
+	function sample() {
+    var canvas = document.getElementById('usage_grp');
+	if ( ! canvas || ! canvas.getContext ) { return false; }
+	//今年の昼間ご使用量　  #e85c5f 232, 92, 92
+	//前年の昼間ご使用量　  #ffc0c1 255, 192, 193
+	//今年のピークご使用量　#ffba00 255, 186, 0
+	//前年ピークご使用量　  #f7e894 247, 232, 148
+	//今年の夜間ご使用量　  #1b61ae 27, 97, 174
+	//前年の夜間ご使用量　  #bbdbff 187, 219, 255
+	//同じ契約容量          #d00000 208, 0, 0
+	  var ctx = canvas.getContext('2d');
+	  //３月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(6, 272, 20, 41);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(6, 211, 20, 61);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(28, 293, 20, 7);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(28, 266, 20, 27);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(33, 136, 7, 7);
+		ctx.fill();
+		
+		//４月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(61, 269, 20, 31);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(61, 218, 20, 51);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(83, 293, 20, 7);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(83, 266, 20, 27);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(89, 161, 7, 7);
+		ctx.fill();
+		
+		//５月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(117, 265, 20, 35);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(117, 209, 20, 56);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(139, 283, 20, 17);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(139, 246, 20, 37);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(145, 171, 7, 7);
+		ctx.fill();
+		
+		//６月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(172, 274, 20, 26);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(172, 228, 20, 46);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(194, 294, 20, 6);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(194, 268, 20, 26);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(199, 192, 7, 7);
+		ctx.fill();
+		
+		//７月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(228, 269, 20, 31);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(247, 232, 148)'; //前年のピークご使用量 黄色
+		ctx.fillRect(228, 249, 20, 20);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(228, 200, 20, 49);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(250, 275, 20, 25);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 186, 0)'; //今年のピークご使用量 オレンジ色
+		ctx.fillRect(250, 260, 20, 15);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(250, 222, 20, 38);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(256, 167, 7, 7);
+		ctx.fill();
+		
+		//８月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(283, 233, 20, 67);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(247, 232, 148)'; //前年のピークご使用量 黄色
+		ctx.fillRect(283, 211, 20, 22);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(283, 116, 20, 95);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(305, 255, 20, 45);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 186, 0)'; //今年のピークご使用量 オレンジ色
+		ctx.fillRect(305, 240, 20, 15);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(305, 190, 20, 50);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(311, 128, 7, 7);
+		ctx.fill();
+		
+		//９月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(339, 225, 20, 75);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(247, 232, 148)'; //前年のピークご使用量 黄色
+		ctx.fillRect(339, 200, 20, 25);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(339, 130, 20, 70);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(361, 272, 20, 28);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 186, 0)'; //今年のピークご使用量 オレンジ色
+		ctx.fillRect(361, 261, 20, 11);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(361, 206, 20, 55);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(366, 139, 7, 7);
+		ctx.fill();
+		
+		//１０月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(395, 273, 20, 27);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(395, 226, 20, 47);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(417, 272, 20, 28);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(417, 214, 20, 58);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(423, 176, 7, 7);
+		ctx.fill();
+		
+		//１１月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(449, 275, 20, 25);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(247, 232, 148)'; //前年のピークご使用量 黄色
+		ctx.fillRect(449, 270, 20, 5);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(449, 230, 20, 40);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(472, 272, 20, 28);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(472, 214, 20, 58);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(477, 167, 7, 7);
+		ctx.fill();
+		
+		//１２月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(505, 273, 20, 27);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(247, 232, 148)'; //前年のピークご使用量 黄色
+		ctx.fillRect(505, 268, 20, 5);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(505, 218, 20, 50);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(528, 272, 20, 28);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(528, 214, 20, 58);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(533, 151, 7, 7);
+		ctx.fill();
+		
+		//１月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(561, 276, 20, 24);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(247, 232, 148)'; //前年のピークご使用量 黄色
+		ctx.fillRect(561, 271, 20, 5);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(561, 234, 20, 37);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(583, 242, 20, 58);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(583, 164, 20, 78);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(588, 93, 7, 7);
+		ctx.fill();
+		
+		//２月
+		ctx.fillStyle = 'rgb(187, 219, 255)'; //前年の夜間ご使用量 水色
+		ctx.fillRect(617, 260, 20, 40);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(255, 192, 193)'; //前年の昼間ご使用量 ピンク色
+		ctx.fillRect(617, 200, 20, 60);
+		ctx.fill();
+		
+		
+		ctx.fillStyle = 'rgb(27, 97, 174)'; //今年の夜間ご使用量 青色
+		ctx.fillRect(639, 244, 20, 56);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(232, 92, 92)'; //今年の昼間ご使用量 赤色
+		ctx.fillRect(639, 158, 20, 86);
+		ctx.fill();
+		
+		ctx.fillStyle = 'rgb(208, 0, 0)'; //同じご契約容量のお客さまの平均ご使用量（東京電力サービス区域内） 赤四角
+		ctx.fillRect(645, 99, 7, 7);
+		ctx.fill();
+		
+		// 線を記述
+		ctx.beginPath();
+		ctx.strokeStyle ='rgb(208, 0, 0)'
+		ctx.lineWidth = 2;
+		ctx.moveTo(37,140);
+		ctx.lineTo(93,165);
+		ctx.lineTo(148,175);
+		ctx.lineTo(202,196);
+		ctx.lineTo(259,170);
+		ctx.lineTo(316,131);
+		ctx.lineTo(368,142);
+		ctx.lineTo(425,179);
+		ctx.lineTo(481,170);
+		ctx.lineTo(535,155);
+		ctx.lineTo(590,97);
+		ctx.lineTo(646,102);
+		ctx.stroke();
+	}
+    </script>
+    <div class="graph_content">
+    <div class="block canvas" style="position: relative; padding: 0px; width: 710px; height: 340px;">
+    <div style="border-bottom: 1px dotted #979797; position: absolute; width: 661px; height: 0px; top: 72px; left: 45px; z-index: 1;"></div>
+    <div style="border-bottom: 1px dotted #979797; position: absolute; width: 661px; height: 0px; top: 132px; left: 45px; z-index: 1;"></div>
+    <div style="border-bottom: 1px dotted #979797; position: absolute; width: 661px; height: 0px; top: 192px; left: 45px; z-index: 1;"></div>
+    <div style="border-bottom: 1px dotted #979797; position: absolute; width: 661px; height: 0px; top: 252px; left: 45px; z-index: 1;"></div>
+    <canvas width="668" height="300" id="usage_grp" style="position: relative; margin: 0px; border-left: 2px solid #d0d0d0; border-bottom: 2px solid #d0d0d0; margin-left: 40px; margin-top: 13px; z-index: 2;">
+    <area style="background-color: #bbdbff;" shape="rect" coords="">
+
+    </canvas>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 61px; top: 324px;">3月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 116px; top: 324px;">4月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 172px; top: 324px;">5月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 227px; top: 324px;">6月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 282px; top: 324px;">7月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 337px; top: 324px;">8月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 391px; top: 324px;">9月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 450px; top: 324px;">10月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 506px; top: 324px;">11月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 559px; top: 324px;">12月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 615px; top: 324px;">1月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 671px; top: 324px;">2月</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 0; top: 0;">(円)</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 9px; top: 248px;">200</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 9px; top: 188px;">400</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 10px; top: 128px;">600</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 10px; top: 68px;">800</div>
+    <div style="font-size: 75%; line-height: 12px; height: 12px; font-family:'ＭＳ ゴシック', 'MS Gothic'; color: #4e4e4e; margin: 0px; padding: 0px; position: absolute; left: 2px; top: 15px;">1,000</div>
+    </div>
+    </div>
+</div>
+        <div class="data_area clearfix">
+            <table class="graph_table">
+                <tr>
+                    <th>店所コード/お客さま番号</th>
+                    <td>009/0000-11111-2-33</td>
+                </tr>
+                <tr>
+                    <th>契約種別</th>
+                    <td>従量電灯B</td>
+                </tr>
+                <tr>
+                    <th>ご使用場所</th>
+                    <td>東京都新宿区西新宿1-1-1</td>
+                </tr>
+                <tr>
+                    <th>表示期間</th>
+                    <td>H24/03月～H26/02月分</td>
+                </tr>
+            </table>
+            <p class="bt_print"><a href="#"><img src="/client/toden6374/toden_relative/dk/images/graph/bt_print.jpg" alt="印刷用ページ" width="126" height="126" ></a></p>
+        </div>
+    </div>
+</div>
+
+<!--id content --></div>
+
+<!--id pageBody --></div>
+<!--id pageBodyBg--></div>
+
+
+<div id="footer">
+<div id="fMenu" class="clearfix">
+
+</div>
+<div id="fMenu2" class="clearfix">
+<ul>
+<li class="fLink"><a href="#">利用規約</a></li>
+<li class="fLink privacy"><a href="#">個人情報保護方針</a></li>
+</ul>
+</div>
+<p id="copyright">All Rights Reserved. Copyright &copy; 2012-2014 TEPCO.</p>
+<!-- / id footer --></div>
+<!-- / id layout --></div>
+
+</body>
+
+</html>

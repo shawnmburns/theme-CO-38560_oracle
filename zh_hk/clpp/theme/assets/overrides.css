@@ -1,0 +1,92 @@
+/* Put overrides in here */
+
+html {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-secondary {
+  padding-top: 5px;
+}
+
+#nav-main {
+  padding-top: 5px;
+}
+
+#nav-main ul li:first-of-type a {
+  border-top-left-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+}
+
+td {
+  font-size: 14px;
+}
+
+.header td, .header a {
+  line-height: 9px;
+}
+
+span.label {
+  color: #FFF;
+}
+
+span.label.outside {
+  color: #222;
+}
+
+.module-customer__energy-export {
+  display: none;
+}
+
+#content > .space-bottom-small {
+  display: none;
+}
+
+/* hide home size */
+#livingArea {
+  display: none;
+}
+
+#livingAreaLabel {
+  display: none;
+}
+
+#livingAreaTitle {
+  display: none;
+}
+
+/* really hide the unwanted fields */
+#myHomeSettingsForm fieldset:nth-of-type(3),
+#myHomeSettingsForm fieldset:nth-of-type(4),
+#myHomeSettingsForm fieldset:nth-of-type(6),
+#myHomeSettingsForm fieldset:nth-of-type(7),
+#myHomeSettingsForm fieldset:nth-of-type(9) {
+  display: none;
+}
+
+/* swap in alternate My Plan image */
+#page-myPlan .myPlan-empty {
+  background-image: url("empty-plan-image_3-01-small.png");
+}
+
+.tip-why {
+  display: none;
+}
+
+#your-insights {
+ display: none;
+}
+
+.languageSelector .slideContent {
+    height: 355px;
+}
+
+
+/* CO-34282_ hide twitter tip sharing link */
+a[data-twitter-sharing-page-url] {
+
+    display:none;
+
+}

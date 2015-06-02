@@ -1,0 +1,7 @@
+/* IPL's "you" neighbor bar is navy. Default label color is black. 
+ * Ideally we would be able to set this via a style property, and ideally it would just apply to the "you" bar
+ * But we will make due with setting the color for all neighbor compare bars
+ */
+.module-customer__neighbors_comparison-bar_summary .barPilar .bar_container .bar .label {
+    color: #ffffff;
+}

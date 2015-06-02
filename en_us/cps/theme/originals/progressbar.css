@@ -1,0 +1,108 @@
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+/*progressbar container*/
+#progressbar {
+	display: table;
+	margin: 1%;
+	padding:0;
+}
+
+/*list item style and sprite defined*/
+#progressbar li {
+	background-image: url("../images/sprite.png");
+  list-style-type: none;
+	color: #173464;
+	font-size: 18px;
+	font-weight:bold;
+	padding-right:50px;
+	height:50px;
+	width: 50px;
+	float: left;
+	position: relative;
+  text-align:center;
+	text-indent: -9999px;
+	overflow: hidden;
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+/*sprite positioning*/
+#progressbar li.step1.complete {background-position: 0px 0px;}
+#progressbar li.step1.active {background-position: -100px 0px;}
+#progressbar li.step1.incomplete {background-position: -200px 0px;}
+
+#progressbar li.step2.complete {background-position: 0px -100px;}
+#progressbar li.step2.active {background-position: -100px -100px;}
+#progressbar li.step2.incomplete {background-position: -200px -100px;}
+
+#progressbar li.step3.complete {background-position: 0px -200px;}
+#progressbar li.step3.active {background-position: -100px -200px;}
+#progressbar li.step3.incomplete {background-position: -200px -200px;}
+
+#progressbar li.step4.complete {background-position: 0px -300px;}
+#progressbar li.step4.active {background-position: -100px -300px;}
+#progressbar li.step4.incomplete {background-position: -200px -300px;}
+
+#progressbar li.step5.complete {background-position: 0px -400px;}
+#progressbar li.step5.active {background-position: -100px -400px;}
+#progressbar li.step5.incomplete {background-position: -200px -400px;}
+
+/*progressbar connectors
+#progressbar li:after {*/
+	#progressbar span {
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #959595;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:last-child {
+	/*padding not needed after last step*/
+	padding-right:0;
+}
+#progressbar li:last-child:after {
+	/*connector not needed after last step*/
+	content: none;
+}
+/*marking connector green after completed steps
+#progressbar li.complete:before,  #progressbar li.complete:after{*/
+	#progressbar li.complete span{
+	background: #27AE60;
+}
+
+/*media queries*/
+
+/*2x sprite for high res screens*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+	#progressbar li {
+		/* Reference the @2x Sprite */
+		background-image: url("../images/sprite2x.png");
+		/* Translate the @2x sprite's dimensions back to 1x */
+		background-size: 300px 500px;
+	}
+}
+
+
+/*switch to text only for mobile*/
+@media (max-width: 48.0625em){
+
+/*list item style adjustments and sprite removed*/
+#progressbar li {
+	background-image: none;
+	padding-right:0;
+	height:auto;
+	width: auto;
+	text-indent: 0;
+}
+
+/*hide inactive states and connector*/
+	#progressbar li.complete,
+	#progressbar li.incomplete,
+	#progressbar li:after
+	{display:none;}
+}

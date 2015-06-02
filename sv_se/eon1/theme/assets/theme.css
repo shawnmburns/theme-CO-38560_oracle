@@ -1,0 +1,327 @@
+/** 
+ * 
+ * imported from: 
+ * http://eontest.adc.capgemini.se/styles/eon-min.css
+ * 
+ **/
+* {margin: 0; padding: 0;}
+
+body {font-family: arial,sans-serif; font-size: 12px; line-height: 16px; color: #5d5d5d; background: #fff;}
+
+.mainContainer {position: relative; width: 960px; background: #fff; margin: 0 auto;}
+
+hr {display: none;}
+
+h1,h2,h3,h4 {font-family: arial,sans-serif;}
+
+h1 {font-size: 32px; line-height: 40px; font-weight: normal; color: #f21c0a; margin-top: .6em; margin-bottom: .35em; letter-spacing: -1px;}
+
+a img {border: 0;}
+
+h1,h2,h3,h4,h5,h6,.mainNavigation a,.startpage .bigBannerContent p.subHeader,.landingpage .bigBannerContent p.subHeader {font-family: Polo,Arial,"Helvetica Neue",sans-serif;}
+
+h1:first-child {margin-top: 0;}
+
+h4 {font-size: 13px; line-height: 16px; font-weight: normal; margin-top: 1.0em; margin-bottom: 0;}
+
+input[type="text"],input[type="password"],input.disabled,textarea,select {background: #fff url(inputBg.gif) 0 0 repeat-x; }
+
+select option {padding-right: 1em;}
+
+p {line-height: 1.54; margin-bottom: .5em;}
+
+li {line-height: 1.55;}
+
+p.link,p.link-down {padding-left: 14px; margin-bottom: 1em; line-height: 1.2 !important;}
+
+p+p.link,p+p.link-down,p+p.download,p+p.movie,p+p.email,p+p.rss,p+p.sound,p+p.foto {margin-top: -10px;}
+
+p.link>a:first-child {font-size: 12px; background: url(icons.gif) 0 -1798px no-repeat; margin-left: -13px; padding-left: 11px; color: #000; text-decoration: none; position: relative; display: inline-block;}
+
+.link a:visited {color: #B77A7A;}
+
+p.download,p.movie,p.email,p.rss,p.foto,p.sound,p.link {margin: 1em 0 1.5em 0;}
+
+p[class]+p.download,p[class]+p.movie,p[class]+p.email,p[class]+p.rss,p[class]+p.foto,p[class]+p.sound,p[class]+p.link {margin-top: -1em;}
+
+h2+p.download,h3+p.download,h4+p.download,h2+p.movie,h3+p.movie,h4+p.movie,h2+p.email,h3+p.email,h4+p.email,h2+p.link,h3+p.link,h4+p.link {margin-top: 0;}
+
+a {color: #323232;}
+
+input.submit {padding: 3px 5px; margin-top: 4px; width: auto !important; border: solid 1px #d30d01; background: #f21c0a; *padding: 3px 0; color: #fff; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-size: 12px; height: auto; cursor: pointer;}
+
+.logo {position: absolute; display: block; top: 16px; left: 50px; z-index: 100; overflow: hidden;}
+
+.forgotEmail {position: relative; float: left; padding-top: 8px;}
+
+.forgotEmail a {padding-left: 9px; text-decoration: none; background: url(icons.gif) 0 -1798px no-repeat; font-size: 10px;}
+
+.help {position: relative; padding-top: 8px;}
+
+.help a {background: url(icons.gif) 0 -1798px no-repeat; padding-left: 9px; text-decoration: none; font-size: 10px;}
+
+.createAccount {position: relative; padding-top: 15px;}
+
+.createAccount a {background: url(icons.gif) 0 -1798px no-repeat; padding-left: 9px; text-decoration: none; font-size: 10px;}
+
+.formArea+.createAccount,.formArea+.forgotEmail,.formArea+.help {margin-top: 7px !important;}
+
+.pageTools {position: absolute; top: 10px; right: 0; z-index: 100;}
+
+.pageToolsLinks,.pageToolsLinks li {margin-right: .9em; font-size: 12px;}
+
+.pageToolsLinks li {float: left;}
+
+.pageToolsLinks {margin-top: 2px; float: right; margin-right: 185px;}
+
+.pageToolsLinks li a {color: #323232; text-decoration: none; padding-left: 9px; background: url(icons.gif) 0 -1797px no-repeat;}
+
+.pageToolsLinks li a:hover {color: #f21c0a !important;}
+/*
+input {position: absolute; top: 0; right: 27px; vertical-align: top;}
+
+input.searchButton {position: absolute; top: 0; right: 0;}*/
+
+.minaSidorLogin {margin-right: 20px; float: right; top: 0; vertical-align: top; padding: 0 15px 0 15px; position: relative; z-index: 100; font-size: 12px; text-align: right; border: solid 1px #fff;}
+
+.minaSidorLogin p.login a {position: relative; top: 2px; font-size: 12px; text-decoration: none; color: #000; background: url(icons.gif) 100% -2395px no-repeat; padding-right: 14px;}
+
+.minaSidorLogin p a:hover {color: #f21c0a !important;}
+/*
+.pageTools .minaSidorLogin p.login a:hover {color: #000 !important;}
+
+.minaSidorLoginPopup {width: 220px; background: #fff; text-align: left; display: none;}*/
+
+.mainNavigation {z-index: 0; position: relative;}
+/*
+.pageTools .minaSidorLoginPopup a {width: 220px;}
+
+.pageTools .minaSidorLoginPopup .fb-login-button {text-align: center; padding-top: 5px;}
+
+.pageTools .minaSidorLoginPopup .fb_button {width: auto;}
+
+.pageTools .minaSidorLoginPopup label {color: #5D5D5D;}
+
+.pageTools .minaSidorLoginPopup input[type="text"],.pageTools .minaSidorLoginPopup input[type="password"] {width: 95% !important;}
+
+.pageTools .minaSidorLoginPopup select {width: 98% !important;}
+
+.pageTools .minaSidorLoginPopup .submit {float: right;}
+*/
+.minaSidorLogin .help, .minaSidorLogin .forgotEmail, .minaSidorLogin .createAccount,.boxContent .help,.boxContent .forgotEmail,.boxContent .createAccount {position: static; float: none; padding-top: 0; margin: 0;}
+
+.minaSidorLoginInactivated {width: 160px !important;}
+
+/* a:hover {color: #fff !important;} */
+
+/*input {border: solid 1px #b9b9b9; font-size: 12px; padding: 2px 5px !important; line-height: 16px; vertical-align: middle; margin-left: .3em; background: 0; width: 132px; height: 19px;}*/
+
+input.watermark {color: #888;}
+
+.searchButton {border: 0; background: url(searchButton.png) 0 0 no-repeat; text-indent: -3000px; width: 27px; height: 25px; margin-left: 0; padding: 2px 3px !important;}
+/*
+.alertTeaser {float: right; margin-top: 76px; margin-bottom: 10px; margin-right: 11px; position: relative; z-index: 100;}
+
+.alertTeaserContent {position: relative; top: -5px; width: 162px; border-radius: 6px; border: solid 2px #231f20; background: #ffdc00 url(alertIcon.png) 7px 25px no-repeat;}
+
+.alertTeaserContent h4 {background: #231f20; font-size: 14px; color: #fff; margin: 0 0 10px 0; padding: 2px 2px 4px 2px; text-align: center;}
+
+.alertTeaserContent p {width: 126px; font-size: 12px; margin: 4px 10px 8px 40px !important; padding: 0; background: 0;}
+
+.alertTeaserContent p a {margin: 0 !important; padding: 0 !important; background: none !important;} */
+
+#header {height: 105px; position: relative; margin-bottom: 46px; z-index: 100;}
+
+.mainNavigation {position: absolute; bottom: 34px; left: 260px;}
+
+.mainNavigation li {float: left; border-left: solid 1px #b9b9b9; margin-left: 20px; padding-left: 20px; padding-top: 5px; height: 20px;}
+
+.mainNavigation li:first-child,.mainNavigation li li:first-child {border-left: none; margin-left: 0;}
+
+/*.mainNavigation li li:first-child a {-webkit-border-top-left-radius: 7px; -webkit-border-bottom-left-radius: 7px; -moz-border-radius-topleft: 7px; -moz-border-radius-bottomleft: 7px; border-top-left-radius: 7px; border-bottom-left-radius: 7px;}*/
+
+.mainNavigation li a {float: left; color: #5d5d5d; text-decoration: none; font-size: 16px; line-height: 20px; padding-bottom: 5px;}
+
+.mainNavigation li a strong,.mainNavigation li a:hover,.mainNavigation li a.hover,.noneSelected li a {color: #f21c0a; font-weight: normal;}
+
+.mainNavigation ul ul {position: absolute; top: 45px; left: -260px; background-color: #f21c0a; overflow: hidden; border: solid 1px #d30d01; height: 34px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; width: 958px;}
+
+.mainNavigation ul ul li {border: 0; margin: 0; padding: 0;}
+
+.mainNavigation ul ul li.current a,.mainNavigation ul ul li a:hover {background: #fff; position: relative; color: #d30d01;}
+
+.mainNavigation ul ul li a {color: #fff; font-size: 16px; padding: 7px 20px; border-right: solid 1px #d30d01;}
+
+.mainNavigation ul ul li a strong,.mainNavigation ul ul li a:hover,.mainNavigation ul ul li a.hover {color: #f21c0a;}
+
+.mainNavigation ul li ul {white-space: nowrap;}
+
+.content {width: 725px; float: left; font-size: 13px; margin-bottom: 30px;}
+
+.footer {position: relative; clear: both; min-height: 1%; font-size: 11px; color: #a5a5a5; margin-top: 3em;}
+
+.footerLinks {color: #fff;}
+
+.footer a {color: #a5a5a5; text-decoration: none;}
+
+.footer a:hover {text-decoration: underline;}
+
+.footerLinks {overflow: hidden; margin-bottom: 10px; padding: 15px 3px 20px 10px; background: #f5f5f5;}
+
+.footerLinks dl {float: left; width: 163px; margin-left: 33px;}
+
+.footerLinks dl:first-child {margin-left: 0;}
+
+.footerLinks dt {font-size: 11px; color: #5d5d5d; margin-bottom: .7em;}
+
+.footerLinks dd {color: #969696; margin: .5em 0;}
+
+.footer .legalFooter {clear: both; color: #fff; text-align: center; padding: 10px 0;}
+
+.footer .legalFooter a,.footer .legalFooter span {color: #969696; margin: 0 15px;}
+
+.footer .footerFunctions {overflow: hidden; margin: 1em 10px;}
+
+.footer .footerFunctions ul {float: right;}
+
+.footer .footerFunctions ul:first-child {float: left;}
+
+.footer .footerFunctions ul:first-child li {float: left; margin-right: 2.5em;}
+
+.footer .footerFunctions ul a {color: #5d5d5d;}
+
+.startpage .content {width: 100%; float: none;}
+
+.formArea {background: #f5f5f5; padding: 9px; overflow: hidden;}
+
+.formArea label {color: #5d5d5d; display: block;}
+
+.formArea input[type="text"],.formArea input[type="password"] {width: 133px; margin: 7px 0; background: #fff;}
+
+.formArea select {width: 139px; margin: 7px 0; background: #fff;}
+
+.formButton {margin-top: 5px; text-align: right;}
+
+.formButton input {margin-bottom: 5px;}
+
+.divider-with-text {border-top: 1px solid #b0b2b7; margin-top: 16px; height: 16px; text-align: center;}
+
+.divider-with-text span {display: inline-block; padding: 0 6px; background: #fff; position: relative; top: -9px;}
+
+img {border: 0;}
+
+/*.pageTools .minaSidorLoginPopup input[type="password"] {width: 95% !important;}
+
+input[type="text"],input[type="password"],textarea {background: #fff url(inputBg.gif) 0 0 repeat-x; border: solid 1px #c3c3c3; border-top: solid 1px #7c7c7c; padding: 2px;}
+
+.formArea input[type="password"] {width: 133px; margin: 7px 0; background: #fff;}
+
+.fb_button_text {font-size: 10px!Important;}*/
+
+#navlist .footer-icon {background-repeat: no-repeat; padding-left: 18px;}
+
+#navlist .footer-icon.News{background-image:url(sprite-footer.png);background-position:0 -448px;}
+
+#navlist .footer-icon.News:hover{background-position:0 -476px;}
+
+#navlist .footer-icon.Facebook {background-image: url(sprite-footer.png); background-position: 0 0;}
+
+#navlist .footer-icon.Facebook:hover {background-position: 0 -28px;}
+
+#navlist .footer-icon.Mobile {background-image: url(sprite-footer.png); background-position: 0 -56px;}
+
+#navlist .footer-icon.Mobile:hover {background-position: 0 -84px;}
+
+#navlist .footer-icon.Twitter {background-image: url(sprite-footer.png); background-position: 0 -112px;}
+
+#navlist .footer-icon.Twitter:hover {background-position: 0 -140px;}
+
+#navlist .footer-icon.Youtube {background-image: url(sprite-footer.png); background-position: 0 -168px; padding-left: 41px;}
+
+#navlist .footer-icon.Youtube:hover {background-position: 0 -196px;}
+
+#navlist .footer-icon.Kontakta {background-image: url(sprite-footer.png); background-position: 0 -252px;}
+
+#navlist .footer-icon.Kontakta:hover {background-position: 0 -224px;}
+
+#navlist .Print {background-repeat: no-repeat; background-image: url(sprite-footer.png); background-position: 0 -308px; padding-left: 20px;}
+
+#navlist .Print:hover {background-position: 0 -280px;}
+
+#navlist .footer-icon.RSS {background-image: url(sprite-footer.png); background-position: 0 -364px;}
+
+#navlist .footer-icon.RSS:hover {background-position: 0 -336px;}
+
+#navlist .footer-icon.Sitemap {background-image: url(sprite-footer.png); background-position: 0 -420px;}
+
+#navlist .footer-icon.Sitemap:hover {background-position: 0 -392px;}
+
+.progressContainer {position: relative;}
+
+.progress {position: relative; top: 15px; width: 20px; height: 20px; float: right;}
+
+.submit.login {float: right;}
+
+.mainNavigation ul ul li a {height: 100% !important;}
+/** 
+ * 
+ * imported from: 
+ * http://eontest.adc.capgemini.se/styles/eon-startpage-responsive.css
+ * 
+ **/
+.fb_button_text {font-size: 9px !important;}
+/** 
+ * 
+ * imported from: 
+ * http://eontest.adc.capgemini.se/styles/eon-responsive-header.css
+ * 
+ **/
+.mainNavigation ul ul li a {overflow: hidden; text-overflow: ellipsis; -ms-text-overflow: ellipsis;}
+
+.touchSearchContainer input, .pageTools > input.searchButton, .pageTools > input.quicksearchinput {-webkit-appearance: none; border-radius: 0;}
+
+.createAccount {padding-top: 0px !important;}
+
+.forgotEmail {padding-top: 0px !important;}
+
+.help {padding-top: 0px !important; clear: both !important;}
+
+.minaSidorLoginPopup .progressContainer .fb-login-button {text-align: center; padding-left: 3.5%; width: 96.5% !important;}
+
+.legalFooter span:first-child a {margin: 0px !important;}
+/** 
+ * 
+ * imported from: 
+ * http://translate.googleapis.com/translate_static/css/translateelement.css
+ * 
+ **/
+#goog-gt-tt html,#goog-gt-tt body,#goog-gt-tt div,#goog-gt-tt span,#goog-gt-tt iframe,#goog-gt-tt h1,#goog-gt-tt h2,#goog-gt-tt h3,#goog-gt-tt h4,#goog-gt-tt h5,#goog-gt-tt h6,#goog-gt-tt p,#goog-gt-tt a,#goog-gt-tt img,#goog-gt-tt ol,#goog-gt-tt ul,#goog-gt-tt li,#goog-gt-tt table,#goog-gt-tt form,#goog-gt-tt tbody,#goog-gt-tt tr,#goog-gt-tt td {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; text-align: left; line-height: normal;}
+
+div#goog-gt-tt {padding: 10px 14px;}
+
+#goog-gt-tt {color: #333; background-color: #ffffff; border: 1px solid #eee; box-shadow: 0 4px 16px rgba(0,0,0,.2); -moz-box-shadow: 0 4px 16px rgba(0,0,0,.2); -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.2); display: none; font-family: arial; font-size: 10pt; width: 420px; padding: 12px; position: absolute; z-index: 10000;}
+
+#goog-gt-tt .original-text,.gt-hl-layer {clear: both; font-size: 10pt; position: relative; text-align: justify; width: 100%;}
+
+#goog-gt-tt .title {color: #999; font-family: arial,sans-serif; margin: 4px 0; text-align: left;}
+
+#goog-gt-tt .logo {float: left; margin: 0px;}
+
+#goog-gt-tt .activity-links {display: inline-block;}
+
+#goog-gt-tt .started-activity-container {display: none; width: 100%;}
+
+#goog-gt-tt .activity-root {margin-top: 20px;}
+
+#goog-gt-tt .bottom {min-height: 15px; position: relative; height: 1%;}
+
+#goog-gt-tt .status-message {background: #29910d; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; box-shadow: inset 0px 2px 2px #1e6609; -moz-box-shadow: inset 0px 2px 2px #1e6609; -webkit-box-shadow: inset 0px 2px 2px #1e6609; color: white; font-size: 9pt; font-weight: bolder; margin-top: 12px; padding: 6px; text-shadow: 1px 1px 1px #1e6609;}
+
+#goog-gt-tt .activity-link {color: #1155cc; cursor: pointer; font-family: arial; font-size: 11px; margin-right: 15px; text-decoration: none;}
+
+#goog-gt-tt .gray {color: #999; font-family: arial,sans-serif;}
+
+#goog-gt-tt span:focus {outline: none;}
+
+.pageTools .minaSidorLogin p.logout{display:inline-block;*display:inline;*zoom:1;position:relative;top:2px;font-size:12px;text-decoration:none;color:#000}
+.pageTools .minaSidorLogin p.loggedIn a,.pageTools .minaSidorLogin p.logout a{text-decoration:none;color:#000;background:url(icons.gif) 0 -1798px no-repeat;padding-left:9px;margin-left:20px}

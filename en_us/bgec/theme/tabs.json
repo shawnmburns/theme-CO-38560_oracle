@@ -1,0 +1,116 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "My Energy Use",
+            "url":      "/dashboard",
+            "hasSubNav": true,
+            "displayCriteria": {
+                "type": "CUSTOMER_TYPE",
+                "arguments": {
+                  "customerType": "RESIDENTIAL"
+                }
+            },
+            "subNav": [
+               {
+                    "pageName": "dashboard",
+                    "label":    "Overview",
+                    "url":      "/dashboard",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My Usage Details",
+                    "url":      "/myEnergyUse",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "What Uses Most",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare My Bills",
+                    "url":      "/compareMyBills",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "RESIDENTIAL"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "hasSubNav": true,
+            "displayCriteria": {
+                "type": "CUSTOMER_TYPE",
+                "arguments": {
+                  "customerType": "SMB"
+                }
+            },
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My Usage Details",
+                    "url":      "/myEnergyUse",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                          "customerType": "SMB"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Savings Tips",
+            "url":      "/ideas/free",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "ideas",
+                    "label":    "Ideas & Advice",
+                    "url":      "/ideas/free"
+                },
+                {
+                    "pageName": "myPlan",
+                    "label":    "My Plan",
+                    "url":      "/myPlan"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "url":      "/dashboard",
+            "heading":  "Welcome",
+            "cssClass": "rounded-tl"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My usage details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "Which uses the most?",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                            "customerType": "RESIDENTIAL"
+                        }
+                     }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare my bills",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "help",
+            "heading":  "Help"
+        },
+        {
+            "pageName": "termsOfUse",
+            "heading":  "Terms of Use"
+        },
+        {
+            "pageName": "privacyPolicy",
+            "heading":  "Privacy Policy"
+        }
+    ]
+}

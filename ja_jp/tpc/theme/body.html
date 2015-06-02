@@ -1,0 +1,234 @@
+<style type="text/css">
+    body,td,th {font-family: "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", Osaka;}
+
+    /*Below CSS statements refer to {{themeUrl}} so they are in this document instead
+    of override.css or theme.css*/
+
+    /*Set the image and position of the iconline on the top-right of the header*/
+    #nav-utility .iconLine {
+        background-image: url("{{themeUrl}}/assets/header_line.jpg") !important;
+        background-position: -2px 4px !important;
+    }
+
+    /*Set the footer line image*/
+    #footer .privacy {
+        background-image: url("{{themeUrl}}/assets//footer_line.jpg");
+        background-repeat: no-repeat;
+        background-position: -1px;
+        padding-left: 10px;
+        margin-left: 10px;
+    }
+
+    /*CO-29652 - Show a custom image for the sample set of tips shown on MyPlan
+      Including this section in body.html instead of overrides to take advantage of
+      mustache tags to reference local assets path*/
+    #page-myPlan .myPlan-empty {
+        background-image: url("{{themeUrl}}/assets/CO_29652_MyPlan_Sample_Tips_Alternate_Image.png");
+    }
+</style>
+
+
+<!-- JavaScript sources
+Make sure graph_nav.js is sourced before rollover so it sets navi03 correctly if needed -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" charset="windows-31j"></script>
+<script src="{{themeUrl}}/assets/graph_nav.js"></script>
+<script src="{{themeUrl}}/assets/faq_links.js"></script>
+<script src="{{themeUrl}}/assets/jquery.rollover.js" charset="windows-31j"></script>
+<script src="{{themeUrl}}/assets/page.js" charset="windows-31j"></script>
+
+
+<div id="layout">
+    <div id="hbox1">
+        <div id="stxt">
+            <h1>
+            </h1>
+        </div>
+    </div>
+    <div id="header">
+        <div id="hbox2" class="clearfix">
+            <div id="logo">
+                <p>
+                    <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/"><img src="{{themeUrl}}/assets/logo.jpg" width="253" height="37" alt=""></a>
+                </p>
+            </div>
+            <ul id="nav-utility" class="clearfix">
+                <li class="toHome">
+                    <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/"><img src="{{themeUrl}}/assets/btn_home.jpg" width="117" height="18" alt=""></a>
+                </li>
+                <li class="qaBtn">
+                    <a href="https://www.kakeibo.tepco.co.jp/inquiryFaq.html" target="_blank"><img src="{{themeUrl}}/assets/btn_qa.jpg" width="102" height="18" alt=""></a>
+                </li>
+                <li class="logoutBtn iconLine">
+                    <a href="https://auth.kakeibo.tepco.co.jp/auth/IDPSloInit/metaAlias/opower/idp?binding=urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST&RelayState=https://www.kakeibo.tepco.co.jp/dk/doIdPLogout"><img src="{{themeUrl}}/assets/btn_logout.jpg" width="71" height="18" alt=""></a>
+                </li>
+            </ul>
+            <div class="login_info clearBoth">
+                <!-- TEPCO has a little piece of text on the banner that shows the user's Denkei Kakeibo ID and the last login time.
+                lol, like we have access to that info. Commenting it out instead of deleting for future reference, in case we integrate
+                this info at any point. -->
+                <span>
+                    <!-- 名前（ID）様　前回ログイン時：0000/00/00 00:00 -->
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="pageBodyBg" class="clearfix">
+        <div id="pageBody" class="clearfix ">
+            <!-- The id used to be just "content". Changed to "content-tpc" to
+            avoid conflict with Astro's #content tag -->
+            <div id="content-tpc">
+                <ul class="navigation clearfix accordion">
+                    <li class="navi01">
+                        <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/">
+                            <img class="img_on opacity100" src="{{themeUrl}}/assets/nav01.jpg" alt="" width="92" height="91">
+                        </a>
+                    </li>
+                    <li class="navi02">
+                        <a href="https://www.kakeibo.tepco.co.jp/dk/syo/electricUsageAmount/">
+                            <img class="img_on opacity100" src="{{themeUrl}}/assets/nav02.jpg" alt="" width="148" height="91">
+                        </a>
+                    </li>
+                    <li class="navi03">
+                        <a href="/ei/app/dashboard">
+                            <img class="img_on opacity100" id="navi03_image" src="{{themeUrl}}/assets/nav03.jpg" alt="" width="148" height="91">
+                        </a>
+                    </li>
+                    <li class="navi04">
+                        <a>
+                            <img class="img_on opacity100" id="navi04_image" src="{{themeUrl}}/assets/nav04.jpg" alt="" width="148" height="91">
+                        </a>
+                        <ul class="subnav">
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goSimulation/"  target="_blank"><img src="{{themeUrl}}/assets/nav04_list01.jpg" alt="" width="190" height="33"></a>
+                            </li>
+                            <li>
+                                <a href="/ei/app/ideas/free">
+                                    <img src="{{themeUrl}}/assets/nav04_list02.jpg" alt="" width="190" height="33">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navi05">
+                        <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goHomeElectricAssist/" target="_blank">
+                            <img class="img_on opacity100" src="{{themeUrl}}/assets/nav05.jpg" alt="" width="148" height="91">
+                        </a>
+                    </li>
+                    <li class="navi06">
+                        <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goSimulation/" target="_blank"><img class="img_on opacity100" src="{{themeUrl}}/assets/nav06.jpg" alt="" width="148" height="91"></a>
+                    </li>
+                    <li class="navi07">
+                        <a>
+                            <img class="img_on opacity100" src="{{themeUrl}}/assets/nav07.jpg" alt="" width="148" height="91">
+                        </a>
+                        <ul class="subnav">
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goPhysicalMove/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list01.jpg" alt="" width="200" height="33"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goWebApply/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list02.jpg" alt="" width="200" height="38"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goWebApply/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list03.jpg" alt="" width="200" height="38"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goNetreception/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list04.jpg" alt="" width="200" height="33"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goCardWebApply/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list05.jpg" alt="" width="200" height="38"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goWebApply/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list06.jpg" alt="" width="200" height="38"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.kakeibo.tepco.co.jp/dk/com/menu/goWebApply/"  target="_blank"><img src="{{themeUrl}}/assets/nav07_list07.jpg" alt="" width="200" height="39"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Conditional Navigation for Orange Tab -->
+            <!-- Only appears when user is on one of these four pages under the orange tab.
+                 See graph_nav.css for more details-->
+            <div class="graph_nav" id='conditional_orange_tab'>
+                <ul>
+                    <li class="graph_buffer"><div></div></li>
+                    <li class="border"></li>
+                    <li class="link_to_dashboard">
+                        <a href="/ei/app/dashboard">
+                            <!-- <img id="link_to_dashboard" class="opacity100" src="http://www.confirm-center.com/client/toden6374/toden_relative/dk/images/graph/graph_nav01.jpg" alt="使用量グラフ" width="202" height="58"> -->
+                            <div id="orange_1" class="graph_tab"><p>使用量を<br/>みんなと比べる<br/>TOP</p></div>
+                        </a>
+                    </li>
+                    <li class="border"></li>
+                    <li class="link_to_myEnergyUse">
+                        <a href="/ei/app/myEnergyUse">
+                            <!-- <img id="link_to_myEnergyUse" class="opacity100" src="http://www.confirm-center.com/client/toden6374/toden_relative/dk/images/graph/graph_nav02.jpg" alt="料金グラフ" width="202" height="58"> -->
+                            <div id="orange_2" class="graph_tab"><p>ご使用量の詳細</p></div>
+                        </a>
+                    </li>
+                    <li class="border"></li>
+                    <li class="link_to_compareMyBills">
+                        <a href="/ei/app/compareMyBills">
+                            <!-- <img id="link_to_compareMyBills" class="opacity100" src="http://www.confirm-center.com/client/toden6374/toden_relative/dk/images/graph/graph_nav03.jpg" alt="使用量・料金一覧" width="202" height="58"> -->
+                            <div id="orange_3" class="graph_tab"><p>請求金額の比較</p></div>
+                        </a>
+                    </li>
+                    <li class="border"></li>
+                    <li class="link_to_myGoal">
+                        <a href="/ei/app/s/myGoal.html">
+                            <!-- <img id="link_to_myGoal" class="opacity100" src="http://www.confirm-center.com/client/toden6374/toden_relative/dk/images/graph/graph_nav04.jpg" alt="当月詳細" width="202" height="58"> -->
+                            <div id="orange_4" class="graph_tab"><p>マイゴール</p></div>
+                        </a>
+                    </li>
+                    <li class="border"></li>
+                    <li class="graph_buffer"><div></div></li>
+                </ul>
+            </div>
+
+            <!-- Conditional Navigation for Green Tab -->
+            <!-- Only appears when user is on one of these two pages under the green tab.
+                 See graph_nav.css for more details-->
+            <div class="graph_nav" id='conditional_green_tab'>
+                <ul>
+                    <li class="graph_buffer"><div></div></li>
+                    <li class="border"></li>
+                    <li class="link_to_waysToSave">
+                        <a href="/ei/app/ideas/free">
+                            <!-- <img id="link_to_waysToSave" class="opacity100" src="http://www.confirm-center.com/client/toden6374/toden_relative/dk/images/graph/graph_nav01.jpg" alt="使用量グラフ" width="202" height="58"> -->
+                            <div id="green_1" class="graph_tab"><p>省エネアドバイス</p></div>
+                        </a>
+                    </li>
+                    <li class="border"></li>
+                    <li class="link_to_myPlan">
+                        <a href="/ei/app/myPlan">
+                            <!-- <img id="link_to_myPlan" class="opacity100" src="http://www.confirm-center.com/client/toden6374/toden_relative/dk/images/graph/graph_nav02.jpg" alt="料金グラフ" width="202" height="58"> -->
+                            <div id="green_2" class="graph_tab"><p>マイプラン</p></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="iTakeUpSpace" style="height:42px;background-color:white;"></div>
+
+            {{{content}}}
+        </div>
+    </div>
+    <div id="footer">
+        <div id="fMenu" class="clearfix">
+        </div>
+        <div id="fMenu2" class="clearfix">
+            <ul>
+                <li class="fLink">
+                    <a href="https://www.kakeibo.tepco.co.jp/memberConsent.html" target="_blank">利用規約</a>
+                </li>
+                <li class="fLink privacy">
+                    <a href="http://www.tepco.co.jp/privacy/mokuteki-j.html" target="_blank">個人情報保護方針</a>
+                </li>
+            </ul>
+        </div>
+        <p id="copyright">
+            All Rights Reserved. Copyright &copy; 2012-2015 TEPCO.
+        </p>
+    </div>
+</div>

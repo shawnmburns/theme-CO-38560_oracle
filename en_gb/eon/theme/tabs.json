@@ -1,0 +1,58 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Home",
+            "serverRelativeUrl": "/ei/x/dashboard",
+            "heading":  "Welcome",
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Energy Use",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "My Usage Details",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Compare Monthly Cost",
+                    "serverRelativeUrl": "/ei/x/compare-my-bills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "My Goal",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/heating",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "whatUsesMost",
+            "label":    "What Uses Most",
+            "url":      "/whatUsesMost/",
+            "displayCriteria": {
+                "type": "CUSTOMER_TYPE",
+                "arguments": {
+                  "customerType": "RESIDENTIAL"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+@charset "windows-31j";
+
+/* for all
+---------------------------------------------------------------------------- */
+
+@import "reset.css";
+@import "modules.css";
+@import "header.css";
+@import "layout.css";
+@import "footer.css";
+@import "print.css";

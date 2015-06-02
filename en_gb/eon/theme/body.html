@@ -1,0 +1,245 @@
+<a href="#content" title="Skip to content" class="skip">Skip to content </a>
+<div id="wrapper">
+    <div id="cookieNotice" class="cookie-notice" style="display:none;" aria-expanded="false">
+        <div class="cookienote-container">
+            <p class="cookie-text">
+                We use cookies to ensure that we give you the best experience on our website. Continue to use the site as normal, if youre happy with this, or find out how to
+                <a href="https://www.eonenergy.com/privacy">manage cookies</a>
+                .
+            </p>
+            <div class="cookie-close-button" role="button">
+                <a href="#" id="cookienote-close-button" class="close">
+                Accept &amp; close
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div id="logo">
+            <a href="https://www.eonenergy.com/" title="E.ON Home">
+            <img alt="Welcome to E.ON" src="{{themeUrl}}/assets/EonMainLogo.gif">
+            </a>
+        </div>
+        <div id="nav-extras">
+            <div id="switcher-nav">
+                <ul>
+                    <li class="home selected">
+                        <a href="https://www.eonenergy.com/for-your-home">For your home</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.eonenergy.com/for-your-business">For your business</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.eonenergy.com/About-eon">About E.ON</a>
+                    </li>
+                    <li class="">
+                        <a href="http://www.eon.com/en.html">E.ON Group</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="search-site">
+                {{#loggedIn}}
+                  <div id="login-register">
+                      <p id="utility_0_pAnonymous" class="secure">
+                          {{displayName}}
+                          <a id="utility_0_HyperLinkLogin" class="loginlink" href="/ei/app/logout">Log out</a>
+                      </p>
+                  </div>
+                {{/loggedIn}}
+                {{^loggedIn}}
+                  <div id="login-register">
+                      <p id="utility_0_pAnonymous" class="secure">
+                          <a id="utility_0_HyperLinkLogin" class="loginlink" href="https://www.eonenergy.com/for-your-home/your-account">Login</a>
+                          or
+                          <a id="utility_0_HyperLinkRegister" class="registerlink" href="https://www.eonenergy.com/for-your-home/your-account/register">Register</a>
+                      </p>
+                  </div>
+                {{/loggedIn}}
+                <div id="search-form">
+                    <form action="https://www.eonenergy.com/search" method="GET">
+                        <label class="accessible-friendly-hide" for="searchbox">
+                            Site search box
+                        </label>
+                        <input id="searchbox" class="searchbox" name="q" type="text">
+                        <input id="filter" name="filter" value="0" type="hidden">
+                        <input type="submit" alt="search this site" class="search-btn" value="" />
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div id="primary-nav">
+            <ul>
+                <li class="home selected">
+                    <a href="https://www.eonenergy.com/for-your-home">For your home</a>
+                    <span class="separator">
+                        &gt;
+                    </span>
+                </li>
+                <li class="first flyout ">
+                    <a href="https://www.eonenergy.com/for-your-home/products-and-services">Products and services</a>
+                </li>
+                <li class="">
+                    <a href="https://www.eonenergy.com/for-your-home/your-account">Your account</a>
+                </li>
+                <li class="flyout ">
+                    <a href="https://www.eonenergy.com/for-your-home/saving-energy">Saving Energy</a>
+                </li>
+                <li class="flyout ">
+                    <a href="https://www.eonenergy.com/for-your-home/help-and-support">Help and support</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div id="nav-wrapper" class="clear">
+            <div id="nav-main" class="clear">
+                <ul  role="navigation">
+                    {{#navBar}}
+                        <li {{#active}}data-nav-state="active" class="active"{{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a></li>
+                    {{/navBar}}
+                </ul>
+            </div>
+            <div id="nav-divider"> </div>
+            {{#hasActiveSubNav}}
+                <div id="nav-secondary" class="clearfix bg-brand">
+                    <ul>
+                        {{#activeSubNav}}
+                            <li {{#active}}data-nav-secondary-state="active" class="active"{{/active}}>
+                                <a href="{{url}}" id="{{id}}" >{{label}}</a>
+                            </li>
+                        {{/activeSubNav}}
+                    </ul>
+                </div>
+            {{/hasActiveSubNav}}
+            {{^hasActiveSubNav}}
+                {{#navBar}}
+                    {{#active}}
+                        <!--<div class="banner bg-brand" role="banner">
+                            <h2>
+                                {{heading}}
+                                {{^heading}}
+                                    {{label}}
+                                {{/heading}}
+                            </h2>
+                        </div>-->
+                    {{/active}}
+                {{/navBar}}
+            {{/hasActiveSubNav}}
+        </div>
+    </div>
+        {{{content}}}
+    <div id="footer">
+        <div id="thick-footer">
+            <div id="footer-links">
+                <ul>
+                    <li>
+                        Residential customers
+                        <ul>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/your-account">Your account</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/help-and-support">Help and support</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/your-account/meter-readings">Meter reads</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/your-account/billing-and-payments">Pay bill</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Products &amp; services
+                        <ul>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/products-and-services/best-deal-for-you">Best deal for you</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/products-and-services/best-deal-for-you-pre-payment">Prepayment best deal for you</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/your-account/prepayment">Prepayment meters</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        Saving energy
+                        <ul>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/saving-energy/need-little-extra-help/home-improvements">Energy saving home improvements</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/saving-energy/Smart-meters">Smart</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/for-your-home/saving-energy/how-you-can-help-yourself/green-deal">Green deal</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        More from E.ON
+                        <ul>
+                            <li>
+                                <a href="https://www.eonenergy.com/About-eon">About E.ON</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/About-eon/how-we-service-our-customers/Standards-of-Service">Our commitment to you</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/About-eon/how-we-service-our-customers/Codes-of-Practice">Codes of practice</a>
+                            </li>
+                            <li>
+                                <a href="https://www.eonenergy.com/About-eon/Community/help-getting-online">Helping the UK get online</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-teaser" id="ctl15">
+                <div class="tertiary-teaser-vertical-a">
+                    <a href="https://www.eonenergy.com/for-your-home/help-and-support/saving-energy-toolkit" target="_blank"><img src="{{themeUrl}}/assets/faq-teaser.jpg" alt="" ""="" width="180" height="122"><div class="text-wrapper"><h3 class="teaser">Saving energy toolkit help</h3><p></p><p>Got a question about your saving energy toolkit? See our frequently asked questions </p><p></p></div></a>
+                </div>
+            </div>
+        </div>
+        <div id="copyright-info">
+            <ul>
+                <li>
+                    &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script><noscript>2015</noscript>&nbsp;E.ON UK plc.
+                </li>
+                <li>
+                    <a href="https://www.eonenergy.com/terms_and_conditions">Terms and Conditions</a>
+                </li>
+                <li>
+                    <a href="https://www.eonenergy.com/privacy">Privacy and Cookies</a>
+                </li>
+                <li>
+                    <a href="https://www.eonenergy.com/About-eon/accessibility">Accessibility</a>
+                </li>
+                <li>
+                    <a href="https://www.eonenergy.com/About-eon/rss feeds">RSS feeds</a>
+                </li>
+                <li>
+                    <a href="https://www.eonenergy.com/About-eon/sitemap">Sitemap</a>
+                </li>
+            </ul>
+        </div>
+        <div id="opower-copyright" class="clear">
+            <ul>
+                <li>
+                    &copy; 2010–<script type="text/javascript">document.write(new Date().getFullYear());</script><noscript>2015</noscript> Opower&reg;.
+                </li>
+                <li>
+                    All rights reserved
+                </li>
+            </ul>
+        </div>
+    </div>    
+</div>

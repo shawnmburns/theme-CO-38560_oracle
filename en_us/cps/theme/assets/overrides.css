@@ -1,0 +1,223 @@
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+a {
+    color: #002C73;
+    text-decoration: none;
+}
+a:hover, a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted;
+  outline-offset: -2px;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+select {
+  height: auto;
+}
+
+#main-content .ei-custom-select select {
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.container {
+  padding:0;
+  
+}
+
+#corebody {
+  margin-left: 0;
+}
+
+#corebody .container {
+  padding: 0;
+  margin:0;
+  width:940px;
+}
+
+.containerwrap {
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+
+.breadCBox li a, .account-bar li a {
+  text-decoration:none;
+}
+
+.footer {
+  margin: 0;
+}
+
+.breadcrumb {
+  margin-bottom:0;
+}
+
+.breadcrumb li {
+  padding-top: 0;
+}
+
+#accInfo {
+  padding-left: 35px;
+  width: auto;
+  color: #F5F5F5;
+  height: 60px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-right: 7px;
+  float: right;
+  font-size: 12px;
+  vertical-align: middle;
+  background: none;
+  text-align: right;
+}
+
+.accbtn {
+  color: #000;
+}
+
+.account-bar {
+  padding: 7px 10px 0 24px;
+}
+
+/* Secondary Navigation
+------------------------------ */
+#nav-secondary {
+  padding-top:7px;
+}
+
+#nav-secondary ul {
+  margin-left: 6px; 
+}
+
+#nav-secondary ul li a {
+  /* TODO: This background opacity is nonsense to IE. Might think about alternatives. */
+  border: 1px solid #888888;
+  background: #eeeeee url(../../../images/bgGradient-eee-ccc.png) bottom left repeat-x;
+  
+  color: #000;
+  display: block;
+  font-size: 16px;
+  line-height: 40px;
+  margin-right: 10px;
+  padding: 0 15px;
+  text-decoration: none; 
+}
+
+#nav-secondary ul li a:hover {
+  background: #cccccc url(../../../images/layout/background-grayGradient.png) 0 0 repeat-x;
+  color: #222; 
+}
+
+#nav-secondary ul li.active a, #nav-secondary ul li.active a:hover {
+  border: 1px solid #616365;
+  background-color: #616365;
+  color:#fff;
+}
+
+#content {
+  background: #ffffff;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+#homepage-content-container {
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-top:1px solid #eeeeee;
+}
+
+#main-content * {
+  box-sizing: initial;
+}
+
+#acctList {
+  font-family: arial, sans-serif;
+  line-height:30px;
+}
+
+h3.divider {
+  font-size: 24px;
+  background-color:#fff;
+}
+
+.navbar.navbar-default.footer { 
+  width: 980px;
+  margin-left: -20px;
+}
+
+.tooltip-right .tooltip-pointer {
+  left: 262px;
+}
+
+.tooltip-right .tooltip-pointer-border {
+  left: 265px;
+}
+
+.module-tips-small h4 {
+  box-sizing: content-box;
+}
+
+.orangebutton, .orange-button, .button, a.button, a:link.button, a:visited.button, a:hover.button, a:active.button {
+  color: #fff;
+  display: block;
+  border: none;
+  padding: 5px;
+  background: #ef7a14;
+  filter: none;
+}
+
+.module-tips__actions-buttons .button {
+  color: #000;
+}
+
+#content .fade {
+  opacity: 1;
+}
+
+#page-whatUsesMost .wizard-page .previousNext .button {
+  color: #fff;
+}
+
+
+#main-content .questionnaireForm, #main-content .questionnaireForm * {
+  box-sizing: border-box;
+}
+  
+
+.orangebutton:hover, .orange-button:hover, .button:hover, a.button:hover, a:link.button:hover {
+  background-color: #ef7a14; 
+  opacity: .8;
+}
+
+#content #disclaimer {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footerList {
+  padding-right: 50px;
+}
+
+.barPilar .bar_container .outside {
+  color: #000;
+}

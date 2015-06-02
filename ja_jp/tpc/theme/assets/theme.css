@@ -1,0 +1,330 @@
+/*
+CSS imported from http://www.confirm-center.com/client/toden6374/toden_relative/dk/html/graph/usage2.html#
+*/
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+a {
+  color: #626262;
+  text-decoration: none;
+}
+a:focus{
+  outline:#3775bb solid 2px;
+}
+input:focus{
+  outline:#3775bb solid 2px;
+}
+
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+
+div#content-tpc a:hover{ text-decoration: underline;}
+div#content-tpc a:hover img { opacity: 1.0; filter: alpha(opacity=100); }
+div.sideContact a:hover img { opacity: 0.7; filter: alpha(opacity=70); }
+div#content-tpc input.inputImg:hover{ opacity: 0.7; filter: alpha(opacity=70); }
+input[type="submit"],input[type="button"],input[type="reset"]{ cursor: pointer;}
+div { display: block; }
+
+
+/* -------------------------------------------------
+  Body
+--------------------------------------------------- */
+body {
+  background-color: #fdfdfd;
+  color: #535353;
+  font-size: 100%;
+  font-family: "ＭＳ Ｐゴシック", 'Hiragino Kaku Gothic ProN', "ヒラギノ角ゴ Pro W3",Meiryo, "メイリオ", Osaka;
+  line-height: 1.5;
+}
+.mac.webkit body {
+font-size:90% !important;
+}
+
+
+/* -------------------------------------------------
+  Clearfix
+--------------------------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/* -------------------------------------------------
+  Header
+--------------------------------------------------- */
+#header {
+  padding-top: 40px;
+  font-size: 87.5%;
+}
+
+/* -------------------------------------------------
+  Logo
+--------------------------------------------------- */
+    #logo {
+      float:left;
+    }
+    #logo a {
+      display:inline-block; height:37px;
+    }
+
+/* -------------------------------------------------
+  Nav Utility
+--------------------------------------------------- */
+#nav-utility{
+  margin-top:8px;
+  border-bottom:#3775bb 1px solid;
+  width:703px;
+  float:right;
+  padding-bottom:2px;
+}
+#nav-utility .toHome a{
+  display:inline-block;
+  height:20px;
+}
+#nav-utility li{
+  float:left;
+  width:auto;
+}
+#nav-utility .toHome{
+  margin-right:390px;
+}
+#nav-utility .qaBtn a{
+  display:inline-block;
+  height:20px;
+}
+#nav-utility .logoutBtn a{
+  display:inline-block;
+  height:20px;
+}
+#nav-utility .inquiryBtn{
+  margin-left:492px;
+}
+#nav-utility .inquiryBtn a{
+  display:inline-block;
+  height:20px;
+}
+#nav-utility .qaBtnLogin a{
+  display:inline-block;
+  height:20px;
+}
+#nav-utility .iconLine{
+  background-image:url(/client/toden6374/toden_relative/dk/images/header_line.jpg);
+  background-repeat:no-repeat;
+  padding-left:10px;
+  background-position: -2px 2px;
+  margin-left:10px;
+}
+
+/* -------------------------------------------------
+  Login Info
+--------------------------------------------------- */
+.login_info{
+  float:right;
+  margin-top:20px;
+}
+.clearBoth {
+  clear: both;
+}
+
+
+/* -------------------------------------------------
+  Header Box 2
+--------------------------------------------------- */
+
+div#hbox2 a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+div#hbox2 #logo a:hover img {
+    opacity: 1;filter: alpha(opacity=100);
+}
+#hbox2 {
+      margin:0 auto;
+      width:980px;
+      padding-bottom: 25px;
+}
+#hbox2 {
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------
+  SubNav Menu
+--------------------------------------------------- */
+ul.navigation li ul.subnav li {
+  margin: 0 0 1px 0;
+}
+ul.subnav {
+  background-color: white;
+}
+
+/* -------------------------------------------------
+  #Graph Nav for pages
+--------------------------------------------------- */
+div.graph_nav{
+  padding: 5px 0 0 0;
+  height: 58px;
+  /*There was previously a 42px margin on the bottom: 0 0 42px 0
+    But instead chose to put a fake division (class="iTakeUpSpace") to acheive
+    the same effect so I could independently set the background of the div*/
+  margin: 0 0 0 0;
+}
+/* Separate background colors for the orange and green versions*/
+div#conditional_orange_tab.graph_nav {
+  background: #ffeace;
+  border-top: 6px solid #ED8D12;
+}
+div#conditional_green_tab.graph_nav {
+  background: #e0ffda;
+  border-top: 6px solid #54AD43;
+}
+/* The individual tabs under each graph. They are not images, just text with
+   blended background*/
+div.graph_tab {
+  width:202px;
+  height:58px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+/* Set tab colors*/
+div.graph_tab p {
+  color: #666666;
+}
+div.graph_nav a {
+  text-decoration: none;
+  color: black;
+}
+
+div.graph_nav ul{
+  letter-spacing: -.40em;
+  text-align: left;
+}
+.graph_buffer div { width: 65px; }
+ol, ul {
+  list-style: none;
+}
+div.graph_nav ul li.border{
+  margin: 0 5px;
+  width: 1px;
+  height: 23px;
+  background: #d6d6d6;
+}
+div.graph_nav ul li{
+  position: relative;
+  width: auto;
+  letter-spacing: normal;
+  vertical-align: middle;
+  display: inline-block;
+  /display: inline;
+  /zoom: 1;
+}
+
+
+/* -------------------------------------------------
+  Page Body Background
+--------------------------------------------------- */
+#pageBodyBg{
+  background-color:#f1f0f1;
+  padding-bottom: 42px;
+}
+
+
+/* -------------------------------------------------
+  Page Body
+--------------------------------------------------- */
+#pageBody{
+  margin:0 auto;
+  width:980px;
+}
+
+/* -------------------------------------------------
+  Footer
+--------------------------------------------------- */
+#fMenu2 {
+  width: 980px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+#fMenu2 ul {
+  float: right !important;
+  display: block;
+  width: 200px;
+}
+#fMenu2 li {
+  float: left;
+  width: auto;
+}
+#copyright{
+  background-color:#3775bb;
+  text-align:center;
+  color:#FFFFFF;
+  padding:12px;
+  width: 100%;
+}
+
+
+
+/**
+ *
+ * ORIGINAL CSS FROM SNOOPER TOOL
+ * imported from:
+ * http://www.confirm-center.com/client/toden6374/toden_relative/dk/css/graph_usage.css
+ * ID: toden
+ * PASS: Q]cY1cMu!
+ *
+ **/
+
+div#content-tpc ul.subnav li a:hover img {
+  opacity: 0.7;
+}
+
+#content-tpc {
+  padding-top: 25px; width: 980px; margin: 0 auto;
+}
+
+#content-tpc a:link,
+#content-tpc a:visited,
+#content-tpc a:active {
+  color: #3b7abe; text-decoration: underline; display: block;
+}
+
+#content-tpc a:hover {
+  color: #3b7abe; text-decoration: none;
+}
+
+.navigation li {
+  background-color: #FFFFFF;
+}
+
+ul.navigation {
+  position: relative; z-index: 2; margin: 0 0 30px 0;
+}
+
+ul.navigation li {
+  cursor: pointer; position: relative; width: auto; float: left;
+}
+
+ul.navigation li.navi02 {
+  cursor: default !important;
+}
+
+ul.navigation li ul.subnav {
+  display: none; position: absolute; top: 92px; left: 0;
+}
+
+ul.navigation li ul.subnav li {
+  margin: 0 0 1px 0;
+}

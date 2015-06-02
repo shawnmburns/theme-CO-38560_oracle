@@ -1,0 +1,125 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Casa",
+            "url":      "/dashboard",
+            "heading":  "Welcome", 
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "Mi uso de la energía",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "Mis Uso Detalles",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "¿Qué usos más",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                            "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Comparar mis Cuentas",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "compareMybillsXweb",
+                    "label":    "Factura Comparar de Equis",
+                    "url":      "/api/static_assets/billCompare/"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "GOOOOAAALLLL",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "Mi Plan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Maneras de ahorrar",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "framedContent",
+            "label":    "PME",
+            "url":      "/frame/smb/myreports",
+            "displayCriteria": {
+                "type"      : "CUSTOMER_STUDY_GROUP",
+                "arguments" : {
+                    "studyName":     "SMB Pilot",
+                    "studyGroupName": "SMB"
+                }
+            },
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "framedContent",
+                    "label": "Mis informes",
+                    "url": "/frame/smb/myreports"
+                 },
+                 {
+                    "pageName": "framedContent",
+                    "label": "Mi Perfil",
+                    "url": "/frame/smb/profile"
+                 },
+                 {
+                    "pageName": "framedContent",
+                    "label": "Configuración",
+                    "url": "/frame/smb/reportsettings"
+                 }
+             ]
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "My Account"
+        },
+        {
+            "pageName": "help",
+            "heading":  "Help"
+        },
+        {
+            "pageName": "termsOfUse",
+            "heading":  "Terms of Use"
+        },
+        {
+            "pageName": "privacyPolicy",
+            "heading":  "Privacy Policy"
+        }
+    ]
+}

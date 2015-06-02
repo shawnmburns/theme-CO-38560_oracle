@@ -1,0 +1,205 @@
+﻿.system-unavailable-head {
+    margin-top: 1em;
+}
+
+.no-line-break {white-space: nowrap;}
+
+.existing-message { text-align: left; }
+
+.care-tab-viewer {
+margin-top: 10px;
+}
+
+.tab-content-nav {
+    background: #fff;
+}
+
+.tab-content-nav li {
+    border-top: 1px solid #ccc;
+}
+
+.tab-content {
+    border: 1px solid #ccc !important;
+}
+
+.bulleted-list {
+    margin-left: 1em;
+}
+
+.bulleted-list, .bulleted-list li {
+    list-style: disc;
+    list-style-position: outside;
+}
+
+.tab-content h4 {
+color: #0089C4;
+font-size: 1.16em;
+padding: 0 0 .3em;
+background-color: transparent;
+}
+
+input.button-enroll, input.button-recertify, input.button-cancel-enrollment {
+    text-indent: 0;
+    font-size: 0;
+    line-height: 138px;
+    width: 100px;
+    height: 35px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    cursor: pointer;
+    background: url(images/btn_enroll.jpg) no-repeat -5px -5px;
+}
+
+input.button-recertify {
+    background: url(images/btn_recertify.jpg) no-repeat -5px -5px;
+}
+
+input.button-cancel-enrollment {
+    background: url(images/btn_cancel_enrollment.jpg) no-repeat -5px -5px;
+    width: 170px;
+    margin-left: 10px;
+}
+
+.service-address label {
+    width: auto !important;
+}
+
+.service-address select {
+    width: auto;
+}
+
+.account-recap p {
+    clear: none;
+}
+
+div.enroll{
+    padding: 10px 0 15px 0;
+    width: auto;
+    margin: 0px;
+    text-align: left;
+}
+
+.bill-exception {
+margin: 0 0 2em;
+}
+
+.tab-content-nav li a{
+    width: 152px;
+}
+
+.household-size {
+    margin-top: 1em;
+}
+
+.household-size label {
+    width: 60px !important;
+    text-align: left;
+    display: block;
+}
+
+.income-source label {
+    text-align: left;
+    width: auto;
+}
+
+.public-assistance-list, .public-assistance-list li {
+    list-style: disc;
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+.community-outreach {
+    margin-top: 1em;
+}
+
+.household-income-fieldset {
+    margin-top: 1em;
+}
+
+form p {
+    color: #333;
+}
+
+
+.income-source .input-group {
+    margin-left: 1em;
+}
+
+.public-assistance-fieldset div.error, .household-income-fieldset div.error {
+    margin-left: 0px;
+    display: none;
+}
+
+#care-enroll-step-two div.error {
+margin: 0 15px 5px 0;
+}
+
+.household-size div.error {
+margin: 0 0 0 83px;
+}
+
+.income-source div.error {
+margin:    0 0 0 207px;
+}
+
+.care .form-has-errors {
+    margin-bottom: 1em;
+}
+
+.account-recap {
+    border: 1px solid #000;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1.5em 1.5em 0 1.5em;
+}
+
+.account-recap .confirm-print {
+    margin: 0 !important;
+    padding: 0 !important;
+    float: right;
+    height: 1px;
+}
+
+.tab-content-nav li a{
+    width: 152px;
+}
+
+.care .next-steps { width: 558px;}
+
+.care .next-steps ul {width: 375px;}
+
+.ie6 .align-wrapper, .ie7 .align-wrapper {zoom: 1;}
+
+.ie6 .household-income-fieldset label, .ie6 .public-assistance-fieldset label{width: auto !important;}
+
+.tab-content-nav li a { background-color: #eee; } 
+.tab-content-nav li a .on { background-color: #fff; }
+
+.ie7 .care .tab-content {margin-top: 2px !important;}
+
+.ie6 .care .tab-content-nav li a {border-bottom: 0px none !important; }
+.ie6 .care .tab-content-nav li a .on{border-bottom: 1px solid #000 !important; }
+.ie6 .care .tab-content {margin-top: 0px !important; height: 400px;}
+
+.care .public-assistance-fieldset, .care .household-income-fieldset, .care .community-outreach {display:block;}
+
+.tab-content {clear:both; min-height:200px; height: auto !important; background-image:none; background-color:#FFF; padding:20px 10px 20px 18px; overflow:hidden; border:1px solid #CCC; border-top: 0px;}
+.ie6 .tab-content {margin-top:1px;}
+
+#care-enroll-recertify div.error { margin: 0 0 5px 0;}
+
+#care-enroll-recertify fieldset.enrolled{margin-bottom: 1.5em;}
+
+.coc_radio { padding: 0 15px; }
+#cocnumber_textarea { display: none; } 
+#removespace { padding: 0 0; }
+
+/*tabs style fix 8/24*/
+.tab-content-program-care li a {
+    width: 139px;
+}
+.ie6 .tab-content-program-care li a{
+    width: 135px;
+}
+/*tabs style fix 8/24*/

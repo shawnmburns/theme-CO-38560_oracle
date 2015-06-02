@@ -1,0 +1,48 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Dashboard",
+            "url":      "/dashboard"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "My Usage Details",
+            "url":      "/myEnergyUse"
+        },
+        {
+            "pageName": "whatUsesMost",
+            "label":    "What Uses Most",
+            "url":      "/whatUsesMost/"
+        },
+        {
+            "pageName": "compareMyBills",
+            "label":    "Compare My Bills",
+            "serverRelativeUrl": "/ei/x/compare-my-bills/"
+        },
+        {
+            "pageName": "myGoal",
+            "label":    "My Goal",
+            "url":      "/s/myGoal.html"
+        },
+        {
+            "pageName":     "myRates",
+            "label":        "My Rates",
+            "url":          "/myRates"
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "My Plan",
+            "url":      "/myPlan"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Ways to Save",
+            "url":      "/ideas/free"
+        },
+        {
+            "label":    "Rewards",
+            "clientUrl":   "/rewards"
+        }
+    ]
+}

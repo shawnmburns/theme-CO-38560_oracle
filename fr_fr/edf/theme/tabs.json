@@ -1,0 +1,49 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Accueil",
+            "url":      "/dashboard",
+            "heading":  "Bienvenue",
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "Ma consommation d'électricité",
+            "url":      "/myEnergyUse",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "Les détails de ma consommation",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "Ce qui consomme le plus",
+                    "url":      "/whatUsesMost/"
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Comparer mes dépenses",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "Mon objectif",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "Mon plan d'actions",
+            "url":      "/myPlan"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Conseils pour économiser",
+            "url":      "/ideas/free"
+        }
+    ]
+}

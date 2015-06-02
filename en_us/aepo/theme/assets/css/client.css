@@ -1,0 +1,4 @@
+/* AEPO is making a ridiculous request and, as a SaaS company, we obviously have to oblige */
+.module-utility_account__rate_analysis-rateComparison .graph .date {
+    display: none;
+}

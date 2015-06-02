@@ -1,0 +1,47 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "ホーム",
+            "url":      "/dashboard",
+            "heading":  "ようこそ",
+            "cssClass": "rounded-tl first"
+        },
+        {
+            "pageName":   "myEnergyUse",
+            "label":      "ご使用状況",
+            "url":        "/myEnergyUse",
+            "cssClass":   "custom",
+            "hasSubNav":  true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "ご使用量の詳細",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "請求金額の比較",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "マイゴール",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "マイプラン",
+            "url":      "/myPlan",
+            "cssClass": "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "省エネ術",
+            "url":      "/ideas/free",
+            "cssClass": "custom"
+        }
+    ]
+}

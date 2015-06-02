@@ -1,0 +1,62 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "主頁",
+            "url":      "/dashboard",
+            "heading":  "歡迎您",
+            "cssClass": "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "我的用電情況",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "過往用電記錄",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "賬單比較",
+                    "url":      "/compareMyBills"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "自訂節能計劃",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "特選節能貼士",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "login",
+            "heading":  "Sign In"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "我的資料"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "我的賬戶"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "我的賬戶"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "我的賬戶"
+        }
+    ]
+}

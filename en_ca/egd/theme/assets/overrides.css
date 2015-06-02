@@ -1,0 +1,118 @@
+/* Put overrides in here */
+a {
+  text-decoration: none;  
+}
+
+form label span {
+  display: inline;
+}
+
+div.header {
+  font-weight: normal;
+  font-family: Arial,sans-serif;
+}
+
+.myenbridgeNav li {
+ padding: 0 5px;
+}
+.myenbridgeNav li a {
+ font-size: 13px;
+}
+
+.searchBar label {
+  display: inline;  
+}
+
+.bannerShort {
+ height: 128px;
+}
+
+.footer { 
+  line-height: normal;
+  font-family: Arial, sans-serif;  
+}
+
+.footer h6 {
+  line-height: normal;
+}
+.footer .navigation a, a.learnMore, a.top, a.contentLink, ul.contentLink a {
+  display: block;
+  font-size: 10px;
+}
+
+#header #nav-main ul li a.lastHeaderElement {
+  border-right: none;
+}
+
+ul.navigation.clearfix {
+  font-size: 10px;
+}
+
+.bg-brand, #header #nav-main ul li.active a {
+  background: #5e9cae;
+}
+
+#header #nav-main ul li a:hover {
+  background: #eeeeee;
+}
+
+.subnav-single {
+  border: 0px;
+  margin: 0;
+  width: 980px;
+}
+
+#header #nav-main ul li a {
+  border-left: 0px;
+}
+
+ul.secondaryNav li:hover ul {
+ display: block; /* display the dropdown */
+}
+
+a.logo {
+	height: 71px;
+	background-position-y: 10px;
+}
+
+#main-content a.button {
+  text-transform: none;
+  font-size: inherit;
+  font-weight: normal;
+  background: #EEE;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  padding: 5px 20px;
+}
+
+.Extranet_divMyEnbridgeLogin ul li {
+  font-size: 1.3em;
+}
+
+#main-content label {
+  font-weight: normal;
+}
+
+#main-content .header {
+  background: none;
+}
+
+#main-content a.button:hover {
+  background: #eee;
+}
+
+.myenbridgeNav {
+  font-size: inherit;
+  line-height: normal;
+  height: 29px;
+}
+.primaryNav, .searchBar {
+  line-height: normal;
+}
+
+div.footer div.item p {
+  margin: 0 0 10px;
+}
+
+div.copyright {
+  padding: 0 5px;
+}

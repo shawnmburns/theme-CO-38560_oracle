@@ -1,0 +1,59 @@
+{
+    "nav":[
+        {
+            "label":"Home",
+            "url":"/ei/app/dashboard"
+        },
+        {
+            "label":"My Energy Use",
+            "url":"/ei/app/myEnergyUse",
+            "subnav":[
+                {
+                    "label":"My Usage Details",
+                    "url":"/ei/app/dashboard"
+                },
+                {
+                    "label":"Home Energy Checkup",
+                    "url":"/ei/app/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                            "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "label":"Compare My Bills",
+                    "url":"/ei/app/compareMyBills"
+                },
+                {
+                    "label":"X-web Bill Compare",
+                    "url":"/ei/app/api/static_assets/billCompare/",
+                    "template":{
+                        "path":"template-widget-layouts/7.1.0/templates/single-widget.html"
+                    },
+                    "content":[
+                        {
+                            "name":"widget-bill-compare",
+                            "version":"0.9.13",
+                            "selector":"#singleWidgetContainer",
+                            "loginRequired": "true"
+                        }
+                    ]
+                },
+                {
+                    "label":"My Goal",
+                    "url":"/ei/app/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "label":"My Plan",
+            "url":"/ei/app/myPlan"
+        },
+        {
+            "label":"Ways to Save",
+            "url":"/ei/app/ideas/free"
+        }
+    ]
+}

@@ -1,0 +1,203 @@
+<div class="main">
+    <!-- Start MAIN Div -->
+    <div class="mainInside">
+        <div class="customerHeader">
+            <!-- Start Tile Name: Customer Header -->
+            <div class="clientimage">
+                <a href="{{clientUrl}}"><img src="{{themeUrl}}/assets/bge_exelon_logo.png" alt="Baltimore Gas and Electric"></a>
+            </div>
+            <!-- Insert Tabs Template when appropiate -->
+            <!-- App Title -->
+            <div class="outageAndContactHeader">
+                <label class="outageLeft">
+                    <a href="http://outagemap.bge.com">OUTAGES:</a>
+                    &nbsp; 877.778.2222
+                </label>
+                <label>
+                    <a href="{{clientUrl}}/Pages/reportoutage.aspx">REPORT AN OUTAGE</a>
+                </label>
+                <label>
+                    <a href="{{clientUrl}}/customerservice/contactus/Pages/default.aspx">CONTACT US</a>
+                </label>
+                <label>
+                    <a href="{{clientUrl}}/myaccount/manage/help/Pages/default.aspx">HELP</a>
+                </label>
+                {{#loggedIn}}
+                <label>
+                    Welcome {{displayName}}
+                </label>
+                {{/loggedIn}}
+            </div>
+            <!-- End of App Title -->
+            <!-- tiles:insert attribute="utilitytabs"/ -->
+            <!-- tiles:useAttribute id="language_link" name="language_link" classname="java.lang.String"/ -->
+        </div>
+        <div class="nav-collapse collapse">
+            <div class="bgeMainTabs" style="background-image: url({{themeUrl}}/assets/bg_utility.jpg);">
+                <ul style="visibility: visible;">
+                    <li class="leftSide">
+                        <a href="{{clientUrl}}/myaccount/Pages/default.aspx"><span class="activeTab">My Account</span></a>
+                    </li>
+                    <li>
+                        <a href="{{clientUrl}}/customerservice/Pages/default.aspx"><span>Customer Service</span></a>
+                    </li>
+                    <li>
+                        <a href="{{clientUrl}}/waystosave/Pages/default.aspx"><span>Ways to Save</span></a>
+                    </li>
+                    <li>
+                        <a href="{{clientUrl}}/smartenergy/pages/default.aspx"><span>Smart Energy</span></a>
+                    </li>
+                    <li>
+                        <a href="{{clientUrl}}/safetyreliability/pages/default.aspx"><span>Safety &amp; Reliability</span></a>
+                    </li>
+                    <li>
+                        <a href="{{clientUrl}}/ourcommitments/Pages/default.aspx"><span>Our Commitments</span></a>
+                    </li>
+                </ul>
+                 {{#loggedIn}}
+                    <form name="userForm" method="get" action="/ei/app/logout" class="logoutForm">
+                        <input type="submit" value="Sign Out" class="bge_button" title="Sign Out">
+                    </form>
+                {{/loggedIn}}
+                {{^loggedIn}}
+                    <a class="logoutForm" href="{{clientAltUrl}}/manage/pages/login.aspx">
+                        <span class="bge_button">Sign In</span>
+                    </a>
+                {{/loggedIn}}
+            </div>
+            <!-- End of App Title -->
+            <!-- Start Tile Name: Tabs Definition: .template.tabs -->
+            <ul class="mainNav">
+                <li>
+                    <a href="{{clientAltUrl}}/css/pages/adaptor.aspx?pgcode=1" class="mainTab">Manage My Account</a>
+                </li>
+                <li>
+                    <a href="{{clientAltUrl}}/css/pages/adaptor.aspx?pgcode=2" class="mainTab">My Bill</a>
+                </li>
+                {{#navBar}}
+                <li class="{{#active}}tabSelected{{/active}}">
+                    <a href="{{url}}">{{label}}</a>
+                </li>
+                {{/navBar}}
+                <li>
+                    <a href="{{clientAltUrl}}/css/pages/adaptor.aspx?pgcode=5" class="mainTab">My Profile</a>
+                </li>
+                <li>
+                    <a href="{{clientAltUrl}}/css/pages/adaptor.aspx?pgcode=6" class="mainTab">Payments</a>
+                </li>
+            </ul>
+            <!-- End Tile Name: Tabs -->
+            <!-- Start Tile Name: subtabs Definition: .template.subtabs -->
+            <ul class="subNav">
+                {{#activeSubNav}}
+                    <li class="{{#active}}subTabSelected{{/active}}">
+                        <a href="{{url}}" >{{label}}</a>
+                    </li>
+                {{/activeSubNav}}
+            </ul>
+            <!-- End Tile Name: subtabs -->
+        </div>
+        <!-- CLOSE customerHeader.jsp DO NOT REMOVE -->
+        <div class="mainarea">
+            <!-- *Original Content Removed* -->
+            {{{content}}}
+        </div>
+    </div>
+    <div id="pageFooter">
+        <div id="pageFooterCustomerService" class="pageFooterCol">
+            <h6>
+                Customer Service
+            </h6>
+            <ul>
+                <li>
+                    <a href="{{clientUrl}}/customerservice/contactus/commonquestions/pages/default.aspx">Common Questions</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/customerservice/contactus/Pages/default.aspx">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pageFooterStormCenter" class="pageFooterCol">
+            <h6>
+                Outages
+            </h6>
+            <ul>
+                <li>
+                    <a href="{{clientUrl}}/Pages/reportoutage.aspx">Report an Outage</a>
+                </li>
+                <li>
+                    <a href="http://outagemap.bge.com/">Current Outages</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/safetyreliability/reliability/stormsoutages/Pages/Planned-Outages.aspx">Planned Outages</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/safetyreliability/reliability/stormsoutages/stormcenter/beforeastorm/pages/default.aspx">Storm Preparation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pageFooterCol">
+            <h6>
+                Doing Business With Us
+            </h6>
+            <ul>
+                <li>
+                    <a href="{{clientUrl}}/doingbusiness/builderscontractors/Pages/default.aspx">Builders &amp; Contractors</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/doingbusiness/lightspeedcommunications/Pages/default.aspx">LightSpeed Communications</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/doingbusiness/energysuppliers/Pages/default.aspx">Energy Suppliers</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/doingbusiness/vendors/Pages/default.aspx">Vendors</a>
+                </li>
+                <li>
+                    <a href="{{clientUrl}}/doingbusiness/economicdevelopment/Pages/default.aspx">Economic Development</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pageFooterStayConnected" class="pageFooterCol">
+            <h6>
+                Stay Connected
+            </h6>
+            <ul class="socialTools">
+                <li class="socialToolsTwitter">
+                    <a style="background-image: url({{themeUrl}}/assets/icon_social_tools.png);" href="http://twitter.com/mybge" target="_new" title="Twitter">Twitter</a>
+                </li>
+                <li class="socialToolsFacebook">
+                    <a style="background-image: url({{themeUrl}}/assets/icon_social_tools.png);" href="http://www.facebook.com/myBGE" target="_new" title="Facebook">Facebook</a>
+                </li>
+                <li class="socialToolsYouTube">
+                    <a style="background-image: url({{themeUrl}}/assets/icon_social_tools.png);" href="http://www.youtube.com/BALTIMOREGASELECTRIC" target="_new" title="YouTube">YouTube</a>
+                </li>
+                <li class="socialToolsLinkedIn">
+                    <a style="background-image: url({{themeUrl}}/assets/icon_social_tools.png);" href="http://www.linkedin.com/company/5115?trk=null" target="_new" title="LinkedIn">LinkedIn</a>
+                </li>
+                <li class="socialToolsFlickr">
+                    <a style="background-image: url({{themeUrl}}/assets/icon_social_tools.png);" href="http://www.flickr.com/photos/mybge" target="_new" title="Flickr">Flickr</a>
+                </li>
+            </ul>
+        </div>
+        <div id="pageFooterCopyright" class="pageFooterCol">
+            <p>
+                &copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Baltimore Gas and Electric Company.<br>
+                All Rights Reserved.
+            </p>
+            <p>&copy;2010&ndash;<script type="text/javascript">document.write(new Date().getFullYear());</script> OPOWER&reg;. All Rights Reserved.</p>
+            <ul>
+                <li>
+                    <a href="{clientUrl}/Pages/Site-Standards.aspx">Site Standards</a>
+                </li>
+                <li>
+                    <a href="{clientUrl}/Legal/Pages/default.aspx">Legal</a>
+                </li>
+                <li>
+                    <a href="{clientUrl}/Pages/Sitemap.aspx">Site Map</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End MAIN Div -->

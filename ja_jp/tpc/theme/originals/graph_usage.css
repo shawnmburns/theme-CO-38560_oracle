@@ -1,0 +1,731 @@
+@charset "windows-31j";
+
+div#content .navigation a:hover img { opacity: 1; filter: alpha(opacity=100); }
+div#content ul.subnav li a:hover img { opacity:0.7 ; filter: alpha(opacity=70) ;  }
+
+#hbox2 {
+  margin-bottom: 0;
+}
+#pageBodyBg {
+	padding-bottom: 42px;
+}
+#content {
+  padding-top: 25px;
+  width: 980px;
+  margin: 0 auto;
+}
+#content a:link,
+#content a:visited,
+#content a:active {
+  color: #3b7abe;
+  text-decoration: underline;
+  display:block;
+}
+#content a:hover {
+  color: #3b7abe;
+  text-decoration: none;
+}
+.navigation li{ background-color:#FFFFFF;}
+
+/*---------------.flow------------------------------*/
+
+.flow {
+  margin: 0 0 30px;
+}
+.flow li {
+  float: left;
+}
+.flow .step01 {
+  width: 313px;
+  margin: 0 7px 0 0;
+}
+.flow .step02 {
+  width: 315px;
+  margin: 0 7px 0 0;
+}
+.flow .step03 {
+  width: 279px;
+}
+
+
+/*---------------#cnt01 .inputArea------------------------------*/
+
+#cnt01 {
+  margin-bottom: 30px;
+}
+#cnt01 .inputArea {
+  background: #FFF; 
+  padding: 32px 30px;
+}
+
+#cnt01 .inputArea .errorMsg {
+  color: #F52E2E;
+  font-size: 100%;
+  line-height: 1.6em;
+  margin: 0 0 26px;
+}
+#cnt01 .inputArea table {
+  width: 100%;
+  margin: 0 0 33px;
+  border-top: 1px solid #d2d2d2;
+}
+#cnt01 .inputArea table caption {
+  background: #919191;
+  border-left: 1px solid #d2d2d2;
+  /*border-bottom: 1px solid #d2d2d2;*/
+  border-right: 1px solid #d2d2d2;
+  color: #FFF;
+  font-size: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+#cnt01 .inputArea table th {
+  background: #f3f3f3;
+  border-left: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  font-size: 100%;
+  line-height: 1.8em;
+  vertical-align: middle;
+  text-align: right;
+  padding: 24px 35px 24px 0;
+  width: 178px;
+}
+#cnt01 .inputArea table th.must {
+  background: url(/client/toden6374/toden_relative/dk/images/regist/img_must.jpg) no-repeat 154px center #f3f3f3;
+  padding-right: 66px; 
+  width: 146px;
+}
+#cnt01 .inputArea table th.mmail02 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#cnt01 .inputArea table td {
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  font-size: 100%;
+  line-height: 1em;
+  vertical-align: middle;
+  padding: 16px 0 16px 15px;
+}
+#cnt01 .inputArea table td input[type="text"] {
+  width: 333px;
+  height: 20px;
+  border: 1px solid #acacac;
+}
+#cnt01 .inputArea table td.zip input[type="text"] {
+  width: 73px;
+}
+#cnt01 .inputArea table td.toh input[type="text"],
+#cnt01 .inputArea table td.room input[type="text"] {
+  width: 143px;
+}
+#cnt01 .inputArea table td.tel input[type="text"] {
+  width: 103px;
+}
+#cnt01 .inputArea table td .hyphen {
+  margin: 0 5px;
+}
+#cnt01 .inputArea table td .example {
+  display: block;
+  margin: 6px 0 0;
+}
+#cnt01 .inputArea table td.zip .input {
+  float: left;
+  margin: 0 16px 0 0;
+}
+#cnt01 .inputArea table td.zip .input .example {
+  margin: 17px 0 0;
+}
+#cnt01 .inputArea table td.zip input[type="submit"] {
+  float: left;
+  margin: 17px 24px 0 0;
+}
+#cnt01 .inputArea table td.zip .note {
+  float: left;
+  margin: 20px 0 0;
+  background: url(/client/toden6374/toden_relative/dk/images/regist/icn_blue-arrow.gif) no-repeat 0 0;
+  padding: 0 0 0 17px;
+}
+#cnt01 .inputArea table td.zip .note a{
+	text-decoration:none;
+}
+#cnt01 .inputArea table td.todofuken select {
+  margin: 0 70px 0 0;
+}
+#cnt01 .inputArea table td.todofuken .input input[type="submit"] {
+  margin: 0 15px 0 0;
+}
+#cnt01 .inputArea table td.toh input[type="text"],
+#cnt01 .inputArea table td.room input[type="text"] {
+  margin: 0 8px 0 0;
+}
+#cnt01 .inputArea .btn {
+  text-align: center;
+}
+#cnt01 .inputPlace {
+	float:right;
+	margin-right:224px;
+}
+#cnt01 .inputPlace input[type="submit"] {
+margin: 0 15px 0 0;
+}
+#cnt01 select.place {
+	width:230px;
+}
+
+/*---------------#cnt02 .inputArea------------------------------*/
+
+#cnt02 {
+  margin-bottom: 30px;
+}
+#cnt02 .inputArea {
+  background: #FFF; 
+  padding: 32px 30px;
+}
+#cnt02 .inputArea .note {
+  background: url(/client/toden6374/toden_relative/dk/images/regist/icn_blue-arrow.gif) no-repeat 0 0;
+  padding: 0 0 0 17px;
+}
+#cnt02 .inputArea .method {
+  font-size: 100%;
+  margin: 0 0 15px;
+}
+#cnt02 .inputArea .strongRed {
+  color: #f52e2e;
+}
+#cnt02 .inputArea table {
+  width: 100%;
+  margin: 0 0 30px;
+  border-top: 1px solid #d2d2d2;
+}
+#cnt02 .inputArea table caption {
+  background: #919191;
+  border-left: 1px solid #d2d2d2;
+  /*border-bottom: 1px solid #d2d2d2;*/
+  border-right: 1px solid #d2d2d2;
+  color: #FFF;
+  font-size: 100%;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+#cnt02 .inputArea table th {
+  background: #f3f3f3;
+  border-left: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  font-size: 100%;
+  line-height: 1.8em;
+  vertical-align: middle;
+  text-align: right;
+  padding: 24px 35px 24px 0;
+  width: 178px;
+}
+#cnt02 .inputArea table th.must {
+  background: url(/client/toden6374/toden_relative/dk/images/regist/img_must.jpg) no-repeat 154px center #f3f3f3;
+  padding-right: 66px; 
+  width: 146px;
+}
+#cnt02 .inputArea table td {
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  font-size: 100%;
+  line-height: 1em;
+  vertical-align: middle;
+  padding: 16px 0 16px 15px;
+}
+#cnt02 .inputArea table td input[type="text"] {
+  width: 333px;
+  height: 20px;
+  border: 1px solid #acacac;
+}
+#cnt02 .inputArea table td .example {
+  display: block;
+  margin: 6px 0 0;
+}
+#cnt02 .inputArea table td .hyphen {
+  margin: 0 5px;
+}
+#cnt02 .inputArea table td.zokusei label {
+  margin: 0 20px 0 0;
+  float: left;
+}
+#cnt02 .inputArea table td.storeCode input[type="text"] {
+  width: 73px;
+  margin: 0 8px 0 0;
+}
+#cnt02 .inputArea table td.storeCode .example {
+  display: inline-block;
+  margin: 0;
+}
+#cnt02 .inputArea table td.storeCode .add {
+  line-height: 1.3em;
+  font-size: 75%;
+  margin: 5px 0;
+}
+#cnt02 .inputArea table td.storeCode .list span {
+  font-size: 75%;
+  margin: 0 15px 0 0;
+}
+#cnt02 .inputArea table td.customerNumber input[type="text"].keta5 {
+  width: 73px;
+}
+#cnt02 .inputArea table td.customerNumber input[type="text"].keta1 {
+  width: 23px;
+}
+#cnt02 .inputArea table td.customerNumber input[type="text"].keta2 {
+  width: 33px;
+}
+#cnt02 .inputArea table td.customerNumber .example .note {
+  margin-left: 5px;
+  background-position: 0 0.1em;
+}
+#cnt02 .inputArea table td.zip .input {
+  float: left;
+  margin: 0 16px 0 0;
+}
+#cnt02 .inputArea table td.zip .input input[type="text"] {
+  width: 73px;
+}
+#cnt02 .inputArea table td.zip .input .example {
+  margin: 17px 0 0;
+}
+#cnt02 .inputArea table td.zip input[type="submit"] {
+  float: left;
+  margin: 17px 24px 0 0;
+}
+#cnt02 .inputArea table td.zip .note {
+  background: url("/client/toden6374/toden_relative/dk/images/regist/icn_blue-arrow.gif") no-repeat 0 0;
+  float: left;
+  margin: 20px 0 0;
+  padding: 0 0 0 17px;
+}
+#cnt02  .note a{
+	text-decoration:none;
+}
+#cnt02 .inputArea table td.todofuken select {
+  margin: 0 70px 0 0;
+}
+#cnt02 .inputArea table td.todofuken .input input[type="submit"] {
+  margin: 0 15px 0 0;
+}
+#cnt02 .inputArea table td.toh input[type="text"],
+#cnt02 .inputArea table td.room input[type="text"] {
+  width: 143px;
+  margin: 0 8px 0 0;
+}
+#cnt02 .inputArea table td.shiharai {
+  padding-bottom: 14px;
+}
+#cnt02 .inputArea table td.shiharai .shiji {
+  margin: 0 0 20px;
+}
+#cnt02 .inputArea table td.shiharai ul {
+  margin: 0 0 20px;
+}
+#cnt02 .inputArea table td.shiharai ul li .number {
+  display: block;
+  margin: 15px 0 25px 21px;
+}
+#cnt02 .inputArea table td.shiharai ul li .number input[type="text"] {
+  width: 73px;
+  margin: 0 10px;
+}
+#cnt02 .inputArea table td.shiharai ul li .number .sText {
+  font-size: 87.5%;
+}
+#cnt02 .inputArea table td.shiharai .matome {
+  margin: 0 0 14px;
+}
+#cnt02 .inputArea table td.shiharai .matome label {
+  font-size: 87.5%;
+  line-height: 1.5em;
+  margin: 0 0 0 10px;
+
+}
+#cnt02 .inputArea table td.shiharai .add {
+  font-size: 87.5%;
+  line-height: 1.5em;
+  text-indent: -0.5em;
+  padding-left: 0.5em;
+}
+#cnt02 .inputArea table td.kankei label {
+  margin: 0 20px 0 0;
+  float: left;
+}
+#cnt02 .inputArea table td.tantosha {
+  padding-bottom: 13px;
+}
+#cnt02 .inputArea table td.tantosha input[type="text"] {
+  width: 373px;
+  margin: 0 8px 15px 0;
+}
+#cnt02 .inputArea table td.tantosha .example {
+  display: inline-block;
+  margin: 0;
+}
+#cnt02 .inputArea table td.tantosha ul {
+  line-height: 1.4em;
+}
+
+#cnt02 .inputArea .btn {
+  text-align: center;
+}
+#cnt02 .inputArea .btn .back {
+  margin-right: 16px;
+}
+
+#cnt02 .inputPlace {
+	float:right;
+	margin-right:224px;
+}
+#cnt02 .inputPlace input[type="submit"] {
+margin: 0 15px 0 0;
+}
+#cnt02 select.place {
+	width:230px;
+}
+
+/*---------------#cnt03 .inputArea------------------------------*/
+
+#cnt03 .inputArea {
+  background: #FFF; 
+  padding: 32px 30px;
+}
+#cnt03 .inputArea table {
+	border: 1px solid #d2d2d2;
+  width: 100%;
+  margin: 0 0 33px;
+}
+#cnt03 .inputArea table caption {
+	background: #919191;
+	border: 1px solid #d2d2d2;
+	color: #FFF;
+	font-size: 100%;
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+#cnt03 .inputArea table th {
+  background: #f3f3f3;
+  border-left: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  font-size: 100%;
+  line-height: 1.8em;
+  vertical-align: middle;
+  text-align: right;
+  padding: 24px 35px 24px 0;
+  width: 175px;
+}
+#cnt03 .inputArea table th.must {
+  background: url(/client/toden6374/toden_relative/dk/images/regist/img_must.jpg) no-repeat 154px center #f3f3f3;
+  padding-right: 66px; 
+  width: 146px;
+}
+#cnt03 .inputArea table th.mmail02 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#cnt03 .inputArea table td {
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+  font-size: 100%;
+  line-height: 1em;
+  vertical-align: middle;
+  padding: 16px 0 16px 15px;
+}
+#cnt03 .inputArea table td input[type="text"] {
+  width: 333px;
+  height: 20px;
+  border: 1px solid #acacac;
+}
+#cnt03 .inputArea table td.zip input[type="text"] {
+  width: 73px;
+}
+#cnt03 .inputArea table td.toh input[type="text"],
+#cnt03 .inputArea table td.room input[type="text"] {
+  width: 143px;
+}
+#cnt03 .inputArea table td.tel input[type="text"] {
+  width: 103px;
+}
+#cnt03 .inputArea table td .hyphen {
+  margin: 0 5px;
+}
+#cnt03 .inputArea table td .example {
+  display: block;
+  margin: 6px 0 0;
+}
+#cnt03 .inputArea table td.zip .input {
+  float: left;
+  margin: 0 16px 0 0;
+}
+#cnt03 .inputArea table td.zip .input .example {
+  margin: 17px 0 0;
+}
+#cnt03 .inputArea table td.zip input[type="submit"] {
+  float: left;
+  margin: 17px 24px 0 0;
+}
+#cnt03 .inputArea table td.zip .note {
+  float: left;
+  margin: 20px 0 0;
+  background: url(/client/toden6374/toden_relative/dk/images/regist/icn_blue-arrow.gif) no-repeat 0 0;
+  padding: 0 0 0 17px;
+}
+#cnt03 .inputArea table td.zip .note a{
+	text-decoration:none;
+}
+#cnt03 .inputArea table td.todofuken select {
+  margin: 0 70px 0 0;
+}
+#cnt03 .inputArea table td.todofuken .input input[type="submit"] {
+  margin: 0 15px 0 0;
+}
+#cnt03 .inputArea table td.toh input[type="text"],
+#cnt03 .inputArea table td.room input[type="text"] {
+  margin: 0 8px 0 0;
+}
+#cnt03 .inputArea .btn {
+  text-align: center;
+}
+
+#cnt03 .inputArea  .btn input {
+	margin-left: 20px;
+}
+
+#cnt03 .inputArea  .btn input:hover { opacity: 0.7;	filter: alpha(opacity=70); }
+
+#cnt03 .inputArea .error {
+    color: #ed1717;
+}
+
+p.text{
+	font-size: 100%;
+	line-height: 23px;	
+}
+
+/*�����g�b�v�y�[�W_�O���t_�d�C�g�p�ʃO���t*/
+
+ul.navigation{
+	position: relative;
+	z-index: 2;
+	margin: 0 0 30px 0;
+}
+
+ul.navigation li{
+	cursor: pointer;
+	position: relative;
+	width: auto;
+	float: left;
+}
+
+
+
+ul.navigation li.navi02{
+	cursor: default !important;
+}
+
+ul.navigation li.img_none{
+	cursor: default;	
+}
+
+ul.navigation li.coming{
+	cursor: default;	
+}
+
+ul.navigation li ul.subnav{
+	display: none;
+	position: absolute;
+	top: 92px;
+	left: 0;
+}
+
+ul.navigation li ul.subnav li{
+	margin: 0 0 1px 0;
+}
+
+.usage_place{
+	height: 76px;	
+}
+
+.usage_place dl{
+	background: #ffffff;
+	height: 46px;
+}
+
+.usage_place dl dt{
+	width: 147px;
+	float: left;	
+}
+
+.usage_place dl dd{
+	/*padding: 12px 0 0 0;*/
+	margin-top:11px;
+	width: 833px;
+	/*letter-spacing: -.40em;*/
+	float: left;	
+}
+
+.usage_place dl dd select{
+	/*letter-spacing: 0.1em;
+	width: 726px;
+	height: 26px;
+	font-size: 93.8%;
+	vertical-align: middle;
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;*/
+	width: 722px;
+}
+
+/*.usage_place dl dd input[type="button"]{
+	margin: 0 0 0 15px;
+	width: 61px;
+	height: 26px;
+	font-size: 75%;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	vertical-align: middle;
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;
+}*/
+
+.graph_area{
+	background: #ffffff;
+	margin: 0 0 48px 0;
+	padding: 0 0 50px 0;	
+}
+
+div.graph_nav{
+	padding: 5px 0 0 0;
+	height: 58px;
+	background: #ffe5e6;
+	border-top: 6px solid #e85c5f;	
+	margin: 0 0 42px 0;
+}
+
+div.graph_nav ul{
+	letter-spacing: -.40em;
+	text-align: center;	
+}
+
+div.graph_nav ul li{
+	position: relative;
+	width: auto;
+	letter-spacing: normal;
+	vertical-align: middle;
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;	
+}
+
+div.graph_nav ul li.border{
+	margin: 0 5px;
+	width: 1px;
+	height: 23px;
+	background: #d6d6d6;
+}
+
+.graph_wrap{
+	padding: 35px 0 32px 0;
+	width: 848px;
+	margin: 0 auto;
+	border: 1px solid #dadada;	
+	background: #fbfbfb;
+}
+
+.graph_head{
+	width: 752px;
+	margin: 0 auto 30px auto;	
+}
+
+.graph_head ul{
+	letter-spacing: -.40em;	
+}
+
+.graph_head ul li{
+	height: 13px;
+	width: auto;
+	letter-spacing: -.40em;
+	vertical-align: middle;
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;	
+	margin: 0 0 10px 0;
+}
+
+.graph_head ul li span{
+	font-size: 62.5%;
+	letter-spacing: normal;
+	vertical-align: middle;
+	display: inline-block;
+	/display: inline;
+	/zoom: 1;	
+}
+
+.graph_head ul li span.image{
+	margin: 0 5px 0 0;
+}
+
+.graph_head ul li span.title_text{
+	line-height: 13px;
+}
+
+.graph_head ul li.w138{
+	width: 138px;
+}
+
+.graph_head ul li.w144{
+	width: 144px;
+}
+
+.graph_head ul li.w142{
+	width: 142px;
+}
+
+.graph_area_in{
+	width: 850px;
+	margin: 0 auto;
+}
+
+.graph_content{
+	width: 734px;
+	margin: 0 auto;
+}
+
+table.graph_table{
+	font-size: 87.5%;
+	float: left;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+table.graph_table th{
+	padding: 24px 2px;
+	vertical-align: middle;
+	border-top: 1px solid #e4e4e4;
+	border-right: 35px solid #ffffff;
+	width: 186px;
+}
+
+table.graph_table td{
+	width: 432px;
+	padding: 24px 2px;
+	vertical-align: middle;
+	border-top: 1px solid #e4e4e4;
+}
+
+p.bt_print{
+	float: right;	
+}
+
+.data_area{
+	margin: 50px 0 0 0;	
+}

@@ -1,0 +1,67 @@
+﻿/* Put overrides in here */
+
+/* Overwrite our white background with their orange one */
+body {
+    background: transparent url(glb-bg.jpg) 0 0 repeat-x;
+    font-family: arial, helvetica, sans-serif;
+}
+
+/* Don't mess up our line heights */
+p {
+    line-height: normal;
+    clear: inherit;
+}
+
+/* PGE didn't mark the tab I used as active so Snooper missed this code */
+#glb-hdr-secondary-nav li a.on,
+#glb-hdr-secondary-nav li a.on:hover {color:#FFF; padding:0 0 0 2px;}
+#glb-hdr-secondary-nav li a.on span {display:block; float:left; padding:0 20px; height:60px; background:url('./glb-hdr-secondary-nav-indicator.gif') 50% 100% no-repeat;}
+#glb-hdr-secondary-nav li.over a.on span {background:transparent;}
+
+/* Fix PGE bug to add correct padding */
+#glb-hdr-toolbar .contact-link span a {
+    padding-right: 11px;
+}
+
+/* Show our normally hidden page headings - but the text of these is in message properties, not tabs.json */
+h1.contentHeader {
+    font-size: 25px;
+    line-height: 50px;
+
+    color: #0089C4;
+    font-weight: bold;
+
+    display: block;
+}
+
+/* Remove excess padding */
+#main-content {
+    padding-top: 0;
+    font-size: 14px;
+    min-height: 775px;
+}
+
+/* Hide gray that we normally use on most pages with slabs */
+#content {
+    background: none;
+}
+
+/* Change drop shadow to go all the way around.  Don't use border because it will change the width. */
+.slab {
+    box-shadow: 0 0 1px 1px #ccc;
+}
+
+/* This style makes PGE less accessible and should be removed. */
+#page-ideas h1.pageTitleHeader {
+    display: none;
+}
+
+/* WEB-2942: Non-color-based-cues for links.  Accessibility requirement.  Overrides necessary to play nice w/ Astro. */
+.glb-hdr-container a { text-decoration: none; }
+.glb-ftr-container a { text-decoration: none; }
+.glb-ftr-container a:hover { text-decoration: underline; }
+
+/* CO-30923 - make h2 headings for conditional messages bold */
+.module-utility_account__rate_conditional_message-description h2 {
+    font-weight: bold;
+}

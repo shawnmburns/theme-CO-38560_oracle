@@ -1,0 +1,151 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{{themeUrl}}/assets/opower_clp.js"></script>
+<table bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="top">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="0e3b91" class="header">
+          <tbody>
+            <tr>
+              <td>
+                <img src="https://www.clponline.com.hk/EO2/images/opower/web/logo.jpg" border="0" hspace="16" alt="CLP Online Logo"></td>
+              <td>
+                <div align="right">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <!-- Header start here -->
+                          <table border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="https://www.clponline.com.hk/EO2/link.aspx?target=faq&lang=en_HK" target="CLPonline">
+                                    <img src="{{themeUrl}}/assets/help_en_HK.jpg" name="btn_faq" border="0" alt="FAQ"></a>
+                                </td>
+                                <td>
+                                  <a href="https://www.clponline.com.hk/EO2/link.aspx?target=feedback&lang=en_HK" target="CLPonline">
+                                    <img src="{{themeUrl}}/assets/feedback_en_HK.jpg" name="btn_feedback" border="0" alt="Feedback"></a>
+                                </td>
+                                <td>
+                                  <a href="https://www.clponline.com.hk/EO2/link.aspx?target=contact&lang=en_HK" target="CLPonline">
+                                    <img src="{{themeUrl}}/assets/contact_en_HK.jpg" name="btn_contact" border="0" alt="Contact"></a>
+                                </td>
+                                {{#loggedIn}}
+                                <td>
+                                  <a class="languagePreferenceLink" id="languagePreferenceLink-0" href="javascript:void(0);" data-new-locale="zh_HK">
+                                    <img class="btn-language" src="{{themeUrl}}/assets/change_lang_en_HK.jpg" name="btn_language" border="0" alt=""></a>
+                                </td>
+                                {{/loggedIn}}
+                                {{^loggedIn}}
+                                <td>
+                                  <a class="languagePreferenceLinkNoLogin" href="?locale=zh_HK">
+                                    <img class="btn-language" src="{{themeUrl}}/assets/change_lang_en_HK.jpg" name="btn_language" border="0" alt=""></a>
+                                </td>
+                                {{/loggedIn}}
+                                <!-- <td>
+                                  <img src="{{themeUrl}}/assets/nav_fontSize_en_HK.gif" name="btn_fontsize" border="0" alt="Font Size">
+                                  <a href="javascript:changeFontSize(1);">
+                                    <img src="{{themeUrl}}/assets/nav_font_increase.gif" name="btn_fontsize_increase" border="0" alt="Increase Font Size"></a>
+                                  <a href="javascript:changeFontSize(-1);">
+                                    <img src="{{themeUrl}}/assets/nav_font_decrease.gif" name="btn_fontsize_decrease" border="0" alt="Decrease Font Size"></a>
+                                </td> -->
+                                <td>
+                                  <img src="{{themeUrl}}/assets/spacer.gif" border="0"></td>
+                                {{#loggedIn}}
+                                <td style="padding-right:16px">
+                                  <a href="/ei/app/logout">
+                                    <img name="btn_logout" border="0" src="{{themeUrl}}/assets/logout_en_HK.jpg" alt="logout"></a>
+                                </td>
+                                {{/loggedIn}}
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- Header end here --> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <img src="https://www.clponline.com.hk/EO2/images/opower/web/clplogo.jpg" border="0" hspace="16" alt="CLP"></div>
+              </td>
+            </tr>
+            <tr class="">
+              <table width="800" border="0" cellpadding="0" cellspacing="0">
+                <!-- *Original Content Removed* --> </table>
+            </tr>
+          </tbody>
+        </table>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table_bg_footer">
+          <!-- *Original Content Removed* -->
+          <tr>
+            <td>
+              <div id="header" class="clearfix">
+                <div id="nav-main" class="clear" role="navigation">
+                  <ul class="navigation unlist rounded-tl rounded-tr">
+                    {{#navBar}}
+                    <li {{#active}}class="active"{{/active}}>
+                      <a class="{{#active}}active{{/active}}" href="{{url}}">
+                        {{label}}
+                      </a>
+                    </li>
+                    {{/navBar}}
+                  </ul>
+                </div>
+              <div id="nav-secondary" class="clearfix bg-brand" role="navigation">
+                <ul class="subnav-list">
+                  {{#hasActiveSubNav}}
+                  {{#activeSubNav}}
+                    <li {{#active}}class="active" data-nav-secondary-state="active"{{/active}}>
+                      <a href="{{url}}" class="rounded-tl rounded-tr">{{label}}</a>
+                    </li>
+                  {{/activeSubNav}}
+                  {{/hasActiveSubNav}}
+                  {{^hasActiveSubNav}}
+                    {{#navBar}}
+                      {{#active}}
+                        <div class="banner bg-brand" role="banner">
+                          <h2>
+                            {{heading}}
+                            {{^heading}}
+                              {{label}}
+                            {{/heading}}
+                          </h2>
+                        </div>
+                        {{/active}}
+                      {{/navBar}}
+                    {{/hasActiveSubNav}}
+                  </ul>
+                </div>
+              </div>
+            {{{content}}}
+            </td>
+          </tr>
+        </table>
+        <!-- Footer start here -->
+        <!-- Begin Footer -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr>
+              <td width="15"></td>
+              <td height="50">
+                <a href="https://www.clponline.com.hk/EO2/link.aspx?target=privacy&lang=en_HK" class="footerText" target="CLPonline">Privacy Policy</a>
+                |
+                <a href="https://www.clponline.com.hk/EO2/link.aspx?target=pics&lang=en_HK" class="footerText" target="CLPonline">Personal Information Collection Statement</a>
+                |
+                <a href="https://www.clponline.com.hk/EO2/link.aspx?target=disclaimer&lang=en_HK" class="footerText" target="CLPonline">Disclaimer</a>
+                |
+                <a href="https://www.clponline.com.hk/EO2/link.aspx?target=copyright&lang=en_HK" class="footerText" target="CLPonline" >Copyright</a>
+                |
+                <a href="https://www.clponline.com.hk/EO2/link.aspx?target=clponline&lang=en_HK" class="footerText" target="CLPonline">CLP Online</a>
+              </td>
+              <td class="footerText" align="right" style="padding-right:10px;">&copy; 2014 CLP Power Hong Kong Limited. All Rights Reserved</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End Footer -->
+        <!-- Footer end here --> </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- END OF SmartSource Data Collector TAG -->
+<script src="{{themeUrl}}/assets/SdcTagJs.js"></script>

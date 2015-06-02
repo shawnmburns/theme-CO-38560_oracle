@@ -1,0 +1,90 @@
+{
+    "navBar" : [
+        {
+            "pageName": "dashboard",
+            "label":    "Översikt Min energirapport",
+            "url":      "/dashboard",
+            "heading":  "Welcome", 
+            "cssClass":    "rounded-tl first"
+        },
+        {
+            "pageName": "myEnergyUse",
+            "label":    "Min energiförbrukning",
+            "url":      "/myEnergyUse",
+            "cssClass":    "custom",
+            "hasSubNav": true,
+            "subNav": [
+                {
+                    "pageName": "myEnergyUse",
+                    "label":    "Detaljer om min förbrukning",
+                    "url":      "/myEnergyUse"
+                },
+                {
+                    "pageName": "whatUsesMost",
+                    "label":    "Vad förbrukar mest?",
+                    "url":      "/whatUsesMost/",
+                    "displayCriteria": {
+                        "type": "CUSTOMER_TYPE",
+                        "arguments": {
+                            "customerType": "RESIDENTIAL"
+                        }
+                    }
+                },
+                {
+                    "pageName": "compareMyBills",
+                    "label":    "Jämför mina fakturor",
+                    "url":      "/compareMyBills"
+                },
+                {
+                    "pageName": "myGoal",
+                    "label":    "Mitt mål",
+                    "url":      "/s/myGoal.html"
+                }
+            ]
+        },
+        {
+            "pageName": "myPlan",
+            "label":    "Min energisparplan",
+            "url":      "/myPlan",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "ideas",
+            "label":    "Energispartips",
+            "url":      "/ideas/free",
+            "cssClass":    "custom"
+        },
+        {
+            "pageName": "login",
+            "heading":  "Logga in"
+        },
+        {
+            "pageName": "myHomeSettings",
+            "heading":  "Om min bostad"
+        },
+        {
+            "pageName": "reportSettings",
+            "heading":  "Rapportinställningar"
+        },
+        {
+            "pageName": "accountSettings",
+            "heading":  "Kontoinställningar"
+        },
+        {
+            "pageName": "alerts",
+            "heading":  "Aviseringar"
+        },
+        {
+            "pageName": "help",
+            "heading":  "Hjälp"
+        },
+        {
+            "pageName": "termsOfUse",
+            "heading":  "Användningsvillkor"
+        },
+        {
+            "pageName": "privacyPolicy",
+            "heading":  "Sekretesspolicy"
+        }
+    ]
+}

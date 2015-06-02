@@ -1,0 +1,71 @@
+.oucss_button
+{
+  height: 20px;
+}
+
+.oucss_user_name
+{
+  font-family: Tahoma, Verdana, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.oucss_outage_area
+{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.AmountDue
+{
+  font-family: Tahoma, Verdana, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.oucss_button_80px
+{
+  width:80px;
+}
+
+.oucss_dashboard_graph_button
+{
+  width:120px;
+}
+.oucss_information_update_button
+{
+  width:70px;
+}
+.oucss_previous_button
+{
+  width:60px;
+}
+.oucss_next_button
+{
+  width:60px;
+}
+.oucss_move_previous_button
+{
+  width:80px;
+}
+.oucss_move_next_button
+{
+  width:80px;
+}
+.oucss_show_me_button
+{
+  width:70px;
+}
+.oucss_no_wrap
+{
+  white-space:nowrap;
+}
+.oucss_set_popup
+{  
+  width: 600.0px;
+  height: 500.0px;
+}
+.oucss_set_data_area
+{  
+  height: 445.0px;
+}

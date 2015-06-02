@@ -1,0 +1,139 @@
+<a id="skip-nav-link" class="hide" href="#content">Skip to main content</a>
+<div id="utilityNavContainer">
+  <a class="button" href="http://opower.com/">
+    <span class="">UtilityCo</span>
+    <span class="icon icon-right-5 icon-size-5"></span>
+  </a>
+</div>
+
+<div class="container" data-test-pageName="{{pageName}}" data-test-displayName="{{displayName}}" data-test-username="{{username}}" data-test-clientName="{{clientName}}" data-test-astroUrl="{{astroUrl}}" data-test-themeUrl="{{themeUrl}}">
+  <div id="header" class="clearfix">
+    <div id="header-logo">
+      <h1>
+        {{#loggedIn}}
+        <a href="{{clientUrl}}/app/dashboard" id="top" title="UtilityCo">
+                {{/loggedIn}}
+                {{^loggedIn}}
+                    <a href="{{clientUrl}}/app/index.html" id="top" title="UtilityCo">
+                {{/loggedIn}}
+                <span class="hide">{{clientName}}</span>
+                </a>
+      </h1>
+    </div>
+
+    <div id="header-meta">
+      {{#loggedIn}}
+      <div class="module-person-userbox">
+        <ul class="nav-meta small">
+
+          <li class="first" data-test-name="{{displayName}}">ようこそ</li>
+
+          <li><a id="myAccountLink" href="/ei/app/myAccount">マイアカウント</a>
+          </li>
+          <li class="last">
+            <a href="/ei/app/logout">サインアウト</a>
+          </li>
+        </ul>
+      </div>
+      {{/loggedIn}} {{^loggedIn}}
+      <ul class="nav-meta small">
+        <li class="first">
+          <a href="{{clientUrl}}/app/help.html" data-test-help="header">Help</a>
+        </li>
+      </ul>
+      <ul class="nav-buttons">
+        <li>
+          <a href="{{clientUrl}}/app/account/create" data-sso="headerCreateAccount standard" class="button" id="header-createAccountLink">Create an account</a>
+        </li>
+        <li>
+          <a href="{{clientUrl}}/app/signin/index.html" class="button signInDropdownToggle">Sign In<span class="arrow"></span></a>
+          <div class="hide rounded signInDropdown">
+            <div class="rounded bg-white">
+              <form id="login-form" name="login-form" action="/ei/app/login-process" method="post" class="clearfix nonssoSignIn">
+                <div class="font-scheme-1 space-bottom-small clearfix">
+                  <div class="float-left icon-size-3 space-right-small">
+                    <div class="icon icon-blue-I-3 icon-size-3 "></div>
+                  </div>
+                  This site requires a different account than online billing. <a href="{{clientUrl}}/app/account/create">Create an account</a>
+                </div>
+                <p class="space-bottom-small">
+                  <label for="header-username" class="align-left">Email address</label>
+                  <input type="text" name="j_username" id="header-username" class="text">
+                </p>
+                <p class="space-bottom">
+                  <label for="header-password" class="align-left">Password</label>
+                  <input type="password" name="j_password" id="header-password" class="text password">
+                </p>
+                <div class="clearfix space-top">
+                  <div class="float-left">
+                    <input id="header-loginButton" type="submit" name="login" class="orangebutton rounded" value="Sign in" data-test-signinbutton="nonSSO">
+                  </div>
+                  <div class="space-bottom-small float-left space-left font-scheme-1 center-vertical">
+                    <a id="header-forgotPasswordLink" href="{{clientUrl}}/app/account/password">Forgot your password?</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+      {{/loggedIn}}
+
+    </div>
+    <div id="nav-main" class="clear" role="navigation">
+      <ul class="rounded-tl rounded-tr">
+        {{#navBar}}
+        <li {{#active}}data-nav-state="active" class="active" {{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a>
+        </li>
+        {{/navBar}}
+      </ul>
+    </div>
+    <div id="nav-divider"> </div>
+    {{#hasActiveSubNav}}
+    <div id="nav-secondary" class="clearfix bg-brand">
+      <ul>
+        {{#activeSubNav}}
+        <li {{#active}}data-nav-secondary-state="active" class="active" {{/active}}>
+          <a href="{{url}}" id="{{id}}" class="rounded-tl rounded-tr">{{label}}</a>
+        </li>
+        {{/activeSubNav}}
+      </ul>
+    </div>
+    {{/hasActiveSubNav}} {{^hasActiveSubNav}} {{#navBar}} {{#active}}
+    <div class="banner bg-brand" role="banner">
+      <h2>
+        {{heading}} {{^heading}} {{label}} {{/heading}}
+      </h2>
+    </div>
+    {{/active}} {{/navBar}} {{/hasActiveSubNav}}
+
+  </div>
+</div>
+<div class="container">
+  {{{content}}}
+</div>
+<div class="container">
+  <div id="footer-container">
+    <div id="footer" class="small clearfix" role="contentinfo">
+      <ul class="nav-meta">
+        <li class="first"><a href="{{clientUrl}}/app/help.html">ヘルプ</a>
+        </li>
+        <li><a href="{{clientUrl}}/app/help.html">お問い合わせ</a>
+        </li>
+        <li><a href="{{clientUrl}}/app/terms_of_use.html">ご利用規約</a>
+        </li>
+        <li><a href="{{clientUrl}}/app/privacy_policy.html">個人情報保護方針</a>
+        </li>
+      </ul>
+      <div id="copyright" data-test-copyrightuntil="2012">
+        &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script><noscript>2015</noscript> OPOWER&reg;. All rights reserved.
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+.greenButton {
+  background: url({{themeUrl}}/assets/greenbutton_JA.png) no-repeat;
+}
+</style>

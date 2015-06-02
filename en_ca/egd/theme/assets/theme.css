@@ -1,0 +1,403 @@
+/** 
+ * 
+ * imported from: 
+ * https://www.enbridgegas.com/Styles/Site.css
+ * 
+ **/
+body,button {font: normal 62.7% Arial,sans-serif;}
+
+html,body, form , input.checkbox {margin: 0; padding: 0;}
+
+img {border: 0;}
+
+table {border-collapse: collapse;}
+
+.navigation {list-style: none; margin: 0; padding: 0;}
+
+h1 {font: Arial Bold; font-size: 27px; color: #fff;}
+
+h2 {font-size: 1.8em;}
+
+h6 {color: #eae4a9; font-size: 1.7em; margin-bottom: 8px;}
+
+.footer h6 {color: #959799; font-size: 10px; font-weight: bold; margin-bottom: 8px;}
+
+.contentContainer p a {font-size: 1em !important;}
+
+a {text-decoration: none;}
+
+.rightRail a, input.text {font-size: 12px;}
+
+body, .secondaryNav li a, .breadcrumbs li a, .printfontcontrol a, .sectionNav .navigation li a , .landingContainer p, select, .paragraph {color: #333333;}
+
+label {font-weight: bold;}
+
+.hidden {display: none !important;}
+
+.clear {clear: both;}
+
+.ucase {text-transform: uppercase;}
+
+#tooltipcontainer, #tooltipcontainerMyE {background: url(tooltipbottom.png) no-repeat 0 100%; padding: 0 0 10px 0; position: absolute; width: 351px; z-index: 150;}
+
+.tooltipc1 {background: url(shadowright.png) no-repeat 100% 0; padding: 0 6px 0 0;}
+
+.tooltipc2 {background: #fff; border: 1px solid #576067; padding: 5px;}
+
+.tooltipheader a {color: #5e9cae; float: right;}
+
+#tooltipbody {font-size: 11px; margin: 5px 0 0;}
+
+.tooltipclose {background: url(allaccountsclose.gif) no-repeat 100% 0; display: block; height: 15px; width: 15px;}
+
+.tooltiparrow {background: url(tooltiparrow.png) no-repeat; bottom: -10px; height: 21px; left: 20px; position: absolute; width: 19px;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+
+*:first-child+html .clearfix {zoom: 1;}
+
+.layout , .contentContainer {margin: 0 auto; width: 1003px;}
+
+.logo {background: url(logo.png) no-repeat 16px 16px; float: left; height: 61px; margin: 0; text-indent: -10000px; width: 340px;}
+
+.headerContainer , .header {background: url(header_bg.gif) repeat-x 50% 0;}
+
+.headerContainer, .footerContainer {width: 100%;}
+
+.header {height: auto;}
+
+.header .layout {width: 972px;}
+
+.headerElements {float: right; height: 70px; position: relative; width: 630px;}
+
+.header .navigation {float: left;}
+
+.header .navigation li,.footer .navigation li, .anchors .navigation li {border-left: 1px solid #fff; display: inline; padding: 0 5px;}
+
+.header .navigation li.first,.footer .navigation li , .header .breadcrumbs li, .secondaryFooterMenu ul.navigation li.first , .anchors .navigation li.first {border: 0;}
+
+.myenbridgeNav {background: url(myenbridge_menu.gif) no-repeat 0 0 #92b051; margin-bottom: 16px; padding-left: 115px; position: absolute; right: 0;}
+
+.myenbridgeNav .navigation {float: none; margin: 7px 10px 7px;}
+
+.myenbridgeNav .navigation li a {color: #fff;}
+
+.searchBar {height: 25px; position: absolute; right: 0; text-align: right; top: 40px; width: 420px;}
+
+.searchBar label {color: #fff; font-size: 12px; font-weight: bold;}
+
+.searchBar span {color: #fdbf57; font-size: 13px;}
+
+.searchBar input {background: #c5c8ca; border: 0; margin-right: 1px; width: 180px;}
+
+.searchBar input.labelinput {color: #5a5d61;}
+
+.primaryNav ul.navigation {margin: 14px 0 0 0;}
+
+.primaryNav ul.navigation li {border-left: 2px solid #85888a; padding: 0 18px;}
+
+.primaryNav ul.navigation li a {color: #fff; font-size: 12px; font-weight: bold;}
+
+.primaryNav ul.navigation li.selected a , .primaryNav ul.navigation li a:hover {color: #fdbf57;}
+
+.homeBusinessNav li {background: transparent;}
+
+.header .secondaryNav {float: none; margin: 0px 0 0 43px;}
+
+.header .secondaryNav li {background: url(divider.gif) no-repeat center left; border: 0; float: left; line-height: 16px; padding: 0; z-index: 3;}
+
+.header .secondaryNav li.first {background: none;}
+
+.secondaryNav li a {display: block; font-size: 14px; font-weight: bold; padding: 16px 11px 11px;}
+
+.secondaryNav li a:hover {background: #c60c30; color: #fff;}
+
+.secondaryNav li#home a {background: url(button_home.gif) no-repeat 1px 13px; border: 0; height: 18px; text-indent: -10000px; width: 21px;}
+
+.secondaryNav li#home.selected a, .secondaryNav li#home a:hover {background-image: url(button_home_selected.gif);}
+
+.dropdown {margin: 0; padding: 0;}
+
+.dropdown ul,.dropdown li {list-style: none; margin: 0; padding: 0;}
+
+.dropdown li {display: block; float: left; padding: 0 10px; position: relative;}
+
+.dropdown a {display: block; text-decoration: none;}
+
+.dropdown ul {background: #8e9296; display: none; left: 0; padding-bottom: 10px; position: absolute; z-index: 100;}
+
+.dropdown ul li {float: none; padding: 0;}
+
+.dropdown ul li a {color: #ffffff; display: -moz-inline-stack; display: inline-block; font-size: 12px; padding: 6px 11px 6px 17px; width: 130px; width: 160px; zoom: 1;}
+
+.dropdown ul li a {background: #8e9296;}
+
+.dropdown ul li a:hover {}
+
+.dropdown .widedropdown ul li a {width: 200px;}
+
+.utilityBar {padding: 10px 0 20px 43px;}
+
+.header .breadcrumbs li {color: #595757; padding: 0;}
+
+.printfontcontrol a, .navlabel , .breadcrumbs a, .breadcrumbs span {font-size: 11px; white-space: nowrap;}
+
+.breadcrumbs li a {background: url(bullet_breadcrumb.gif) no-repeat 100% 4px; color: #595757; margin: 0 4px 0 0; padding-right: 10px;}
+
+.banner {background-repeat: no-repeat; border: 1px solid #fff; color: #fff; height: 128px; margin: 0 auto; width: 972px;}
+
+.banner.hideTitle h1 {display: none;}
+
+.footer {background: none; padding: 20px 0;}
+
+.footerContainer , .footer {background: none;}
+
+.footer .layout {width: 940px;}
+
+.footer .columns {float: left; margin: 0 20px 0 0; width: 152px;}
+
+.footer .column3 {margin: 0 20px 0 0; width: 137px;}
+
+.myEnbridgeSection {color: #959799; font-size: 10px;}
+
+.myEnbridgeSection li {background: url(bullet_footer_menu.png) no-repeat 0 4px; padding: 0 0 0 10px;}
+
+.footer .myEnbridgeSection ul li a {background: none; display: inline; padding: 0 3px;}
+
+.footer .moreLinks {margin: 0;}
+
+.footer .emergencyBeforeDig {width: 182px;}
+
+.footer .moreLinks {width: 237px;}
+
+.footer .navigation li {display: block; margin: 0 0 0 3px;}
+
+.footer .emergencyBeforeDig li, .footer .emergencyBeforeDig p {margin: 0;}
+
+.footer .myEnbridgeSection li {margin: 0 0 0 8px;}
+
+.footer a, .footer .heading, .footer p, .copyright {color: #676a6c; font-size: 10px;}
+
+.footer li.heading {font-weight: bold; margin-bottom: 8px;}
+
+.footer .emergency {color: #c60c30;}
+
+.footer .item {float: left; width: 119px;}
+
+.myEnbridgeTitle {background: url(footer_myenbridge_transparent.gif) no-repeat; height: 15px; margin-top: 10px; text-indent: -10000px; width: 73px;}
+
+.logoSmall {background: none; float: left; height: 25px; margin: -12px 7px 0 0; text-indent: -10000px; width: 83px;}
+
+.top100 {background: url(top100.jpg) no-repeat; float: left; height: 62px; margin-right: 10px; text-indent: -10000px; width: 65px;}
+
+.twitter {background: url(TwitterLogo.png) no-repeat; float: left; height: 55px; margin-right: 10px; text-indent: -10000px; width: 65px;}
+
+.footer .secondaryFooterMenu {margin: 30px auto 0; width: 940px;}
+
+.secondaryFooterMenu ul, .copyright {float: left;}
+
+.secondaryFooterMenu a.top {float: right;}
+
+.secondaryFooterMenu ul.navigation li {border-left: 1px solid #bbbdc1; display: inline; font-size: 10px; padding: 0 5px; margin-left: 0;}
+
+.secondaryFooterMenu ul.navigation li a {background: 0; color: #5e9cae; display: inline; padding: 0;}
+
+.quickLinksContainer , .quickLinkBottom p , .brandFeature {float: left;}
+
+.quickLinkBottom p {display: block; width: 500px;}
+
+.quickLinks , .quickLinkBottom {background: url(quicklinks_bg.gif) no-repeat left top; margin-top: 6px; width: 725px;}
+
+.quickLinkBottom {background-position: 0 -383px; padding: 10px 40px 0 40px; width: 645px;}
+
+.updateItem {background: #fff;}
+
+.layout, .contentContainer {width: auto;}
+
+.layout, .contentContainer {width: auto;}
+
+.contentContainer {min-height: 350px;}
+
+.contentPage {}
+
+.contentPage h1 {margin: 45px 0 0 45px;}
+
+.contentPage .contentContainer {margin: 10px auto 40px; width: 972px;}
+
+.subSectionPage h1 {margin: 49px 0 0 253px; width: 400px;}
+
+.contentContainer a, .quickLinkBottom a, .securityBar a, .contenttabscontentarea a {color: #5e9cae;}
+
+.footer .navigation a, a.learnMore, a.top, a.contentLink, ul.contentLink a {background: url(bullet_menu.png) no-repeat 0 4px; display: block; padding: 0 0 0 10px;}
+
+.footer .navigation a, a.learnMore {background-image: url(bullet_footer_menu.png);}
+
+a.top {background-image: url(bullet_top.png); color: #5e9cae;}
+
+ul.contentLink {margin: 0; padding: 0;}
+
+ul.contentLink li {list-style: none;}
+
+a.contentLink {display: inline-block;}
+
+ul.contentLink a {display: inline-block;}
+
+a.updates {float: right;}
+
+a.button , a.button span, button.button span {*display: inline; background: url(button_standard.gif) repeat 100% 0; color: #333333; cursor: pointer; display: -moz-inline-stack; display: inline-block; font-size: 11px; font-weight: bold; line-height: 23px; padding: 0 10px; text-decoration: none; text-transform: uppercase; white-space: nowrap; zoom: 1;}
+
+a.button span , button.button span {background-position: 0 0; padding: 0 0 0 2px;}
+
+a.signin , a.signin span {background-image: url(button_signin.gif); color: #fff; padding: 2px 32px 3px 0;}
+
+a.signin {margin-bottom: 10px;}
+
+a.signin span {padding: 0 0 0 20px;}
+
+.tabs {list-style: none; margin: 0 0 0 0px; padding: 0;}
+
+.tabs li,.tabs li a {background: url(tab_off.png) no-repeat 0 0; float: left; line-height: 19px; text-align: center; text-decoration: none; white-space: nowrap;}
+
+.tabs li {background-position: 100% 0;}
+
+.tabs li a {color: #fff; font-size: 14px; font-weight: bold; padding: 10px 6px 11px 0; width: 170px;}
+
+.tabs li.selected a:hover, .tabs li a:hover {color: #333333;}
+
+.tabs li.selected,.tabs li.selected a {background: #e4e7eb; color: #c60c30;}
+
+.form {border-collapse: collapse; border: 0;}
+
+.form td {padding: 3px 5px 5px 0; vertical-align: top;}
+
+.form .checkbox {margin: -3px 3px -1px 0;}
+
+*:first-child+html .form .checkbox {margin: -4px 0 0 -3px;}
+
+.form .text,.form select,.form textarea {border: 0px; margin: -3px 0 0;}
+
+#mask {background-color: #333; display: none; left: 0; position: absolute; top: 0; z-index: 6;}
+
+#dialog {position: absolute; z-index: 1000;}
+
+.dialogheader {background: #72B5CC; padding: 10px 10px 15px 45px;}
+
+.dialogtitle {color: #fff; font-size: 24px;}
+
+.dialogclose {background: url(allaccountsclose.gif) no-repeat 100% 0; color: #fff; display: block; float: right; font-size: 11px; height: 15px; padding-right: 20px;}
+
+#popupcontent {background: #fff;}
+
+.dialogcontainer {background: url(shadow_r.png) no-repeat 100% 0; margin-right: -50px; padding-right: 50px;}
+
+.dialogbottom , .dialogcorner {height: 50px;}
+
+.dialogcorner {background: url(shadow_br.png) no-repeat; position: absolute; right: -50px; width: 50px;}
+
+.dialogbottom {background: url(shadow_b.png) no-repeat 0 0; position: relative;}
+
+.widget img, .videoWidget img {margin-bottom: 10px;}
+
+.divgleft {width: 30%; float: left;}
+
+.divgright {width: 70%; float: right;}
+
+.loginWidget {color: #fff;}
+
+.loginWidget, .infoWidget {float: left;}
+
+.loginWidget {background: #92b051 url(signinbg.gif) no-repeat right bottom; height: 345px; padding: 0; width: 350px;}
+
+.loginWidget, .infoWidget {float: right;}
+
+.loginWidget .innerWidget {color: #fff; padding: 10px 15px 0px 42px; width: 260px;}
+
+.loginWidget .innerWidget , .loginWidget .innerWidget a {color: #fff;}
+
+.loginWidget input.text {width: 165px;}
+
+.loginWidget input.labelinput {color: #ccc;}
+
+.loginWidget input.nonlabel {color: #333;}
+
+.loginHeader {background: url(signinhead.gif) no-repeat left top; height: 23px; margin: 20px 0 8px 42px; text-indent: -5000px; width: 250px;}
+
+.infoWidget {border: 1px solid #dedfe4; height: 315px; margin: 0 0 0 10px; padding: 23px 46px 5px; width: 517px;}
+
+.infoWidget .videoWidget {float: right;}
+
+.infoWidget h2 {margin-bottom: 20px;}
+
+.infoWidget p.subhead {margin-bottom: 20px;}
+
+.infoWidget ul {margin: 0 0 9px; padding: 0;}
+
+.infoWidget ul li {background: url(icons_login_page.gif) no-repeat 0 0; height: 28px; list-style: none; padding-left: 30px; width: 263px;}
+
+.infoWidget ul li.first {padding-top: 5px;}
+
+.infoWidget ul li.second {background-position: 0 -34px; margin-bottom: 15px;}
+
+.infoWidget ul li.third {background-position: 0 -60px;}
+
+.infoWidget ul li.fourth {background-position: 0 -87px;}
+
+.infoWidget ul li.fifth {background-position: 0 -120px;}
+
+.loginerrorcontainer {background: #fff url(icon_error1.gif) no-repeat 22px 13px; border: 2px solid #92b051; margin: 0 0 12px; padding: 10px 0 0 46px; width: 300px;}
+
+.loginerrorcontainer {background: url(icon_error1.gif) no-repeat scroll 22px 13px #FFFFFF; border: 2px solid #92B051; margin: 0 0 -1; margin: 0 0 -12px; padding: 10px 0 0 46px; width: 300px;}
+
+#ctl00_BodyContent_ctrlLogin1_login_lnkForgotPass {color: #fff; color: #FFFFFF; font-size: 11px; text-decoration: underline; background: url(bullet_menu.png) no-repeat scroll 0 4px transparent; display: block; padding: 0 0 0 12px;}
+
+.videoWidget {background: #FFFFFF; border: none; padding: 15px 20px; width: 160px;}
+
+.embeddedlabel {color: #888;}
+
+.contactCorporateOffices {margin-top: 12px;}
+
+.checkbox.mainloginremembermetext input {margin: 0px 5px 0 0;}
+
+.mainloginremembermetext label {font-size: 11px; font-weight: normal; display: inline-block; padding: 0 0 5px 0; vertical-align: middle;}
+
+.updates {font-weight: bold; margin: 20,0,0,20; padding: 10,0,0,10;}
+
+.bannerShort {background-repeat: no-repeat; border: 1px solid #fff; color: #fff; height: 128px; margin: 0 auto; width: 972px;}
+
+.breadcrumbs li.selected a {background: none; color: #333333; font-weight: bold; padding-right: 0;}
+
+.searchBar div {display: inline;}
+
+.mainloginremembermetext {font-size: 11px; margin: -6px 10px 5px 0;}
+
+.myenbridgeNav {background: url(myenbridge_menu.gif) no-repeat 0 0 #92b051; float: right; margin-bottom: 16px; padding-left: 115px; width: auto;}
+
+.header .secondaryNav li.first {background: none;}
+
+.secondaryNav li#home a {background: url(button_home.gif) no-repeat 1px 13px; border: 0; height: 18px; text-indent: -10000px; width: 21px;}
+
+.printfontcontrol a, .navlabel , .breadcrumbs a, .breadcrumbs span {font-size: 11px; white-space: nowrap;}
+
+.banner {background-repeat: no-repeat; border: 1px solid #fff; color: #fff; height: 128px; margin: 0 auto; width: 972px;}
+
+.bannerShort {background-repeat: no-repeat; border: 1px solid #fff; color: #fff; height: 128px; margin: 0 auto; width: 972px;}
+
+.footer a, .footer .heading, .footer p, .copyright {color: #676a6c; font-size: 10px;}
+
+.secondaryFooterMenu ul.navigation li {border-left: 1px solid #bbbdc1; display: inline; font-size: 10px; padding: 0 5px; margin-left: 0;}
+
+.updateItem {background: #fff;}
+
+.infoWidget {border: 1px solid #dedfe4; height: 300px; margin: 0 0 0 10px; padding: 23px 46px; width: 517px;}
+
+.embeddedlabel {color: #888;}
+
+#ctl00_bodyTag.contentPage .rightRail-3-col {float: left; margin-left: 39px; margin: 0 0 0 10px; width: 292px;}
+
+.logincontent {margin: 0; width: 972px;}
+
+.addthis_toolbox a {color: Black;}
+
+.at300m {margin-top: 4px !important;}
+
+.at300bs {margin-top: -4px !important;}

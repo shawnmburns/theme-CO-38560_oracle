@@ -1,0 +1,207 @@
+/* Put overrides in here */
+
+body {
+  line-height: 1;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif; 
+  font-weight: normal;
+}
+
+#primary-nav .separator {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+#content {
+  width: auto;
+  padding: 20px 10px 20px 10px; 
+}
+
+.container {
+  width: 960px;
+}
+
+#header {
+  margin: 0px;
+}
+
+#footer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#search-site input.search-btn {
+  cursor: pointer;
+  float: left;
+  position: relative;
+  left: -1px;
+  background-image: url(MagnifyingGlass.gif);
+  background-repeat: none;
+  width: 25px;
+  height: 24px;
+  border: none;
+  
+}
+
+#search-site input.search-btn:hover {
+  background-image: url(MagnifyingGlassHover.gif);
+}
+
+#search-site input.searchbox {
+  padding:1px;
+}
+
+#header #nav-wrapper {
+  margin: 20px 0 20px 0;
+  border:1px solid #eeeeee;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  
+}
+
+#header #nav-main ul li a  {
+  font-size: 14px;
+}
+
+#header #nav-secondary ul li a {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+#header #nav-main ul {
+  background-image:none;
+  background-color: #eeeeee;
+
+}
+
+#header #nav-main ul li a {
+  border-right:none;
+  border-left: 1px solid #cccccc;
+}
+
+#header #nav-main ul li:first-child a {
+  border-left:none;
+}
+
+#header #nav-main ul li.active a, #header #nav-secondary ul li.active a  {
+  background-color:#ffffff;
+  color: #f21c0a;
+}
+
+#header #nav-secondary {
+  background-color:#ffffff;
+  padding:0;
+  
+}
+
+#nav-secondary ul li a {
+  border-right: 1px solid #eeeeee;
+  background-color: #ffffff;
+  color: #333333;
+  margin:0;
+}
+
+#nav-secondary ul li a:hover  {
+  background-color: #eeeeee;
+  background-image:none;
+}
+
+#nav-secondary ul li:last-child a {
+    border:none;
+}
+
+#nav-secondary ul li.active a {
+
+}
+
+#nav-secondary ul li.active a:hover {
+  background: #ffffff; 
+}
+
+.bg-brand {
+  background-color: #eeeeee;
+}
+
+#content {
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+}
+
+#copyright-info {
+  margin-bottom:0;
+}
+
+#copyright-info ul, #opower-copyright ul {
+  float:none;
+}
+
+#copyright-info a{
+  color:#5D5D5D;
+}
+
+#opower-copyright ul {
+  padding-top:10px;
+}
+
+#opower-copyright {
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#opower-copyright ul li {
+  display: inline; 
+  padding-left: 10px; 
+  padding-right: 10px;
+}
+
+.page-content, #content p {
+  color: #5D5D5D;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+a#module-tip_filters-left-allLink {
+  font-size: 14px;
+}
+
+.module-tip_filters-left-left a, .tip-detail-sidebar a {
+  font-size:14px;
+}
+
+.page-content ol {
+  list-style: decimal;
+}
+
+.module-tips-small .tip-popularity, .module-tips-small .tip-popularity p {
+  font-size: 12px;
+}
+
+form#tip-sort-form {
+  font-size: 14px;
+}
+
+.dropdown-trigger .text{
+  margin-top: -2px;
+}
+
+/* CO-29025 Hide the 'view each day' link from the mouse over in cost section of My Energy Use */
+div.page-myEnergyUse-data-type-rates div.module-utility_account__cost-graph div.elroi-tooltip-content div.drilldown {
+  display: none;
+}
+
+/* WEB-2942: Non-color-based-cues for links.  Accessibility requirement.  Overrides necessary to play nice w/ Astro. */
+#footer a { text-decoration: none; }
+#footer #copyright-info a:hover { text-decoration: none; }
+
+/* WEB-2970: Top tips dialog close button fix.  Dialog has a conflicting .close style.  So instead of showing Astro's default x
+   we'll embrace that style but we need to make some minor tweaks first. */
+#page-whatUsesMost .tip-modal .header .close { width: 20px; }
+#page-whatUsesMost .tip-modal .header .close:before { content: ''; }

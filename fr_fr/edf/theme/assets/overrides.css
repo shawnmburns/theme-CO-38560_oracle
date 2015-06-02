@@ -1,0 +1,49 @@
+/* Put overrides in here */
+
+#cookieBox {
+  background-color: #005bbb;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 26px;
+  text-align: center;
+  /* margin-top: -14px; */
+  padding-top: 1px;
+  padding-bottom: 0.5px;
+  top: 0px;
+  z-index: 1;
+  position: relative;
+}
+
+#cookieBox p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+#cookieBox p span a:visited {
+  color: white !important;
+}
+
+#cookieBox p span a:link {
+  color: white !important;
+}
+
+.list_WhiteArrow {
+  background: url("list-arrow-bg_white.png") no-repeat local left center rgba(0, 0, 0, 0);
+  margin-left: 5px;
+  padding-left: 10px;
+}
+
+#cookiebox_close {
+  left: 97%;
+  position: absolute;
+  top: 5px;
+}
+
+#utilityNavContainer A {
+  position: relative;
+  float: right;
+}

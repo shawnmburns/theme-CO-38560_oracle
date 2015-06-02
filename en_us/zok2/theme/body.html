@@ -1,0 +1,146 @@
+<a id="skip-nav-link" class="hide" href="#content">Skip to main content</a>
+<div id="utilityNavContainer">
+    <a class="button" href="https://www1.nationalgridus.com/RhodeIsland">
+    <span class="">National Grid Home Page</span>
+    <span class="icon icon-right-5 icon-size-5"></span>
+    </a>
+</div>
+
+<div class="container"
+        data-test-pageName="{{pageName}}"
+        data-test-displayName="{{displayName}}"
+        data-test-username="{{username}}"
+        data-test-clientName="{{clientName}}"
+        data-test-astroUrl="{{astroUrl}}"
+        data-test-themeUrl="{{themeUrl}}">
+    <div id="header" class="clearfix">
+        <div id="header-logo">
+            {{#loggedIn}}
+                <a href="{{clientUrl}}/app/dashboard" id="top" title="National Grid">
+            {{/loggedIn}}
+            {{^loggedIn}}
+                <a href="{{clientUrl}}/app/index.html" id="top" title="National Grid">
+            {{/loggedIn}}
+            <span class="hide">{{clientName}}</span>
+            </a>
+        </div>
+
+        <div id="header-meta">
+            {{#loggedIn}}
+                <div class="module-person-userbox">
+                    <ul class="nav-meta small">
+
+                        <li class="first" data-test-name="{{displayName}}">Welcome, <span>{{displayName}}</span></li>
+
+                        <li><a id="myAccountLink" href="/ei/app/myAccount">My Account</a></li>
+                        <li>
+                            <a class="languagePreferenceLink" href="javascript:void(0);" data-new-locale="es_US">Español</a>
+                        </li>
+
+                        <li class="last">
+                        <a href="/ei/app/logout">Sign Out</a></li>
+                    </ul>
+                </div>
+            {{/loggedIn}}
+            {{^loggedIn}}
+                <ul class="nav-meta small">
+                    <li class="first">
+                        <a href="{{clientUrl}}/app/help.html" data-test-help="header">Help</a>
+                    </li>
+                    <li class="last">
+                        <a class="languagePreferenceLink" href="javascript:void(0);" data-new-locale="es_US">Español</a>
+                    </li>
+                </ul>
+                <ul class="nav-buttons">
+                    <li>
+                        <a href="{{clientUrl}}/app/account/create" data-sso="headerCreateAccount standard" class="button" id="header-createAccountLink">Create an account</a>
+                    </li>
+                    <li>
+                        <a href="{{clientUrl}}/app/signin/index.html" class="button signInDropdownToggle">Sign In<span class="arrow"></span></a>
+                        <div class="hide rounded signInDropdown">
+                            <div class="rounded bg-white">
+<form id="login-form" name="login-form" action="/ei/app/login-process" method="post" class="clearfix nonssoSignIn">
+    <div class="font-scheme-1 space-bottom-small clearfix">
+        <div class="float-left icon-size-3 space-right-small">
+        <div class="icon icon-blue-I-3 icon-size-3 "></div>
+        </div>
+        This site requires a different account than online billing. <a href="{{clientUrl}}/app/account/create">Create an account</a>
+    </div>
+    <p class="space-bottom-small">
+        <label for="header-username" class="align-left">Email address</label>
+        <input type="text" name="j_username" id="header-username" class="text" autocomplete="off">
+    </p>
+    <p class="space-bottom">
+        <label for="header-password" class="align-left">Password</label>
+        <input type="password" name="j_password" id="header-password" class="text password" autocomplete="off">
+    </p>
+    <div class="clearfix space-top">
+        <div class="float-left">
+            <input id="header-loginButton" type="submit" name="login" class="orangebutton rounded" value="Sign in" data-test-signinbutton="nonSSO">
+        </div>
+        <div class="space-bottom-small float-left space-left font-scheme-1 center-vertical">
+            <a id="header-forgotPasswordLink" href="{{clientUrl}}/app/account/password">Forgot your password?</a>
+        </div>
+    </div>
+</form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            {{/loggedIn}}
+
+        </div>
+<div id="nav-main" class="clear" role="navigation">
+    <ul class="rounded-tl rounded-tr">
+        {{#navBar}}
+            <li {{#active}}data-nav-state="active" class="active"{{/active}}><a href="{{url}}" class="{{cssClass}}">{{label}}</a></li>
+        {{/navBar}}
+    </ul>
+</div>
+<div id="nav-divider"> </div>
+    {{#hasActiveSubNav}}
+        <div id="nav-secondary" class="clearfix bg-brand">
+        <ul>
+            {{#activeSubNav}}
+            <li {{#active}}data-nav-secondary-state="active" class="active"{{/active}}>
+                <a href="{{url}}" id="{{id}}" class="rounded-tl rounded-tr">{{label}}</a>
+            </li>
+            {{/activeSubNav}}
+        </ul>
+        </div>
+    {{/hasActiveSubNav}}
+    {{^hasActiveSubNav}}
+        {{#navBar}}
+            {{#active}}
+                <div class="banner bg-brand" role="banner">
+                    <h2>
+                        {{heading}}
+                        {{^heading}}
+                            {{label}}
+                        {{/heading}}
+                    </h2>
+                </div>
+            {{/active}}
+        {{/navBar}}
+    {{/hasActiveSubNav}}
+
+    </div>
+</div>
+ <div class="container">
+{{{content}}}
+</div>
+<div class="container">
+    <div id="footer-container">
+        <div id="footer" class="small clearfix" role="contentinfo">
+            <ul class="nav-meta">
+                <li class="first"><a href="{{clientUrl}}/app/help.html">Help</a></li>
+                    <li><a href="{{clientUrl}}/app/help.html">Contact</a></li>
+                <li><a href="{{clientUrl}}/app/terms_of_use.html">Terms of Use</a></li>
+                <li><a href="{{clientUrl}}/app/privacy_policy.html">Privacy Policy</a></li>
+            </ul>
+            <div id="copyright" data-test-copyrightuntil="2012">
+                &copy; 2013 OPOWER&reg;. All rights reserved.
+            </div>
+        </div>
+    </div>
+</div>

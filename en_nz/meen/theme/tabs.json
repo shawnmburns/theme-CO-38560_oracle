@@ -1,0 +1,52 @@
+{
+   "navBar" : [
+       {
+         "pageName":   "dashboard",
+         "url":        "/dashboard",
+         "label":      "Overview",
+         "hasSubNav":  false
+      },
+      {
+         "pageName":   "myEnergyUse",
+         "url":        "/myEnergyUse",
+         "label":      "Usage Details",
+         "hasSubNav":  false
+      },
+      {
+         "pageName":   "whatUsesMost/",
+         "url":        "/whatUsesMost/",
+         "label":      "What Uses Most",
+         "hasSubNav":  false,
+         "displayCriteria": {
+              "type" : "CUSTOMER_TYPE",
+              "arguments" : {
+                  "customerType" : "RESIDENTIAL"
+              }
+          }
+      },
+      {
+         "pageName":   "compareMyBills",
+         "url":        "/compareMyBills",
+         "label":      "Compare Bills",
+         "hasSubNav":  false
+      },
+      {
+         "pageName":   "myGoal",
+         "url":        "/s/myGoal.html",
+         "label":      "Savings Goal",
+         "hasSubNav":  false
+      },
+      {
+         "pageName":   "ideas",
+         "url":        "/ideas/free",
+         "label":      "Ideas & Advice",
+         "hasSubNav":  false
+      },
+      {
+         "pageName":   "myPlan",
+         "url":        "/myPlan",
+         "label":      "Savings Plan",
+         "hasSubNav":  false
+      }
+   ]
+}
