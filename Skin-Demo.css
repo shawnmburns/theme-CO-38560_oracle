@@ -1,0 +1,361 @@
+af|document  {
+    background-color:rgb(255,255,255);
+ }
+
+af|commandButton,
+af|commandButton:text-only,
+af|commandButton:focus,
+af|commandButton:active,
+af|resetButton,
+af|resetButton:text-only,
+af|resetButton:focus,
+af|resetButton:active,
+.af_dialog_footer-button,
+.af_dialog_footer-button:text-only,
+.af_dialog_footer-button:focus,
+.af_dialog_footer-button:active
+{
+     height: 28px;
+     background:none;
+     background-color:#357ebd;
+     border:1px solid #428bca;
+     border-radius: 5px;
+     box-shadow:none;
+     font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-size:14px;
+     font-color:#FFFFFF;
+}
+
+af|commandButton:hover,
+af|commandButton:active:hover,
+af|commandButton:hover:text-only,
+af|commandButton:active:text-only,
+af|commandButton:focus:hover,
+af|commandButton:focus:hover:text-only,
+af|resetButton:hover,
+af|resetButton:active:hover,
+af|resetButton:hover:text-only,
+af|resetButton:active:text-only,
+af|resetButton:focus:hover,
+af|resetButton:focus:hover:text-only,
+.af_dialog_footer-button:hover,
+.af_dialog_footer-button:active:hover,
+.af_dialog_footer-button:hover:text-only,
+.af_dialog_footer-button:active:text-only,
+.af_dialog_footer-button:focus:hover,
+.af_dialog_footer-button:focus:hover:text-only
+
+{
+     height: 28px;
+     background:none;
+     background-color:#FFFFFF;
+     border:1px solid #428bca;
+     border-radius: 5px;
+     box-shadow:none;
+     font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+     font-size:14px;
+     font-color:#4d4d4d;
+}
+
+
+p|AFTextOnly
+{
+  font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:14px;
+  font-weight: normal;
+  text-transform:none;
+  vertical-align:middle;
+  color: #FFFFFF;
+}
+
+af|inputText_content,
+af|inputDate_content,
+.af_selectOneChoice_content,
+.af_chooseDate_choice-list-content,
+.af_chooseDate_spinbox-content,
+.af_column_data-cell
+{
+  font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:14px;
+  font-weight: normal;
+  text-transform:none;
+  vertical-align:middle;
+  color: #4d4d4d;
+}
+
+/* ADF Task Flows */
+
+.af_panelHeader_title-text1,
+.af_panelHeader_title-text2,
+.af_panelHeader_title-text3,
+.af_panelHeader_title-text4,
+.af_panelHeader_title-text5,
+.af_panelBox_header-element,
+.af_dialog_title
+{
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size:16px;
+    color: #113d8c;
+}
+
+.af_outputLabel,
+tbody, td, tr, text
+{
+	font-size:14px;
+}
+
+.af_panelLabelAndMessage,
+.af_panelLabelAndMessage_label,
+.af_commandLink,
+.af_inputText_label,
+.af_showDetailHeader_title-text2,
+.PortletHeading4,
+.af_column_column-header-cell-content,
+label
+{
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size:14px;
+    color: #113d8c;
+}
+
+
+.af_panelGroupLayout,
+.af_panelLabelAndMessage_end-facet,
+.af_panelLabelAndMessage_content-cell
+{
+	font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size:14px;
+    color: #4d4d4d;
+}
+
+.AFDataText,
+.af_table_data-row,
+.af_selectOneRadio_item-text
+{
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size:14px;
+    font-weight: normal;
+	color: #4d4d4d;
+}
+
+/* HTML Pages  */
+
+body
+{
+  background-color: White;
+  color: black;
+}
+
+h1
+{
+  color: navy;
+  font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+h2
+{
+  color: navy;
+  font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+h3
+{
+  color: navy;
+  font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: large;
+  font-weight: lighter;
+  text-transform: capitalize;
+}
+.demoH3 {
+    font-weight: bold;
+    font-size: 13px;
+    color: #333333;
+}
+
+/* Header  */
+header {
+    margin:auto;
+    box-shadow:0px 5px 5px 0px rgba(17, 61, 140, 0.23);
+}
+
+.header-top {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:14px;
+    font-weight: normal;
+    color:#4d4d4d;
+    text-transform: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.header-link {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:14px;
+    font-weight: normal;
+    padding: 5px 5px 5px 5px;
+    color:#800000;
+    text-transform: capitalize;
+}
+
+/* Top Nav */
+#menu {
+	list-style:none;
+	height:46px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+}
+#menu li {
+    float:right;
+	display:block;
+    position:relative;
+	padding: 5px 15px 5px 15px;
+}
+
+#menu li:hover {
+    padding: 5px 15px 15px 15px;
+}
+
+#menu li a {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:20px;
+    font-weight: normal;
+    text-transform: uppercase;
+	color: #113d8c;
+    background:#FFFFFF;
+    display:block;
+	outline:0;
+	text-decoration:none;
+    vertical-align:bottom;
+}
+
+/* popup menu - L2 menu options */
+
+.popupmenu {
+	margin:10px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	border:none;
+    z-index: 99;
+}
+
+/* popup alignment and appear */
+#menu li ul {
+	list-style:none;
+	padding:0;
+    margin:0;
+}
+
+#menu li:hover .popupmenu {
+	left: 0px;
+    top:auto;
+}
+
+/* popup menu blocks */
+#menu li ul li, #menu li ul li:hover {
+    position:relative;
+    padding:5px 0px 0px 0px;
+    width:230px;
+    background:#FFFFFF;
+    box-shadow:5px 5px 5px rgba(17, 61, 140, 0.23);
+    border-left: 1px solid #BFBFBF;
+}
+
+/* popup links */
+
+#menu li:hover div a {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:18px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #4d4d4d;
+    background:#FFFFFF;
+    display:block;
+	outline:0;
+    vertical-align:top;
+    padding: 5px 0px 5px 15px;
+}
+
+#menu li:hover div a:hover {
+    color:#FFFFFF;
+    background:#4d4d4d;
+}
+
+/* Side Nav  */
+
+.sideNavHeader {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #113d8c;
+    background:#FFFFFF;
+    display:block;
+	outline:0;
+    vertical-align:top;
+    padding: 5px 0px 10px 0px;
+}
+
+.sideNav li, .sideNav li:hover {
+    position:relative;
+    padding:5px 0px 5px 0px;
+    width:230px;
+    background:#FFFFFF;
+}
+
+.sideNav div a {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:18px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #4d4d4d;
+    background:#FFFFFF;
+    display:block;
+	outline:0;
+    vertical-align:top;
+    padding: 5px 0px 5px 10px;
+}
+
+.sideNav div a:hover, .sideNav a.Selected {
+    color:#FFFFFF;
+    background:#4d4d4d;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.mainContentArea {
+    padding:0px;
+    margin:auto auto;
+}
+
+/* Footer  */
+footer {
+  background:rgba(17, 61, 140, 0.23);
+  height: 50px;
+  width:100%;
+}
+
+.footer-content {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:12px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.footer-links {
+    font-family: Cabin, 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size:12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000000;
+}
